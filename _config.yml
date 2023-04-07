@@ -18,21 +18,27 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Kein Plan
+title: Christian Grölings Blog
 email: ch.groeling@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Danke für den Besuch. Diese Seite beschreibt, wie ich mein Leben 
+  führe, woran ich arbeite und was mich beschäftigt. Ich lade Sie 
+  herzlich ein, an meinen Ideen teilzuhaben und gemeinsam mit mir zu wachsen.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://christiangroeling.de" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  christiangroeling
+linkedin_username: dr-ing-christian-gröling-48b9691a4 
 
+    
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+
+# Minima Theme Settings
+minima:
+  skin: solarized # Minima unterstützt verschiedene Farbschemata. Der Standardwert ist "default"
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
