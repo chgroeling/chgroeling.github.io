@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Wie erstellt man eine Roadmap?"
+title:  "Erfolgreiche Planung mit Roadmaps: So navigieren Sie zielsicher durch Veränderungen"
 date:   2023-04-06 05:50:10 +0200
 categories: Produktentwicklung
 ---
