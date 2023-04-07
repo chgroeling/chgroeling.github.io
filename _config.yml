@@ -26,7 +26,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   herzlich ein, an meinen Ideen teilzuhaben und gemeinsam mit mir zu wachsen.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://christiangroeling.de" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  christiangroeling
+github_username:  chgroeling
 linkedin_username: dr-ing-christian-gröling-48b9691a4 
 
     
