@@ -6,7 +6,7 @@ categories: Produktentwicklung
 ---
 
 
-Eine Roadmap ist im wesentlichen eine Zeitleiste, die den aktuellen Stand und das Ziel zeigt. Sie ist vergleichbar mit einer Busfahrt in einer Großstadt: Die Haltestellen sind die Zwischenziele der Roadmap. Der Startbahnhof ist der aktuelle Stand und der Endbahnhof ist das Ziel.
+Eine Roadmap ist im Wesentlichen eine Zeitleiste, die den aktuellen Stand und das Ziel zeigt. Sie ist vergleichbar mit einer Busfahrt in einer Großstadt: Die Haltestellen sind die Zwischenziele der Roadmap. Der Startbahnhof ist der aktuelle Stand und der Endbahnhof ist das Ziel.
 
 In dieser Metapher kann man an jeder Haltestelle einen anderen Weg wählen. Man ist nicht an einen festen Weg gebunden. Es ist nur eine mögliche Strategie. Eine Roadmap ist nicht unveränderlich. Sie dient als Diskussionsgrundlage und kann sich jederzeit ändern.
 
