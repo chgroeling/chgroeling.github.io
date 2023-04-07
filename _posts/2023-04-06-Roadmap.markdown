@@ -1,0 +1,81 @@
+---
+layout: post
+title:  "Wie erstellt man eine Roadmap?"
+date:   2023-04-06 05:50:10 +0200
+categories: Produktentwicklung
+---
+
+
+Eine Roadmap ist im wesentlichen eine Zeitleiste, die den aktuellen Stand und das Ziel zeigt. Denk an eine Busfahrt in einer Großstadt: Die Haltestellen sind die Zwischenziele der Roadmap. Der Startbahnhof ist der aktuelle Stand und der Endbahnhof ist das Ziel.
+
+In dieser Metapher kann man an jeder Haltestelle einen anderen Weg wählen. Man ist nicht an einen festen Weg gebunden. Es ist nur eine mögliche Strategie. Eine Roadmap ist nicht unveränderlich. Sie dient als Diskussionsgrundlage und kann sich jederzeit ändern.
+
+Normalerweise erstreckt sich eine realistische Roadmap über etwa 18 Monate. Je weiter man in die Zukunft plant, desto unsicherer wird es, und die Planung kann den Bezug zur Realität verlieren.
+
+Eine Roadmap ist ein häufig genutztes Werkzeug in der Produktentwicklung. Man kann es aber auch in vielen anderen Bereichen anwenden, zum Beispiel:
+
+- Persönliche Weiterentwicklung 
+- Beim Lernen neuer Themen.
+- Technologie – wann werden neue Technologien eingeführt?
+- Infrastruktur – wann ändern sich die verwendeten Tools?
+
+
+
+# Warum erstellt man eine Roadmap?
+
+#### Vereinfachte Kommunikation und Interaktion
+
+Der Hauptvorteil einer Roadmap liegt in ihrer Einfachheit: Durch seine visuelle Aufbereitung sind   die Informationen leicht zu erfassen. Ein Blick genügt die wichtigsten Punkte zu erkennen. Dies erlaubt eine effiziente Kommunikation.
+
+#### Konzentration auf wichtigere Ziele
+ 
+Wichtiges ist nicht unbedingt dringend. Dringendes nicht unbedingt wichtig. Wir Menschen neigen dazu Dringendes zu priorisieren und verlieren dabei das große Ganze aus dem Auge. Eine Roadmap hilft den Blick gehoben zu halten. Zu erkennen wo die Reise hinführt und Schritte einzuleiten dies auch zu realisieren. 
+
+#### Weg der Veränderung
+
+Fähigkeit zur Veränderung ist einer der wichtigsten Erfolgsfaktoren der heutigen Zeit. Veränderung erzeugt allerdings bei vielen Menschen Angst. Eine Roadmap kann helfen zu erkennen wo die Reise hingehen soll. Dies hilft Angst vor der Zukunft zu reduzieren.
+
+#### Skalierbarkeit
+
+Eine Roadmap ist kein starres Gebilde. Eine flexible Roadmap-Struktur, die regelmäßige Änderungen standhält ist dringend notwendig, da die Zukunft oft unvorhersehbar ist. Dadurch bleibt eine Roadmap ein Werkzeug um einen möglichen Plan zu kommunizieren,, der die wahrscheinliche Entwicklung des Produkts in den kommenden Monaten skizziert.
+
+#### Erkennung von kritischen Herausforderungen und Schmerzpunkten
+
+Termine (Deadlines) sind die DNA einer Roadmap. Ist die Zeit knapp, kann das recht schnell erkannt werden. Eine Roadmap ist daher ein gutes Mittel konstruktiv und einfach auf Probleme hinzuweisen und deren Lösung zu diskutieren.
+
+#### Erhaltung der Wettbewerbsfähigkeit
+
+Idealerweise zeigt die Roadmap auf ein Ziel (bzw. Zwischenziele) die die Wettbewerbsfähigkeit eines Produktes, einer Technologie, usw.. erhalten und gegebenenfalls verbessern. 
+
+# Wie erstellt man eine Roadmap?
+
+Das folgende Bild zeigt wie ich an die Erstellung einer Roadmap herangehe. Das dazugehörige PowerPoint Template kann [hier]({% link /assets/roadmap_blanko.pptx %}) geladen werden. Ihr könnt es frei verwenden. Ich erhebe keine Lizenzansprüche. Das Template beruht auf dem sehr guten GO Template von Roman Pichler. Dies könnt ihr [hier](https://www.romanpichler.com/blog/goal-oriented-agile-product-roadmap/) finden.
+
+
+
+![Roadmap Template](/assets/img/Roadmap.png)
+
+
+Lasst mich kurz erklären wie ich dieses Template ausfülle:
+
+Zuerst fange ich damit an, die Zeile "Ziele" auszufüllen. Diese Zeile soll die gewünschten Ergebnisse oder Vorteile beschreiben, die in den kommenden Monaten erzielt werden sollen. Hier sollte ein spezifischer Wert angegeben werden, den das Produkt generieren wird, und es sollte die Frage beantwortet werden, warum es sich lohnt, weiterhin Zeit, Geld und Energie in die Produktentwicklung zu investieren.
+
+Als zweites fülle ich den Namen aus. Ein Name der einen Roadmap Meilenstein beschreibt ist sehr wichtig. Nicht selten ist ein kurzer und witziger Name das was letzlich bei den Menschen hängen bleibt. Er fungiert als Anker für die verbunden Ziele. Ein großer Erfolg ist es wenn die Menschen ohne die Roadmap vorliegend zu haben über den Namen des Releases reden.
+
+Als drittes sollte man die mit dem Ziel verbundenen Funktionen ausfüllen. Was benötigt man um den Wert zu schaffen den man will. Beispielsweise welches Tool muss angeschafft werden, welche Technologie eingearbeitet usw.? Üblicherweise schreibe ich hier niemals mehr 4 Features auf. Außerdem ist es wichtig keine Prosa zu verwenden und die Ziele klar und deutlich zu formulieren.
+
+Schließlich wird das Feld Metriken ausgefüllt. Wie lässt sich feststellen, ob das Ziel erreicht wurde und der im Zielfeld angegebene Wert geschaffen wurde? Welche messbaren Indikatoren können herangezogen werden, um dies zweifelsfrei zu belegen? Es ist wichtig, objektive und relevante Metriken zu definieren, die den Fortschritt und den Erfolg des Projekts angemessen abbilden.
+
+Die Deadline lasse ich anfänglich meist offen. Ein Datum schränkt zu sehr den Lösungsraum ein. Hat man ein gemeinsames Bild erreicht dass die Stakeholder miteinander teilen, kann man im nächsten Schritt eine realistische Deadline festlegen. Diese sollte jedoch flexibel gehandhabt werden, um auf Veränderungen im Projektverlauf reagieren zu können
+
+# Zusammenfassung
+
+Eine Roadmap ist ein visuelles Werkzeug, das den aktuellen Stand, Zwischenziele und das Endziel aufzeigt und häufig in der Produktentwicklung eingesetzt wird. Sie dient der Vereinfachung von Kommunikation, Konzentration auf wichtige Ziele und Erkennung von Herausforderungen. Die Erstellung einer Roadmap beinhaltet das Festlegen von Zielen, Meilenstein-Namen, Funktionen und Metriken, während Deadlines offen gelassen werden können, um Flexibilität zu gewährleisten.
+
+# Bibliographie
+
+[1] IntelliSoft. [Creating Technology Roadmap for the Product: Free Technology Roadmap Template](https://medium.com/@IntelliSoft/creating-technology-roadmap-for-the-product-free-technology-roadmap-template-e12284b6dd61)
+
+[2] Pichler, Roman. [The GO Product Roadmap](https://www.romanpichler.com/blog/goal-oriented-agile-product-roadmap/)
+
+[3] Product Plan. [What is a Software Roadmap?](https://www.productplan.com/learn/what-is-a-software-roadmap/)

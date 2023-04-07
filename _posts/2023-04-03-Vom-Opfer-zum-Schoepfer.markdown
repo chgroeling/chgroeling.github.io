@@ -34,7 +34,7 @@ Wir können uns nicht entziehen  das wir soziale Wesen sind. Dies ist unserer Na
 - **Unterlegenheit suggerieren:** Menschen wollen sich dir überlegen fühlen. Gib diesem Wunsch nach. Lass sie sich überlegen fühlen. Dies ist die beste Art andere zu manipulieren während man in Ruhe an seinen Themen arbeiten kann.
 - **Gewinne niemals eine Diskussion durch Argumente sondern immer durch Taten:** Argumentiere nicht sondern demonstriere. Alles andere führt zu unterschwelliger Wut und Hass.
 - **Die Kunst der Abwesenheit:** Wir sollten stets eine nebulöse Aura wahren und dies gezielt durch Abwesenheit bzw. nicht Verfügbarkeit unterstreichen. Hierdurch werden wir weniger vorhersehbar. Man nimmt uns nicht als Inventar war sondern wir werden in den Köpfen der Menschen präsenter, weil interessanter.
-- Erziehe deinen Chef: Wenn er falsche Entscheidungen trifft liegt das daran das du keinen Weg gefunden hast mit ihm auf
+
 
 ### Zeit
 
@@ -48,7 +48,7 @@ Was ist das wertvollste was wir besitzen? Unsere Lebenszeit.  Es ist simpel , al
 
 [1] Green, Robert. The Laws of Human Nature, Profile Books, 2018
 
-[2] Forte, Tjago. Just-In-Time PM #13: Component Thinking. ****[https://fortelabs.com/blog/just-in-time-pm-13-component-thinking/](https://fortelabs.com/blog/just-in-time-pm-13-component-thinking/)
+[2] Forte, Tjago. [Just-In-Time PM #13: Component Thinking](https://fortelabs.com/blog/just-in-time-pm-13-component-thinking/)
 
 [3] Seneca. Briefe an Lucilius, Reclam, 2014
 
