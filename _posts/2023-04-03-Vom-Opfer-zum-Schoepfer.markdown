@@ -44,7 +44,7 @@ Was ist das wertvollste was wir besitzen? Unsere Lebenszeit.  Es ist simpel , al
 - **Komponenten denken:** Arbeitsresultate, Zwischenstände, Protokolle usw. sehen wir als unwichtig an. Doch sind  sie die Bausteine eines Resultats. Um Zeit zu sparen müssen wir in der Lage sein Ganze Projekte wie Lego aufzubauen. Die Lego Bausteine sind Komponenten die wir über längere Zeiträume aus unseren Notizen herausschneiden und ständig verfeinern. Dies können Vorlagen, Fragenkatalog, Diagramme usw. sein. Wichtig ist das wir sie verallgemeinern und stets auffinden können wenn wir sie benötigen. Dies wirkt, wenn richtig durchgeführt, fasst wie Magie.
 - **Grenzen:** Um Prioritäten zu setzen musst du Optionen haben. Optionen bekommst du wenn du deine Zeit massiv einschränkst die du investieren willst. Nun **musst** du wählen was wichtig ist. Nun kannst du auch nicht mehr verschwenderisch sein sondern musst dich fokussieren.  Die Zeit die du so frei machst gehört dir allein. Nutze sie gut.
 
-# Bibliographie
+# Bibliografie
 
 [1] Green, Robert. The Laws of Human Nature, Profile Books, 2018
 
