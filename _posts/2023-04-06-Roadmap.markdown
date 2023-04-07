@@ -27,7 +27,7 @@ Eine Roadmap ist ein häufig genutztes Werkzeug in der Produktentwicklung. Man k
 
 Der Hauptvorteil einer Roadmap liegt in ihrer Einfachheit: Durch seine visuelle Aufbereitung sind   die Informationen leicht zu erfassen. Ein Blick genügt, die wichtigsten Punkte zu erkennen. Dies erlaubt eine effiziente Kommunikation.
 
-#### Konzentration auf wichtigere Ziele
+#### Konzentration auf wichtige Ziele
  
 Wichtiges ist nicht unbedingt dringend. Dringendes nicht unbedingt wichtig. Wir Menschen neigen dazu, Dringendes zu priorisieren und verlieren dabei das große Ganze aus dem Auge. Eine Roadmap hilft, den Blick gehoben zu halten. Zu erkennen, wo die Reise hinführt und Schritte einzuleiten, dies auch zu realisieren. 
 
