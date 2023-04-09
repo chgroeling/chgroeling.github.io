@@ -75,7 +75,7 @@ Die Frist lasse ich anfänglich meist offen. Ein Datum schränkt zu sehr den Lö
 
 # Zusammenfassung
 
-Eine Roadmap ist ein visuelles Werkzeug, das den aktuellen Stand, Zwischenziele und das Endziel aufzeigt und häufig in der Produktentwicklung eingesetzt wird. Sie dient der Vereinfachung von Kommunikation, Konzentration auf wichtige Ziele und Erkennung von Herausforderungen. Die Erstellung einer Roadmap beinhaltet das Festlegen von Zielen, Meilenstein-Namen, Funktionen und Metriken, während Fristen offen gelassen werden können, um Flexibilität zu gewährleisten.
+Eine Roadmap ist ein visuelles Werkzeug, das den Stand, Zwischen- und Endziele aufzeigt und in der Produktentwicklung genutzt wird. Sie hilft bei der Vereinfachung von Kommunikation und ermöglicht es, den Fokus auf wichtige Ziele zu legen. Bei der Erstellung einer Roadmap legt man Ziele, Meilensteine und Metriken fest, während Fristen flexibel gehalten werden können, um Anpassungen an Herausforderungen zu ermöglichen, die von den Nutzern der Roadmap erkannt werden.
 
 # Bibliografie
 
