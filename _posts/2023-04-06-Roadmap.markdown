@@ -19,10 +19,11 @@ Normalerweise erstreckt sich eine realistische Roadmap über etwa 18 Monate. Je 
 
 Eine Roadmap ist ein häufig genutztes Werkzeug in der Produktentwicklung. Man kann es aber auch in vielen anderen Bereichen anwenden, zum Beispiel:
 
-- Persönliche Weiterentwicklung 
-- Beim Lernen neuer Themen.
-- Technologie – wann werden neue Technologien eingeführt?
-- Infrastruktur – wann ändern sich die verwendeten Tools?
+- Produkt- und Projektmanagement: Planung von Produktlebenszyklen, Meilensteinen, Projektfortschritten und Ressourcenallokation.
+- Persönliche und Organisationsentwicklung: Setzen von persönlichen und organisatorischen Zielen, Personalentwicklung und -weiterbildung.
+- Technologie und Infrastruktur: Einführung neuer Technologien, Systeme und Tools, Optimierung von Prozessen.
+- Geschäftsstrategie und Marketing: Festlegung von Geschäftszielen, Marktchancen, Marketingkampagnen und Vertriebskanälen.
+- Forschung und Entwicklung: Planung von Forschungsprojekten, Identifizierung von Investitionsmöglichkeiten.
 
 
 
@@ -75,7 +76,7 @@ Die Frist lasse ich anfänglich meist offen. Ein Datum schränkt zu sehr den Lö
 
 # Zusammenfassung
 
-Eine Roadmap ist ein visuelles Werkzeug, das den Stand, Zwischen- und Endziele aufzeigt und in der Produktentwicklung genutzt wird. Sie hilft bei der Vereinfachung von Kommunikation und ermöglicht es, den Fokus auf wichtige Ziele zu legen. Bei der Erstellung einer Roadmap legt man Ziele, Meilensteine und Metriken fest, während Fristen flexibel gehalten werden können, um Anpassungen an Herausforderungen zu ermöglichen, die von den Nutzern der Roadmap erkannt werden.
+Eine Roadmap ist ein visuelles Planungswerkzeug, das Ziele und Fortschritte zeigt und in vielen Bereichen anwendbar ist. Es vereinfacht Kommunikation, hilft, wichtige Ziele im Auge zu behalten und Veränderungen anzupassen. Um eine Roadmap zu erstellen, legt man Ziele, Meilenstein-Namen, Funktionen und Metriken fest, wobei Fristen flexibel bleiben können. 
 
 # Bibliografie
 
