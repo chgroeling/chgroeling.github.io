@@ -13,7 +13,7 @@ Stellen Sie sich vor, Sie benutzen eine Stadtkarte von Berlin in New York. Das e
 
 Leider neigen wir dazu, bei der Verfolgung unserer persönlichen Ziele die falsche "Karte" zu verwenden, ohne es zu merken. Die Einflussfaktoren sind vielfältig:
 
-- Unsere Sichtweise wird stark von unseren Stimmungen und Gefühlen beeinflusst, die sprunghaft und inkonsistent sind. Richter urteilen unter anderem härter, wenn sie hungrig sind.
+- Unsere Sichtweise wird stark von unseren Stimmungen und Gefühlen beeinflusst, die sprunghaft und inkonsistent sind. Beispielsweise: Richter urteilen härter, wenn sie hungrig sind.
 - Wir versuchen grundsätzlich, Schmerz zu vermeiden und Vergnügen zu suchen. Alles, was bei uns Schmerz verursachen kann (auch Fakten), wird gerne unbewusst ignoriert.
 - Unser tierisches Selbst folgt bestimmten Mustern, die Abkürzungen in unserem Denken darstellen, wie beispielsweise das Folgen von Gruppen. Dies war früher notwendig, um Energie zu sparen, kann aber in unserer komplexen Welt zu Fehlentscheidungen führen.
 
