@@ -7,7 +7,7 @@ categories: Persoenlichkeitsentwicklung
 
 > The map is not the territory - Alfred Korzybski
 
-Unsere Wahrnehmung der Welt ist stets subjektiv, beeinflusst von unseren Vereinfachungen, Erfahrungen, Sichtweisen, Fehlern und anderen Menschen. Sie entspricht nie ganz der Realität, und oft liegen wir weit daneben. Unsere Wahrnehmung ist wie eine Landkarte, die die Realität unzureichend abbildet.
+Unsere Wahrnehmung der Welt ist stets subjektiv, beeinflusst von unseren Vereinfachungen, Erfahrungen, Sichtweisen, Fehlern und vor allem anderen Menschen. Sie entspricht nie ganz der Realität, und oft liegen wir weit daneben. Unsere Wahrnehmung ist wie eine Landkarte, die die Realität unzureichend abbildet.
 
 Stellen Sie sich vor, Sie benutzen eine Stadtkarte von Berlin in New York. Das ergibt offensichtlich keinen Sinn, da die Karte das aktuelle Gebiet nicht darstellt und somit nicht zum gewünschten Ergebnis führen kann. Je genauer die Karte die Realität abbildet, desto besser können wir unseren Weg planen. Das sollte das Hauptziel bei jedem Planungsprozess sein.
 
