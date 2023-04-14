@@ -31,7 +31,7 @@ Eine Roadmap ist ein häufig genutztes Werkzeug in der Produktentwicklung. Man k
 
 #### Vereinfachte Kommunikation und Interaktion
 
-Der Hauptvorteil einer Roadmap liegt in ihrer Einfachheit: Durch seine visuelle Aufbereitung sind   die Informationen leicht zu erfassen. Ein Blick genügt, die wichtigsten Punkte zu erkennen. Dies erlaubt eine effiziente Kommunikation.
+Der Hauptvorteil einer Roadmap liegt in ihrer Einfachheit: Durch ihre visuelle Aufbereitung sind die Informationen leicht zu erfassen. Ein Blick genügt, die wichtigsten Punkte zu erkennen. Dies erlaubt eine effiziente Kommunikation.
 
 #### Konzentration auf wichtige Ziele
  
