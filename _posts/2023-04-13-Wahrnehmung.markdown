@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: single
+toc: false
 title:  "Die Landkarte ist nicht das Gebiet: Wie unsere Wahrnehmung uns täuscht"
 date:   2023-04-13 17:00:10 +0200
 categories: Persoenlichkeitsentwicklung
