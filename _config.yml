@@ -31,14 +31,9 @@ linkedin_username: dr-ing-christian-gröling-48b9691a4
 twitter_username: luzilius
     
 # Build settings
-theme: minima
+remote_theme: mmistakes/minimal-mistakes@4.24.0
 plugins:
-  - jekyll-feed
-
-# Minima Theme Settings
-minima:
-  skin: solarized # Minima unterstützt verschiedene Farbschemata. Der Standardwert ist "default"
-
+  - jekyll-include-cache
 
 # Exclude from processing.
 # The following items will not be processed, by default.
