@@ -5,6 +5,7 @@ date:   2023-04-03 16:30:10 +0200
 categories: Persoenlichkeitsentwicklung
 ---
 
+> Die ganze Welt ist Bühne,/ Und alle Fraun und Männer bloße Spieler./ Sie treten auf und gehen wieder ab,/ Sein Leben lang spielt einer manche Rollen/ Durch sieben Akte hin … - William Shakespeare 
 
 Das Leben ist ein Spiel, und wir spielen alle unsere Rollen. Manche weigern sich vielleicht, dieses Spiel mitzuspielen, **aber letztlich werden sie an den Rand gedrängt und gezwungen, die Außenseiterrolle zu spielen, mit eingeschränkten Möglichkeiten und wenig Freiheit**. Doch auch bewusst eine andere Rolle zu spielen, fällt den Menschen schwer und ist nicht selten von geringer Dauer. Zum Beispiel würde doch niemand gerne andere Menschen gezielt verärgern, und doch gibt es Menschen, denen so etwas ungewollt zielsicher gelingt. 
 
