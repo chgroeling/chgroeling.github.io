@@ -10,9 +10,10 @@ categories: Python
 Im Build-Prozess eines C++ Projekts kann es sinnvoll 
 sein, Python-Skripte zu verwenden, beispielsweise 
 für Code-Generatoren oder Paketierung. Um sicherzustellen, 
-dass alle Entwickler mit den gleichen Abhängigkeiten 
+dass diese Skripte immer mit den gleichen Abhängigkeiten 
+unabhängig auf welchem Rechner sie ausgeführt werden 
 arbeiten, ist die Verwendung einer virtuellen 
-python Umgebung eine sinnvolle Lösung.
+python Umgebung eine gute Lösung.
 
 # Kurze Einführung in venv
 `venv` ist ein Python-Paket, das die Erstellung von virtuellen Umgebungen ermöglicht. 
