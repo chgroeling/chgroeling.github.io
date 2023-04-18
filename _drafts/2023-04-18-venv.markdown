@@ -67,13 +67,19 @@ Um das Environment zu deaktivieren, gib einfach `deactivate` ein.
 
 # Arbeiten mit einem aktivierten virtual environment
 
-Nachdem du dein virtual environment erstellt und aktiviert hast, kannst  du `pip` verwenden um benötigte Pakete zu installieren. Am besten tust du dies indem du eine requirements.txt erstellst  und sie wie folgt mit `pip` verwendest.
+Nachdem du dein virtual environment erstellt und aktiviert hast, 
+kannst  du `pip` verwenden um benötigte Pakete zu installieren. 
+Am besten tust du dies indem du eine requirements.txt 
+erstellst und sie wie folgt mit `pip` verwendest.
 
 ~~~
 pip install -r requirements.txt
 ~~~
 
-Dadurch werden alle in der `requirements.txt` Datei angegebenen Pakete und ihre angegebenen Versionen in das aktive virtual environment installiert. Das Format dieser Datei ist [hier](https://pip.pypa.io/en/stable/reference/requirements-file-format/) beschrieben.
+Dadurch werden alle in der `requirements.txt` Datei 
+angegebenen Pakete und ihre angegebenen Versionen in 
+das aktive virtual environment installiert. 
+Das Format dieser Datei ist [hier](https://pip.pypa.io/en/stable/reference/requirements-file-format/) beschrieben.
 
 
 {: .notice--info} 
