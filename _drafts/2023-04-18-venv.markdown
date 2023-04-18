@@ -58,10 +58,9 @@ Ab diesem Zeitpunkt ist das virtual environment aktiv. Das am einfachsten daran 
 
 {: .notice--warning} 
 **Achtung**: Der Befehl ändert den Pfad. Verwendet ihr absolute 
-Pfade zum
-installierten Python Interperter so wird __nicht__ das 
-virtual environment verwendet. Das 
-kann insbesondere in Makefiles leicht passiern. 
+Pfade zum installierten Python Interperter so wird __nicht__ das 
+virtual environment verwendet. Das kann insbesondere in Makefiles 
+leicht passiern. 
 
 Um das Environment zu deaktivieren, gib einfach `deactivate` ein.
 
