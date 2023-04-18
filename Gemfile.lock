@@ -255,6 +255,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-include-cache
+  jemoji
   webrick
 
 BUNDLED WITH
