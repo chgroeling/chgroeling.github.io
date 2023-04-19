@@ -22,7 +22,7 @@ name                     : "Christian Gröling"
 description              : #
   Danke für den Besuch. Diese Seite beschreibt, wie ich mein Leben
   führe, woran ich arbeite und was mich beschäftigt. Ich lade Sie
-  herzlich ein, an meinen Ideen teilzuhaben und gemeinsam mit mir zu wachsen."
+  herzlich ein, an meinen Ideen teilzuhaben und gemeinsam mit mir zu wachsen.
 url                      : "chgroeling.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -108,9 +108,13 @@ analytics:
 author:
   name             : "Christian Gröling"
   avatar           : "/assets/avatar.jpg"
-  bio              : "Unabhängiger und engagierter Entwickler von embedded Software. Ich vertiefe mich gern intensiv in Strategien und innovative Lösungen, um herausragende Ergebnisse in meinem Fachgebiet und Interessengebieten zu erzielen."
-  location         : "Germany"
-  email            :
+  bio              : #
+    Unabhängiger und engagierter Entwickler von embedded Software. Ich vertiefe mich gern intensiv in 
+    Strategien und innovative Lösungen, um herausragende Ergebnisse in meinem Fachgebiet und 
+    Interessengebietens zu erzielen.
+  
+  location         : "Stuttgart / Germany"
+  email            : "contact@christiangroeling.de"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
