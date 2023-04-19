@@ -10,8 +10,8 @@ categories: Python
 Im Build-Prozess eines C++ Projekts kann es sinnvoll 
 sein, Python-Skripte zu verwenden, beispielsweise 
 für Code-Generatoren oder Paketierung. Um sicherzustellen, 
-dass diese Skripte immer mit den gleichen Abhängigkeiten 
-unabhängig auf welchem Rechner sie ausgeführt werden 
+dass diese Skripte immer mit den gleichen Abhängigkeiten,
+auf welchem Rechner sie ausgeführt werden,
 arbeiten, ist die Verwendung einer virtuellen 
 python Umgebung eine gute Lösung.
 
@@ -23,8 +23,7 @@ Verzeichnis enthält eine Kopie des Python-Interpreters,
 den Python Package Installer (kurz: pip) und die Python Standarbiblitohek. 
 Da `venv` sicherstellt, dass die Abhängigkeiten eines 
 Projekts isoliert und reproduzierbar sind, wird empfohlen 
-es in den meisten Fällen zu verwenden.
-
+es in den meisten Fällen, auch außerhalb von Build Umgebungen, zu verwenden.
 
 {: .notice--info} 
 **Hinweis** Ein wichtiger Aspekt für mich bei `venv` 
@@ -38,36 +37,39 @@ und einfacher virtuelle Umgebungen erstellen können.
 Insbesondere ist hier [virtualenv](https://virtualenv.pypa.io/) 
 zu erwähnen, aus dem einst `venv` hervorgegangen ist.
 
-# Aufsetzen eines virtual environments
+# Aufsetzen eines virtuellen Umgebung 
 
-Um ein virtuelles Environment mit venv zu erstellen, führe den folgenden Befehl aus:
+Um eine virtuelle Umgebung mit `venv` zu erstellen, führe den folgenden Befehl aus:
 
 ~~~
 python3 -m venv mein_venv
 ~~~
 
-Der angegebene Befehl erzeugt im aktuellen Arbeitsverzeichnis ein neues Verzeichnis mit dem Namen `mein_venv`. In dieses Verzeichnisses wird das virtual environment angelegt. Das heißt unter anderem, dass der Python-Interpreter sowie die Standardbibliothek dorthin kopiert wird. 
+Der angegebene Befehl erzeugt im aktuellen Arbeitsverzeichnis ein neues Verzeichnis mit dem Namen `mein_venv`. In dieses Verzeichnisses 
+wird die virtuelle Umgebung angelegt. Das heißt unter anderem, dass der Python-Interpreter sowie die Standardbibliothek dorthin kopiert wird. 
 
-Anschliessen kann das virtual environment durch folgende Befehle aktiviert werden.
+Anschliessen kann sie durch folgenden Befehle aktiviert werden:
 
 ~~~
 Windows: mein_venv\Scripts\activate
 Linux/macOS: source mein_venv/bin/activate
 ~~~
 
-Ab diesem Zeitpunkt ist das virtual environment aktiv. Das am einfachsten daran zu erkennen das der Kommandozeile ein `mein_venv`vorangestellt wird. Alle Aufrufe des python Interperter beziehen sich nun auf das virtual environment. 
+Ab diesem Zeitpunkt ist die virtuelle Umgebung aktiv. Das am einfachsten daran zu erkennen das der 
+Kommandozeile ein `mein_venv`vorangestellt wird. Alle Aufrufe des python Interperter beziehen sich 
+nun auf die virtuelle Umgebung. 
 
 {: .notice--warning} 
 **Achtung**: Der Befehl ändert den Pfad. Verwendet ihr absolute 
-Pfade zum installierten Python Interperter so wird __nicht__ das 
-virtual environment verwendet. Das kann insbesondere in Makefiles 
+Pfade zum installierten Python Interperter so wird __nicht__ die 
+virtuelle Umgebung verwendet. Das kann insbesondere in Makefiles 
 leicht passiern. 
 
-Um das Environment zu deaktivieren, gib einfach `deactivate` ein.
+Um die Umgebung zu deaktivieren, gib einfach `deactivate` ein.
 
-# Arbeiten mit einem aktivierten virtual environment
+# Arbeiten mit einer aktivierten virtuellen Umgebung
 
-Nachdem du dein virtual environment erstellt und aktiviert hast, 
+Nachdem du deine virtuelle Umgebung erstellt und aktiviert hast, 
 kannst  du `pip` verwenden um benötigte Pakete zu installieren. 
 Am besten tust du dies indem du eine requirements.txt 
 erstellst und sie wie folgt mit `pip` verwendest.
@@ -78,25 +80,29 @@ pip install -r requirements.txt
 
 Dadurch werden alle in der `requirements.txt` Datei 
 angegebenen Pakete und ihre angegebenen Versionen in 
-das aktive virtual environment installiert. 
+die aktive virtuelle Umgebung installiert. 
 Das Format dieser Datei ist [hier](https://pip.pypa.io/en/stable/reference/requirements-file-format/) beschrieben.
-
 
 {: .notice--info} 
 
-**Tipp:** Wird in der `requirements.txt`lokalen Paketen die `-e` Option vorangstellt (steht für "editable"), erkennt das System Änderungen direkt am ursprünglichen Speicherort des Pakets. Diese Option ist besonders nützlich, wenn lokale Pakete installiert werden sollen, die sich innerhalb der Build-Umgebung befinden. Dadurch können Anpassungen und Updates im Paket leichter verfolgt und übernommen werden, ohne das Paket jedes Mal erneut installieren zu müssen.
+**Tipp:** Wird in der `requirements.txt`lokalen Paketen die `-e` Option vorangstellt (steht für "editable"), erkennt das 
+System Änderungen direkt am ursprünglichen Speicherort des Pakets. Diese Option ist besonders nützlich, wenn 
+lokale Pakete installiert werden sollen, die sich innerhalb der Build-Umgebung befinden. Dadurch können 
+Anpassungen und Updates im Paket leichter verfolgt und übernommen werden, ohne das Paket jedes Mal 
+erneut installieren zu müssen.
 
-# Verwendung eines virtual environments in einer Build Umgebung
+# Verwendung von `venv`in einer Build Umgebung
 
 Alles zuvor beschriebene zusammengenommen reicht aus um `venv`in einer Build-Umgebung 
 zu verwenden. Wird beispielsweise ein gutes altes `Makefile`verwendet kann man 
-bevor der python Interperter verwenden wird erst einmal ein virtual environment aufbauen. 
+bevor der python Interperter aufgerufen wird erst einmal eine virtuelle Umgebung aufsetzen. 
 
-Da dies aber aber einige Sekunden benötigt die bei inkrementellen builds durchaus (vor allem mich :smiley: ) sehr stören können möchte ich euch noch Skript mitgeben. Es führt die zuvor genannten Schritte aus und unterstützt darüberhinaus noch folgende Funktionen.
-- Es baut das virtual environment nur auf wenn es nicht bereits existiert.
+Da dies aber aber einige Sekunden benötigt die bei inkrementellen builds durchaus (vor allem mich :smiley: ) sehr stören können möchte ich 
+euch noch Skript mitgeben. Es führt die zuvor genannten Schritte aus und unterstützt darüberhinaus noch folgende Funktionen.
+- Es baut die virtuelle Umgebung nur auf wenn es nicht bereits existiert.
 - Es installiert Pakete nur wenn die `requirements.txt`sich nicht geändert hat.
-- Es baut das virtual environment neu auf wenn das Skript selbst sich geändert hat.
-- und letzendlich aktiviert es das virtual environment gleich.
+- Es baut die virtuelle Umgebung neu auf wenn das Skript selbst sich geändert hat.
+- und letzendlich aktiviert sie die virtuelle Umgebung gleich.
 
 Diese Funktionen werden durch Timestamp Files realisiert die …
 
