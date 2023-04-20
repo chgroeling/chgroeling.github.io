@@ -60,7 +60,7 @@ Das folgende Bild zeigt, wie ich an die Erstellung einer Roadmap herangehe. Das 
 
 
 
-![Roadmap Template](/assets/img/Roadmap.png)
+{% include figure image_path="/assets/img/Roadmap.png" alt="Abbildung: Roadmap Template" caption="Abbildung: Roadmap Template" %}
 
 
 Lasst mich kurz erklären, wie ich dieses Template ausfülle:
