@@ -92,9 +92,11 @@ Man kann das, was das Skript erreicht, auch durch Makerules erzielen. Allerdings
 In diesem Artikel habe ich gezeigt, warum die 
 Verwendung von `venv` im Build-Prozess eines 
 C++ Projekts sinnvoll ist. 
-Wir haben gesehen, wie man ein virtuelles 
-Environment erstellt, aktiviert und deaktiviert. 
+Wir haben gesehen, wie man eine virtuelle
+Umgebung erstellt, aktiviert und deaktiviert. 
 Zudem haben wir besprochen, wie man eine 
-`requirements.txt` Datei erstellt. Letztlich wird dem Leser
-ein Skript an die Hand gegeben um die Schritte zu automatisieren.
+`requirements.txt` Datei verwendet um komfortabel Abhängigkeiten zu 
+installieren. Letztlich wird dem Leser
+ein Skript an die Hand gegeben um die Schritte 
+zu automatisieren.
 
