@@ -114,7 +114,7 @@ author:
     Interessengebietens zu erzielen.
   
   location         : "Stuttgart / Germany"
-  email            : "contact@christiangroeling.de"
+  # email            : "contact@christiangroeling.de"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"

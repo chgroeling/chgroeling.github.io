@@ -3,7 +3,7 @@ layout: single
 toc: false
 title:  "Vom Opfer zum Schöpfer: Wie man die eigene Rolle im Leben aktiv gestaltet?"
 date:   2023-04-03 16:30:10 +0200
-categories: Persoenlichkeitsentwicklung
+categories: Persönlichkeitsentwicklung
 ---
 
 > Die ganze Welt ist Bühne,/ Und alle Fraun und Männer bloße Spieler./ Sie treten auf und gehen wieder ab,/ Sein Leben lang spielt einer manche Rollen/ Durch sieben Akte hin … - William Shakespeare 
