@@ -4,6 +4,8 @@ title: Impressum
 permalink: /impressum/
 ---
 
+Die Datenschutzerklärung findest Du hier: [Datenschutz](/datenschutz)
+
 ## Angaben gemäß § 5 TMG
 
 Christian Gröling  
