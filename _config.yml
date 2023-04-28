@@ -23,7 +23,7 @@ description              : #
   Danke für den Besuch. Diese Seite beschreibt, wie ich mein Leben
   führe, woran ich arbeite und was mich beschäftigt. Ich lade Sie
   herzlich ein, an meinen Ideen teilzuhaben und gemeinsam mit mir zu wachsen.
-url                      : "chgroeling.github.io"
+url                      : "www.christiangroeling.de"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : chgroeling/chgroeling.github.io
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
