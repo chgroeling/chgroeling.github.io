@@ -37,7 +37,9 @@ Die meisten von uns gestalten die vor sich liegenden Wochen und Monate in Form v
 
 Da wir oft das Gefühl haben, viel Zeit zur Verfügung zu haben, neigen viele von uns dazu, bestimmte Aufgaben aufzuschieben und sich zunächst anderen Projekten zu widmen. Schließlich scheint die Deadline noch weit entfernt und es gibt immer dringende Themen, die unsere Aufmerksamkeit erfordern.
 
+{::comment}
 Diese Neigung entsteht durch eine Mischung aus Faktoren wie Aufschieberitis, Perfektionismus und dem Wunsch, beschäftigt zu erscheinen, um unseren Ruf aufrechtzuerhalten. Dadurch konzentrieren wir uns immer stärker darauf, kurzfristige Prioritäten zu bewältigen und dringende Aufgaben zu erledigen. Es scheint immer etwas Dringendes zu geben, und die Arbeit, die von außen auf uns zukommt, ist scheinbar endlos.
+{:/comment}
 
 Erst wenn die Zeit im Projekt unseres Lebens knapp wird, werden wir wirklich aktiv und müssen aktiv werden. In solchen Momenten setzen wir Prioritäten. Leider ist es dann oft zu spät. Im Projektmanagement gibt es die sogenannte Post-Mortem-Analyse, bei der nach Abschluss eines Projekts untersucht wird, welche Erfahrungen in das nächste Projekt übernommen werden können. Auffällig ist die Verbindung dieses Begriffs mit dem Tod.
 
