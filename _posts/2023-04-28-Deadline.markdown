@@ -1,7 +1,7 @@
 ---
 layout: single
 toc: false
-title:  "Memento Mori: Warum der Gedanke an den Tod uns dazu motivieren sollte, unser Leben bewusster zu gestalten"
+title:  "Memento Mori - Sei dir der Sterblichkeit bewusst"
 date:   2023-04-28 05:50:10 +0200
 categories: Persönlichkeitsentwicklung
 ---
