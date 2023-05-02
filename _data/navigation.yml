@@ -7,5 +7,5 @@ main:
 #    url: /tags/
   - title: "Über mich"
     url: /about
-  - title: "Rechtliches"
-    url: /rechtliches
+# - title: "Rechtliches"
+#   url: /rechtliches
