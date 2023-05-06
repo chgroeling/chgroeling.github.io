@@ -105,6 +105,8 @@ Folgendes fällt auf:
 - Es gibt nun zwei Root Commits. Einen für die Repo “subtree_test”. Einen anderen für die Repo “repo1”
 - Die gesamte History von “repo1” wurde in die Repo “subtree_test” importiert.
 
+Durch das Hinzufügen eines Subtree wird also die gesamte Historie des hinzugefügten Repositories in das Hauptrepository integriert, wodurch eine saubere und nachvollziehbare Verbindung zwischen beiden Repositories entsteht. 
+
 ## Anwendungsfall 2: Subtree hinzufügen aber die history “squashen”
 
 Setzen wir den master wieder auf den “Initial commit” zurück.
@@ -176,7 +178,7 @@ git commit --message "Change in subtree_test"
 git subtree push --prefix my_repo1 ../repo1 master
 ```
 
-Das Kommando wird nun einen “split” durchführen. Hierbei werden die Änderungen 
+Das Kommando führt nun einen "Split" durch. Dabei werden die Änderungen, die spezifisch für das Subtree sind, von den Änderungen im Hauptrepository getrennt. Anschließend werden die Änderungen aus dem Subtree in das "repo1" Repository gepusht. Dieser Prozess stellt sicher, dass nur die relevanten Änderungen im Subtree in das externe Repository übertragen werden und die Historie beider Projekte sauber bleibt.
 
 # Zusammenfassung
 
