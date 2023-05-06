@@ -17,7 +17,7 @@ Bevor wir uns Git-Subtree genauer anschauen, hier noch einmal die Gründe, warum
 
 * Komplexität beim Klonen: Git klont keine Submodule standardmäßig, was zu einer erhöhten Komplexität führt. Man muss entweder ``git submodule update --init --recursive`` oder ``git clone --recursive <repository-url>`` verwenden, um Submodule zu klonen.
 
-* Manuelle Synchronisierung erforderlich: Git-Submodule werden nicht automatisch synchronisiert. Dadurch entsteht zusätzlicher Aufwand, da man git submodule update ausführen muss, um die Submodule auf den neuesten Stand zu bringen.
+* Manuelle Synchronisierung erforderlich: Git-Submodule werden nicht automatisch synchronisiert. Dadurch entsteht zusätzlicher Aufwand, da man ``git submodule update`` ausführen muss, um die Submodule auf den neuesten Stand zu bringen.
 
 * Zusätzliche Schritte bei Änderungen: Wenn in Hauptmodul und Submodul Dateien geändert wurden, erfordert dies zusätzliche Schritte wie das Commiten/Pushen oder Rückgängigmachen von Änderungen in beiden Modulen. Dies kann leicht zu Verwirrung und Fehlern führen.
 
