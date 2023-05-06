@@ -15,7 +15,7 @@ Git-Subtree bindet den Inhalt eines externen Repositories direkt in das Hauptrep
 # Warum kann die Verwendung von Git Submodulen eine schlechte Idee sein?
 Bevor wir uns Git-Subtree genauer anschauen, hier noch einmal die Gründe, warum die Verwendung von Git-Submodulen bei einigen Entwicklern unbeliebt ist:
 
-* Komplexität beim Klonen: Git klont keine Submodule standardmäßig, was zu einer erhöhten Komplexität führt. Man muss entweder git submodule update --init --recursive oder git clone --recursive <repository-url> verwenden, um Submodule zu klonen.
+* Komplexität beim Klonen: Git klont keine Submodule standardmäßig, was zu einer erhöhten Komplexität führt. Man muss entweder ``git submodule update --init --recursive`` oder ``git clone --recursive <repository-url>`` verwenden, um Submodule zu klonen.
 
 * Manuelle Synchronisierung erforderlich: Git-Submodule werden nicht automatisch synchronisiert. Dadurch entsteht zusätzlicher Aufwand, da man git submodule update ausführen muss, um die Submodule auf den neuesten Stand zu bringen.
 
