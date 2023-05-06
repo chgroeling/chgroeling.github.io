@@ -11,10 +11,10 @@ comments: true
 Im Build-Prozess eines C++-Projekts kann es sinnvoll sein, Python-Skripte einzusetzen, beispielsweise für Codegeneratoren. Um sicherzustellen, dass diese Skripte stets mit denselben Abhängigkeiten arbeiten, unabhängig vom verwendeten Rechner, bietet sich die Nutzung einer virtuellen Python-Umgebung als gute Lösung an.
 
 # Kurze Einführung in venv
-`venv` ist ein Python-Paket, das die Erstellung von virtuellen Umgebungen ermöglicht. Es hilft, Projektabhängigkeiten von globalen Python-Installationen zu trennen. Da `venv` die Isolation und Reproduzierbarkeit von Projekt-Abhängigkeiten gewährleistet, wird empfohlen, es in den meisten Fällen - auch außerhalb von Build-Umgebungen - zu verwenden.
+`venv` ist ein Python-Paket, das die Erstellung von virtuellen Umgebungen ermöglicht. Es hilft, Projektabhängigkeiten von globalen Python-Installationen zu trennen. Da `venv` die Isolation und Reproduzierbarkeit von Projekt Abhängigkeiten gewährleistet, wird empfohlen, es in den meisten Fällen - auch außerhalb von Build-Umgebungen - zu verwenden.
 
 {: .notice--info} 
-**Hinweis** Ein wichtiger Aspekt von `venv` für mich ist, dass es seit Python 3.3 als Teil der Python-Standardbibliothek enthalten ist. Das bedeutet, dass keine zusätzlichen Pakete oder Tools installiert werden müssen, um `venv` zu nutzen. Falls das für Sie kein Problem darstellt, gibt es Python-Bibliotheken auf PyPi, die virtuelle Umgebungen noch komfortabler und einfacher erstellen können. Besonders erwähnenswert ist hier [virtualenv](https://virtualenv.pypa.io/) , aus dem ursprünglich `venv` entstanden ist.
+**Hinweis** Ein wichtiger Aspekt von `venv` für mich ist, dass es seit Python 3.3 als Teil der Python-Standardbibliothek enthalten ist. Das bedeutet, dass keine zusätzlichen Pakete oder Tools installiert werden müssen, um `venv` zu nutzen. Falls das für Sie kein Problem darstellt, gibt es Python-Bibliotheken auf PyPi, die virtuelle Umgebungen noch komfortabler und einfacher erstellen können. Besonders erwähnenswert ist hier [virtualenv](https://virtualenv.pypa.io/), aus dem ursprünglich `venv` entstanden ist.
 
 
 Um eine virtuelle Umgebung mit `venv` zu erstellen, führe den folgenden Befehl aus:
@@ -26,7 +26,7 @@ python -m venv mein_venv
 
 Der angegebene Befehl erstellt im aktuellen Arbeitsverzeichnis ein neues Verzeichnis mit dem Namen `mein_venv`. In diesem Verzeichnis wird die virtuelle Umgebung eingerichtet. Das bedeutet unter anderem, dass der Python-Interpreter und die Standardbibliothek dorthin kopiert werden. 
 
-Anschliessen kann sie durch folgenden Befehle aktiviert werden:
+Anschließend kann sie durch folgenden Befehl aktiviert werden:
 
 ~~~
 Windows: mein_venv\Scripts\activate
@@ -46,8 +46,8 @@ Um die Umgebung zu deaktivieren, gib einfach `deactivate` ein.
 # Pakete in einer virtuellen Umgebung installieren
 
 Nachdem du deine virtuelle Umgebung erstellt und aktiviert hast, 
-kannst  du `pip` verwenden um benötigte Pakete zu installieren. 
-Am besten tust du dies indem du eine `requirements.txt` 
+kannst  du `pip` verwenden, um benötigte Pakete zu installieren. 
+Am besten tust du dies, indem du eine `requirements.txt` 
 erstellst und sie wie folgt mit `pip` verwendest.
 
 ~~~
@@ -59,7 +59,7 @@ angegebenen Pakete und ihre angegebenen Versionen in
 die aktive virtuelle Umgebung installiert. 
 Das Format dieser Datei ist [hier](https://pip.pypa.io/en/stable/reference/requirements-file-format/) beschrieben.
 
-Nach Installation der benötigen Pakete kann die virtuelle Umgebung so wie eine globale Python Installation verwendet werden. 
+Nach Installation der benötigen Pakete kann die virtuelle Umgebung, so wie eine globale Python Installation verwendet werden. 
 
 {: .notice--info} 
 **Tipp:** Wird in der `requirements.txt`lokalen Paketen die `-e` Option vorangstellt (steht für "editable"), erkennt das 
@@ -70,7 +70,7 @@ erneut installieren zu müssen.
 
 # Verwendung von venv in einer Build Umgebung
 
-Alles zuvor Beschriebene zusammengenommen ermöglicht es, `venv` in einer Build-Umgebung zu verwenden. Wenn beispielsweise ein klassisches Makefile zum Einsatz kommt, kann man, bevor der Python-Interpreter aufgerufen wird, erst einmal eine virtuelle Umgebung aufsetzen.
+Alles zuvor Beschriebene zusammengenommen ermöglicht es, `venv` in einer Build-Umgebung zu verwenden. Wenn etwa ein klassisches Makefile zum Einsatz kommt, kann man, bevor der Python-Interpreter aufgerufen wird, erst einmal eine virtuelle Umgebung aufsetzen.
 
 Da dies jedoch einige Sekunden benötigt, die bei inkrementellen Builds durchaus störend sein können (vor allem für mich 😃), möchte ich hier noch ein Skript anbieten. Es führt die zuvor genannten Schritte aus und bietet darüber hinaus noch folgende Funktionen:
 
