@@ -15,11 +15,15 @@ Git-Subtree bindet den Inhalt eines externen Repositories direkt in das Hauptrep
 # Warum kann die Verwendung von Git Submodulen eine schlechte Idee sein?
 Bevor wir uns Git-Subtree genauer anschauen, hier noch einmal die Gründe, warum die Verwendung von Git-Submodulen bei einigen Entwicklern unbeliebt ist:
 
-* Git klont keine Submodule. Man muss entweder `git submodule update` oder `git clone --recursive` verwenden.
-* Git-Submodule werden nicht automatisch synchronisiert, man muss `git submodule update` durchführen.
-* Git diff gibt auch nach einem Commit etwas zurück, wenn das Submodul eine Änderung hat. Man muss im Submodul ebenfalls commiten/pushen oder die Änderung rückgängig machen. Im Grunde muss man jede Operation, die man im Hauptmodul durchführt, auch im Submodul durchführen, wenn Dateien in beiden geändert wurden.
-* Das Beheben von Merge-Konflikten in einem Repo ist schon schwer genug. Wenn man Änderungen am Haupt-Repo und einem Submodul-Repo hat, wird es zur Qual.
-* Der Vergleich von Dateirevisionen wird fast unmöglich, wenn man Dateien/Verzeichnisse vom Hauptprojekt in das Submodul-Repo verschiebt.
+* Komplexität beim Klonen: Git klont keine Submodule standardmäßig, was zu einer erhöhten Komplexität führt. Man muss entweder git submodule update --init --recursive oder git clone --recursive <repository-url> verwenden, um Submodule zu klonen.
+
+* Manuelle Synchronisierung erforderlich: Git-Submodule werden nicht automatisch synchronisiert. Dadurch entsteht zusätzlicher Aufwand, da man git submodule update ausführen muss, um die Submodule auf den neuesten Stand zu bringen.
+
+* Zusätzliche Schritte bei Änderungen: Wenn in Hauptmodul und Submodul Dateien geändert wurden, erfordert dies zusätzliche Schritte wie das Commiten/Pushen oder Rückgängigmachen von Änderungen in beiden Modulen. Dies kann leicht zu Verwirrung und Fehlern führen.
+
+* Schwierigkeiten bei Merge-Konflikten: Das Lösen von Merge-Konflikten kann bei Verwendung von Git-Submodulen besonders herausfordernd sein, insbesondere wenn Änderungen sowohl im Hauptrepository als auch im Submodul-Repository vorgenommen wurden.
+
+* Erschwertes Vergleichen von Dateirevisionen: Das Verschieben von Dateien oder Verzeichnissen zwischen dem Hauptprojekt und dem Submodul-Repository kann den Vergleich von Dateirevisionen erheblich erschweren.
 
 Zusammenfassend benötigt das gesamte Team einiges an Wissen, um mit Submodulen umzugehen. Dies erzeugt Reibung während der Entwicklung, die von der eigentlichen Entwicklungsarbeit ablenkt.
 
@@ -29,16 +33,16 @@ Nun wollen wir Git Subtree genauer betrachten. Was genau gewinnt oder verliert m
 
 #### Vorteile:
 
-* Der Code des Unterprojekts ist sofort verfügbar, nachdem das Klonen des Hauptprojekts abgeschlossen ist.
-* Subtree verlangt von den Benutzern Ihres Repositorys nichts Neues zu lernen; sie können die Tatsache ignorieren, dass Sie Subtree zur Verwaltung von Abhängigkeiten verwenden.
-* Subtree fügt keine neuen Metadatendateien hinzu, wie es bei Submodulen der Fall ist (z.B. `.gitmodule).
-* Der Inhalt des Moduls kann geändert werden, ohne dass eine separate Kopie der Abhängigkeit irgendwo anders im Repository liegt.
+* Sofortiger Zugriff auf Unterprojekt-Code: Nach dem Klonen des Hauptprojekts ist der Code des Unterprojekts direkt verfügbar.
+* Kein zusätzliches Lernen für Repository-Benutzer: Benutzer müssen sich nicht mit neuen Konzepten auseinandersetzen, da sie die Verwendung von Subtree zur Verwaltung von Abhängigkeiten ignorieren können.
+* Keine zusätzlichen Metadatendateien: Im Gegensatz zu Submodulen fügt Subtree keine neuen Metadatendateien wie .gitmodule hinzu.
+* Flexibilität bei Moduländerungen: Der Inhalt des Moduls kann ohne separate Kopie der Abhängigkeit im Repository geändert werden.
 
 #### Nachteile:
 
-* Man muss sich mit einer neuen Merge-Strategie (Subtree) vertraut machen. Dies ist jedoch nur für diejenigen erforderlich, die mit dem Remote des Subtree arbeiten möchten.
-* Es ist etwas komplizierter, den Code für die Unterprojekte wieder "upstream" zu bringen.
-* Die Verantwortung, den Code von Haupt- und Unterprojekten in den Commits nicht zu vermischen, liegt bei Ihnen.
+* Notwendigkeit, sich mit einer neuen Merge-Strategie vertraut zu machen: Das Erlernen der Subtree-Merge-Strategie ist erforderlich, jedoch nur für diejenigen, die mit dem Remote des Subtree arbeiten möchten.
+* Komplexität beim Upstream-Bringen von Unterprojekt-Code: Das Zurückbringen von Änderungen in die Unterprojekte gestaltet sich etwas komplizierter.
+* Verantwortung für Trennung von Haupt- und Unterprojekt-Code: Es liegt in Ihrer Verantwortung, den Code von Haupt- und Unterprojekten in den Commits sauber voneinander zu trennen.
 
 
 # Übung macht den Meister
