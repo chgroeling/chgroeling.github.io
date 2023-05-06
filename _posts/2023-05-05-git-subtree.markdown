@@ -221,6 +221,6 @@ Git Subtree stellt eine leistungsstarke Alternative zu Git-Submodulen dar, die e
 # Bibliografie
 
 - [git-subtree/git-subtree.txt at master · apenwarr/git-subtree (github.com)](https://github.com/apenwarr/git-subtree/blob/master/git-subtree.txt)
--  Paolucci, Nicola. [Git subtree: the alternative to Git submodule ](https://www.atlassian.com/git/tutorials032 Introduction to Git Subtrees/git-subtree)
+-  Paolucci, Nicola. [Git subtree: the alternative to Git submodule ](https://www.atlassian.com/git/tutorials/git-subtree)
 - Paolucci, Nicola. [The power of Git subtree](https://blog.developer.atlassian.com/the-power-of-git-subtree/?_ga=2-71978451-1385799339-1568044055-1068396449-1567112770)
 - [032 Introduction to Git Subtrees](https://www.youtube.com/watch?v=sC1sfoCo5qY)
