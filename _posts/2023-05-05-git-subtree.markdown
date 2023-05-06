@@ -160,7 +160,7 @@ git subtree pull --prefix my_repo1 ../repo1 master --squash
 Hier zeigt sich eine Schwäche von Git Subtree: Es wird kein Link zu "repo1" im Git-Repository gespeichert. Wenn wir mit einem Remote arbeiten wollen, müssen wir den Link zu diesem Remote immer wieder angeben.
 
 {: .notice--warning} 
-Es gibt einen Bug, der ein "subtree pull" ohne "--squash" verhindert, wenn es zuvor verwendet wurde. Dieser Bug wurde meines Erachtens in Git 2.40.x behoben.
+Es gibt einen Bug, der ein "subtree pull" ohne "--squash" verhindert, wenn „—-squash““ zuvor verwendet wurde. Dieser Bug wurde meines Erachtens in Git 2.40.x behoben. Meist ist dies aber irrelevant da ohnehin in der Regel mit „—-squash“ gearbeitet wird.
 
 Der Git-Commit-Graph  (``git log --graph --oneline``) der Repository "subtree_test" sieht nun wie folgt aus.
 
@@ -213,7 +213,7 @@ Schaut man nun auf den Commit-Graph (git log --graph --oneline master) von "repo
 * 33c5799 Initial commit
 ```
 
-Die in "subtree_test" vorgenommene Änderung wurde isoliert und in "repo1" übertragen.
+Die in "subtree_test" vorgenommene Änderung wurden isoliert und danach in "repo1" übertragen.
 
 # Fazit
 Git Subtree stellt eine leistungsstarke Alternative zu Git-Submodulen dar, die es Entwicklern ermöglicht, externe Repositories direkt in das Hauptrepository einzubinden und auf diese Weise Änderungen problemlos zwischen beiden Repositories auszutauschen. Im Vergleich zu Git-Submodulen bietet Git Subtree einige Vorteile wie eine einfachere Handhabung und weniger zusätzliche Metadaten. Es gibt jedoch auch Nachteile, wie die Notwendigkeit, sich mit einer neuen Merge-Strategie vertraut zu machen und die Verantwortung, den Code von Haupt- und Unterprojekten in den Commits nicht zu vermischen. Die im Artikel vorgestellten Anwendungsfälle dienen als praktische Anleitungen für den Umgang mit Git Subtree und zeigen, wie man das Konzept effizient in realen Entwicklungsprojekten einsetzen kann.
