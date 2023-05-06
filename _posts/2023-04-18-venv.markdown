@@ -14,7 +14,7 @@ Im Build-Prozess eines C++-Projekts kann es sinnvoll sein, Python-Skripte einzus
 `venv` ist ein Python-Paket, das die Erstellung von virtuellen Umgebungen ermöglicht. Es hilft, Projektabhängigkeiten von globalen Python-Installationen zu trennen. Da `venv` die Isolation und Reproduzierbarkeit von Projekt Abhängigkeiten gewährleistet, wird empfohlen, es in den meisten Fällen - auch außerhalb von Build-Umgebungen - zu verwenden.
 
 {: .notice--info} 
-**Hinweis** Ein wichtiger Aspekt von `venv` für mich ist, dass es seit Python 3.3 als Teil der Python-Standardbibliothek enthalten ist. Das bedeutet, dass keine zusätzlichen Pakete oder Tools installiert werden müssen, um `venv` zu nutzen. Falls das für Sie kein Problem darstellt, gibt es Python-Bibliotheken auf PyPi, die virtuelle Umgebungen noch komfortabler und einfacher erstellen können. Besonders erwähnenswert ist hier [virtualenv](https://virtualenv.pypa.io/), aus dem ursprünglich `venv` entstanden ist.
+**Hinweis** Ein wesentlicher Aspekt von venv ist die Tatsache, dass es seit Python 3.3 ein Bestandteil der Python-Standardbibliothek ist. Das bedeutet, dass man keine zusätzlichen Pakete oder Tools installieren muss, um venv zu verwenden. Sollte das für Sie kein Hindernis sein, existieren Python-Bibliotheken auf PyPi, die die Erstellung von virtuellen Umgebungen noch benutzerfreundlicher und einfacher machen. Insbesondere ist hier [virtualenv](https://virtualenv.pypa.io/) zu nennen, aus dem venv ursprünglich hervorgegangen ist. 
 
 
 Um eine virtuelle Umgebung mit `venv` zu erstellen, führe den folgenden Befehl aus:
