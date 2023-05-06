@@ -100,6 +100,19 @@ Der git commit graph (git log --graph) sieht danach wie folgt aus:
 
 {% include figure image_path="/assets/img/subtree/git_log_first_task.png" alt="git log --graph" %}
 
+26bb0c2 3 minutes ago cgg * cobace 8 minutes ago cgg
+27469b8 9 minutes ago cgg
+* 3782138 9 minutes ago cgg
+* 72c68ec 14 minutes ago cgg
+(HEAD -> master) Add
+‚my_repol/‚ from commit
+‚cebace296e0d735ebee322457da10b359176ed9‘
+Second change
+First change
+Initial commit
+Initial commit
+
+
 Folgendes fällt auf:
 
 - Es gibt nun zwei Root Commits. Einen für die Repo “subtree_test”. Einen anderen für die Repo “repo1”
