@@ -164,7 +164,7 @@ git subtree pull --prefix my_repo1 ../repo1 master --squash
 Hier zeigt sich eine Schwäche von Git Subtree: Es wird kein Link zu "repo1" im Git-Repository gespeichert. Wenn wir mit einem Remote arbeiten wollen, müssen wir den Link zu diesem Remote immer wieder angeben.
 
 {: .notice--warning} 
-Es gibt einen Bug, der ein "subtree pull" ohne "--squash" verhindert, wenn „—-squash““ zuvor verwendet wurde. Dieser Bug wurde meines Erachtens in Git 2.40.x behoben. Meist ist dies aber irrelevant da ohnehin in der Regel mit „—-squash“ gearbeitet wird.
+Es gibt einen Bug, der ein "subtree pull" ohne "--squash" verhindert, wenn „—-squash“ zuvor verwendet wurde. Dieser Bug wurde meines Erachtens in Git 2.40.x behoben. Meist ist dies aber irrelevant da ohnehin in der Regel mit „—-squash“ gearbeitet wird.
 
 Der Git-Commit-Graph  (``git log --graph --oneline``) der Repository "subtree_test" sieht nun wie folgt aus.
 
@@ -191,7 +191,7 @@ git checkout -b test_branch
 cd ..
 ```
 
-Dieser Schritt ist nicht notwendig, wenn mit lokalen "remotes" gearbeitet wird.
+Dieser Schritt erübrigt sich, wenn mit richtigen "remotes" anstatt lokalen Repositories gearbeitet wird. Z.b. mit GitHub.
 
 Nun kann man seine Änderungen wie folgt in "repo1" übernehmen:
 
@@ -208,7 +208,7 @@ git subtree push --prefix my_repo1 ../repo1 master
 
 Das Kommando führt nun einen "Split" durch. Dabei werden die Änderungen, die spezifisch für das Subtree sind, von den Änderungen im Hauptrepository getrennt. Anschließend werden die Änderungen aus dem Subtree in das "repo1" Repository gepusht. Dieser Prozess stellt sicher, dass nur die relevanten Änderungen im Subtree in das externe Repository übertragen werden und die Historie beider Projekte sauber bleibt.
 
-Schaut man nun auf den Commit-Graph (git log --graph --oneline master) von "repo1", erhält man folgendes Ergebnis:
+Schaut man nun auf den Commit-Graph (``git log --graph --oneline master``) von "repo1", erhält man folgendes Ergebnis:
 ```
 8313d6a (master) Change in subtree_test
 * 50d8d46 (HEAD -> test_branch) Third change
