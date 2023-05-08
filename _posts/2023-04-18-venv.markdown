@@ -70,7 +70,7 @@ erneut installieren zu müssen.
 
 # Verwendung von venv in einer Build Umgebung
 
-Alles zuvor Beschriebene zusammengenommen ermöglicht es, `venv` in einer Build-Umgebung zu verwenden. Wenn etwaHistorie ein klassisches Makefile zum Einsatz kommt, kann man, bevor der Python-Interpreter aufgerufen wird, erst einmal eine virtuelle Umgebung aufsetzen.
+Alles zuvor Beschriebene zusammengenommen ermöglicht es, `venv` in einer Build-Umgebung zu verwenden. Wenn etwa Historie ein klassisches Makefile zum Einsatz kommt, kann man, bevor der Python-Interpreter aufgerufen wird, erst einmal eine virtuelle Umgebung aufsetzen.
 
 Da dies jedoch einige Sekunden benötigt, die bei inkrementellen Builds durchaus störend sein können (vor allem für mich 😃), möchte ich hier noch ein Skript anbieten. Es führt die zuvor genannten Schritte aus und bietet darüber hinaus noch folgende Funktionen:
 
