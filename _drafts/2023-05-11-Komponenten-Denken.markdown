@@ -67,9 +67,16 @@ im hohen Maße. Deine Arbeit wird strategischer; was setzt zu ein was nicht?
 Eine Komponente definiere ich als unabhängiges, wiederverwendbares Wissen, das für ein spezifisches Problem geeignet ist (ähnlich einer Library für Programmierer, nur allgemeiner).
 
 
-Das überlagerte Ziel ist es sie möglichst früh anderen Leuten zu zeigen. Feedback zu Komponenten einzuholen ist einfach und ermöglicht rechtzeitige Verbesserungen. Den Wert von Feedback erkennend, suchst du aktiv nach Meinungen anderer, um eine Komponente zu verfeinern.  
+Folgende Eigenschaften verbinde ich mit einer guten Komponente:
 
-1. Unser Vorgehen konsequent dokumentieren.
-2. Abhängigkeiten minimieren, um Komponenten flexibel zu gestalten.
-3. Komponenten iterativ verfeinern, um Qualität und Effizienz zu steigern.
+- Eine Komponente sollte möglichst früh anderen Leuten gezeigt werden. Feedback zu Komponenten einzuholen ist einfach und ermöglicht rechtzeitige Verbesserungen. Den Wert von Feedback erkennend, suchst du aktiv nach Meinungen anderer, um eine Komponente zu verfeinern.  
+- Eine Komponente sollte umfassend dokumentieren werden. Schreibe die Dokumentation so dass dein Zukünftiges schnell erkennt um was es sich handelt . Eine kurze Zusammenfassung hilft beispielsweise immens .
+- Eine Komponente muss gut auffindbar sein. Ein recht neues Prinzip. Denke darüber nach wie dein Zukünftiges ich die Komponente auffinden kann. Beispielsweise schreibe Stichwortlisten.
+- sie sollte möglichst wenig Abhängigkeiten zu anderen Komponenten, Unsicherheiten oder Unklarheiten aufweisen. Eine Komponente sollte möglichst für sich alleine stehen. In sich schlüssig.
+- Sie sollte eine möglichst eine spezifische Aufgabe lösen, Frage beantworten bzw. 
+- sie sollte möglichst mehrfach schon angewendet worden sein und währendessen iterativ verfeinern worden sein. Bedenke, Wissen das nicht angewendet wird ist nutzlos.
+
+Das alles sind natürlich keine Gesetze, sondern eher grobe Richtlinien die mal mehr mal weniger angewendet werden können oder sollten. Pragmatismus ist hier das oberste Leitprinzip. Denn wenn etwas umständlich und schwer wird wenden wir es nicht an. 
+
+
 
