@@ -6,7 +6,7 @@ date:   2023-05-11 05:50:10 +0200
 categories: Produktentwicklung
 ---
 
-Alles, was wir uns über einen längeren Zeitraum vornehmen, unterliegt Unsicherheiten. Bei bereits erledigten Aufgaben können wir diese Unsicherheiten aufgrund unserer Erfahrungen reduzieren. Wir wissen, was vermutlich passieren wird, und reagieren vorab, um den Einfluss zu minimieren. Dieser Prozess ist iterativ und findet meist unbewusst statt.
+Alles, was wir uns über einen längeren Zeitraum vornehmen, unterliegt Unsicherheiten. Bei vollständig bekannten Aufgaben können wir diese Unsicherheiten aufgrund unserer Erfahrungen reduzieren. Wir wissen, was vermutlich passieren wird, und reagieren vorab, um den Einfluss zu minimieren. Dieser Prozess ist iterativ und findet meist unbewusst statt.
 
 In diesem Artikel möchte ich eine Alternative vorstellen, die als "Komponentendenken" bezeichnet wird. Im Gegensatz zur obigen Herangehensweise werden sinnvolle Teilaspekte einer Herausforderung möglichst zu deren Beginn (also sehr früh) bearbeitet. Die Ergebnisse werden anschließend in wiederverwendbare "Komponenten" zusammengefasst, die später wie Lego-Bausteine zusammengesetzt werden können. 
 
