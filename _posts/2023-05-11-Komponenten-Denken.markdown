@@ -1,7 +1,7 @@
 ---
 layout: single
 toc: false
-title:  "Die Macht des modularen Arbeitens: Wie Komponentendenken Unsicherheiten reduziert"
+title:  "Erfolgsgeheimnis Komponentendenken: So meisterst du Herausforderungen mit modularen Ansätzen"
 date:   2023-05-11 05:50:10 +0200
 categories: Produktentwicklung
 ---
