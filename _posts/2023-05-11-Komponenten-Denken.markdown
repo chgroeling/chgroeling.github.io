@@ -6,9 +6,11 @@ date:   2023-05-11 05:50:10 +0200
 categories: Produktentwicklung
 ---
 
-Alles, was wir uns über einen längeren Zeitraum vornehmen, unterliegt Unsicherheiten. Bei bereits erledigten Aufgaben können wir diese Unsicherheiten aufgrund unserer Erfahrungen reduzieren. Wir wissen, was vermutlich passieren wird, und reagieren vorab, um den Einfluss zu minimieren. Dieser Prozess ist iterativ und findet meist unbewusst statt.
+# Erfolgsgeheimnis Komponenten denken: So meisterst du Herausforderungen mit ´
 
-In diesem Artikel möchte ich eine Alternative vorstellen, die als "Komponenten Denken" bezeichnet wird. Im Gegensatz zur obigen Herangehensweise werden sinnvolle Teilaspekte einer Herausforderung möglichst zu deren Beginn (also sehr früh) bearbeitet. Die Ergebnisse werden anschließend in wiederverwendbare "Komponenten" zusammengefasst, die später wie Lego-Bausteine zusammengesetzt werden können. 
+Alles, was wir uns über einen längeren Zeitraum vornehmen, unterliegt Unsicherheiten. Bei vollständig bekannten Aufgaben können wir diese Unsicherheiten aufgrund unserer Erfahrungen reduzieren. Wir wissen, was vermutlich passieren wird, und reagieren vorab, um den Einfluss zu minimieren. Dieser Prozess ist iterativ und findet meist unbewusst statt.
+
+In diesem Artikel möchte ich eine Alternative vorstellen, die als "Komponenten denken" bezeichnet wird. Im Gegensatz zur obigen Herangehensweise werden sinnvolle Teilaspekte einer Herausforderung möglichst zu deren Beginn (also sehr früh) bearbeitet. Die Ergebnisse werden anschließend in wiederverwendbare "Komponenten" zusammengefasst, die später wie Lego-Bausteine zusammengesetzt werden können. 
 
 
 # Wie funktioniert die herkömmliche Arbeitsweise?
@@ -36,6 +38,8 @@ Grundsätzlich ist dieses Vorgehen effizient und energiesparend. Je tiefer wir i
 
 > "… we have to do so, because, compared with what could be known, we have very, very small heads. …" - E.W. Dijkstra: On the role of scientific thought (EWD447)
 
+Beim Abstieg in unserer Denkhierarchie erreichen wir den Punkt, an dem alles so konkret wird, dass wir durch produktive Arbeit einen tatsächlichen Wert schaffen können. Das Resultat wird anschließend eine Ebene höher integriert und dort weiterverwendet, um ein höheres Ziel zu erreichen.
+
 Allerdings ergeben sich aus diesem Vorgehen auch einige Probleme.
 
 Erstens: Die Welt ist meist nicht vollständig kategorisierbar, zumindest nicht, wenn Wissen fehlt, um dies zu tun. Unsere im Kopf gebildete Hierarchie ist dann "gebrochen". Unser weiteres Vorgehen basiert ab diesem Punkt auf mehr oder weniger guten Vermutungen. Dies ist auch körperlich spürbar, etwa durch ein Gefühl allgemeiner Richtungslosigkeit ("Womit soll ich nur anfangen?"). Ein solches Abdriften kann in Sackgassen führen.
@@ -48,11 +52,9 @@ Natürlich kann man sagen, dass es einfach unsere Natur ist und wir mit dieser E
 
 # Eine neue Form zu Arbeiten
 
-Beim Abstieg in unserer Denkhierarchie erreichen wir den Punkt, an dem alles so konkret wird, dass wir durch produktive Arbeit einen tatsächlichen Wert schaffen können. Das Resultat wird anschließend eine Ebene höher integriert und dort weiterverwendet, um ein höheres Ziel zu erreichen.
+Das Komponenten-Denken nutzt unserer Tendenz hierarchisch zu. Haben wir alle Teilaspekte einer Herausforderung isoliert, beginnen wir intuitiv in unsere Denkhierarchie abzusteigen. Allerdings stoppen wir diesen Vorgang bewusst, wenn wir einem Teilaspekt begegnen, der von den anderen isolierbar erscheint. 
 
-Genau hier setzt Komponenten denken an: Wir unterbrechen diesen Prozess absichtlich ab einer bestimmten Stufe und bilden einen neuen Baum, der einen spezifischen Teilaspekt einer uns gestellten Herausforderung repräsentiert.
-
-Wir trennen also ein komplexes Thema von dieser Herausforderung ab und bearbeiten es völlig unabhängig. Wir fokussieren uns ausschließlich auf dieses Thema, optimiere es und entwickeln es zu einer wiederverwendbaren Komponente weiter. Die Ziele dabei sind, diese Komponente in verschiedenen Kontexten einsetzbar zu machen, sodass wir die damit verbunden Unsicherheiten möglichst in allen Herausforderungen eliminieren können, indem es auftritt. Erst, wenn die Komponente abgeschlossen wurde, gehen wir zurück zur Ursprungsaufgabe – diesmal jedoch mit dem Wissen des gesamten Teilbaums.
+Diesen Teilaspekt trennen wir von der Herausforderung ab und bearbeiten ihn völlig unabhängig von der ursprünglichen Herausforderung. Wir fokussieren uns ausschließlich auf dieses Thema, optimiere es und entwickeln es zu einer wiederverwendbaren Komponente weiter. Die Ziele dabei sind, diese Komponente in verschiedenen Kontexten einsetzbar zu machen, sodass wir die damit verbunden Unsicherheiten möglichst in allen Herausforderungen eliminieren können, indem es auftritt. Erst, wenn die Komponente abgeschlossen wurde, gehen wir zurück zur Ursprungsaufgabe – diesmal jedoch mit dem Wissen des gesamten Teilbaums.
 
 Dieses Vorgehen ist aus zwei Gründen vorteilhaft. Erstens sammeln wir zu Beginn einer Herausforderung wertvolles Wissen, erkunden frühzeitig den Lösungsraum und erhalten damit Erkenntnisse, die sonst viel später verfügbar wären. Dadurch läuft unsere Arbeit reibungsloser, gezielter und vor allem schneller ab. Zweitens schaffen wir uns einen Fundus von Komponenten, die wir immer wieder einsetzen können. Wenn man ein komplexes Problem allein durch Komponenten lösen kann, wirkt dies von außen betrachtet fast wie Magie. 
 
@@ -65,7 +67,7 @@ Eine Komponente definiere ich als unabhängiges, wiederverwendbares Wissen, das 
 - **Feedback:** Eine Komponente sollte möglichst früh anderen Leuten gezeigt werden. Feedback zu Komponenten einzuholen, ist einfach und ermöglicht rechtzeitige Verbesserungen. Den Wert von Feedback erkennend, suchst du aktiv nach Meinungen anderer, um eine Komponente zu verfeinern.
 - **Dokumentation:** Eine Komponente sollte umfassend dokumentiert werden. Schreibe die Dokumentation so, dass dein zukünftiges Ich schnell erkennt, worum es sich handelt. Eine kurze Zusammenfassung hilft z.B. immens.
 - **Auffindbarkeit:** Eine Komponente muss gut auffindbar sein. Ein recht neues Prinzip. Denke darüber nach, wie dein zukünftiges Ich die Komponente auffinden kann. Ich schreibe z.B. Stichwortlisten.
-- **Unabhängigkeit:** Eine Komponente sollte möglichst wenig Abhängigkeiten zu anderen Komponenten, Unsicherheiten oder Unklarheiten aufweisen. Eine Komponente sollte möglichst für sich allein stehen und in sich schlüssig sein.
+- **Unabhängigkeit:** Eine Komponente sollte möglichst wenig Abhängigkeiten zu anderen Komponenten, Unsicherheiten oder Unklarheiten aufweisen. Sie sollte möglichst für sich allein stehen und in sich schlüssig sein.
 - **Separierbarkeit:** Eine Komponente sollte möglichst nur eine spezifische Aufgabe lösen oder Frage beantworten.
 - **Nützlichkeit:** Sie sollte möglichst mehrfach angewendet und dabei iterativ verfeinert worden sein. Bedenke, Wissen, das nicht angewendet wird, ist nutzlos.
 
@@ -74,7 +76,7 @@ Das alles sind natürlich keine Gesetze, sondern eher grobe Richtlinien, die mal
 
 # Zusammenfassung
 
-Der Artikel beschreibt das Konzept des "Komponenten Denken". Hierbei werden sinnvolle Teilaspekte einer Herausforderung zu Beginn bearbeitet und in wiederverwendbaren Komponenten zusammengefasst. Dies ermöglicht eine frühere Reduzierung von Unsicherheiten und die Schaffung eines Fundus an Komponenten, die in verschiedenen Kontexten eingesetzt werden können. Eine gute Komponente zeichnet sich durch Feedback, Dokumentation, Auffindbarkeit, Unabhängigkeit, Separierbarkeit und Nützlichkeit aus.
+Der Artikel beschreibt das Konzept des "Komponenten-Denkens". Hierbei werden sinnvolle Teilaspekte einer Herausforderung zu Beginn bearbeitet und in wiederverwendbaren Komponenten zusammengefasst. Dies ermöglicht eine frühere Reduzierung von Unsicherheiten und die Schaffung eines Fundus an Komponenten, die in verschiedenen Kontexten eingesetzt werden können. Eine gute Komponente zeichnet sich durch Feedback, Dokumentation, Auffindbarkeit, Unabhängigkeit, Separierbarkeit und Nützlichkeit aus.
 
 
 # Bibliografie
