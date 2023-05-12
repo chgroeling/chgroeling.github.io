@@ -36,6 +36,8 @@ Grundsätzlich ist dieses Vorgehen effizient und energiesparend. Je tiefer wir i
 
 > "… we have to do so, because, compared with what could be known, we have very, very small heads. …" - E.W. Dijkstra: On the role of scientific thought (EWD447)
 
+Beim Abstieg in unserer Denkhierarchie erreichen wir den Punkt, an dem alles so konkret wird, dass wir durch produktive Arbeit einen tatsächlichen Wert schaffen können. Das Resultat wird anschließend eine Ebene höher integriert und dort weiterverwendet, um ein höheres Ziel zu erreichen.
+
 Allerdings ergeben sich aus diesem Vorgehen auch einige Probleme.
 
 Erstens: Die Welt ist meist nicht vollständig kategorisierbar, zumindest nicht, wenn Wissen fehlt, um dies zu tun. Unsere im Kopf gebildete Hierarchie ist dann "gebrochen". Unser weiteres Vorgehen basiert ab diesem Punkt auf mehr oder weniger guten Vermutungen. Dies ist auch körperlich spürbar, etwa durch ein Gefühl allgemeiner Richtungslosigkeit ("Womit soll ich nur anfangen?"). Ein solches Abdriften kann in Sackgassen führen.
@@ -48,11 +50,9 @@ Natürlich kann man sagen, dass es einfach unsere Natur ist und wir mit dieser E
 
 # Eine neue Form zu Arbeiten
 
-Beim Abstieg in unserer Denkhierarchie erreichen wir den Punkt, an dem alles so konkret wird, dass wir durch produktive Arbeit einen tatsächlichen Wert schaffen können. Das Resultat wird anschließend eine Ebene höher integriert und dort weiterverwendet, um ein höheres Ziel zu erreichen.
+Das Komponentendenken nutzt unserer Tendenz hierarchisch zu denken. Haben wir alle Teilaspekte einer Herausforderung isolieren beginnen wir intuitiv in unser Denkhierachie abzusteigen. Allerdings stoppen wir diesen Vorgang bewusst wenn wir einem Teilaspekt begegnen der von den anderen isolierbar erscheint. 
 
-Genau hier setzt das Komponentendenken an: Wir unterbrechen diesen Prozess absichtlich ab einer bestimmten Stufe und bilden einen neuen Baum, der einen spezifischen Teilaspekt einer uns gestellten Herausforderung repräsentiert.
-
-Wir trennen also ein komplexes Thema von dieser Herausforderung ab und bearbeiten es völlig unabhängig. Wir fokussieren uns ausschließlich auf dieses Thema, optimiere es und entwickeln es zu einer wiederverwendbaren Komponente weiter. Die Ziele dabei sind, diese Komponente in verschiedenen Kontexten einsetzbar zu machen, sodass wir die damit verbunden Unsicherheiten möglichst in allen Herausforderungen eliminieren können, indem es auftritt. Erst, wenn die Komponente abgeschlossen wurde, gehen wir zurück zur Ursprungsaufgabe – diesmal jedoch mit dem Wissen des gesamten Teilbaums.
+Diesen Teilaspekt trennen wir von der Herausforderung ab und bearbeiten ihn völlig unabhängig von der ursprünglichen Herausforderung. Wir fokussieren uns ausschließlich auf dieses Thema, optimiere es und entwickeln es zu einer wiederverwendbaren Komponente weiter. Die Ziele dabei sind, diese Komponente in verschiedenen Kontexten einsetzbar zu machen, sodass wir die damit verbunden Unsicherheiten möglichst in allen Herausforderungen eliminieren können, indem es auftritt. Erst, wenn die Komponente abgeschlossen wurde, gehen wir zurück zur Ursprungsaufgabe – diesmal jedoch mit dem Wissen des gesamten Teilbaums.
 
 Dieses Vorgehen ist aus zwei Gründen vorteilhaft. Erstens sammeln wir zu Beginn einer Herausforderung wertvolles Wissen, erkunden frühzeitig den Lösungsraum und erhalten damit Erkenntnisse, die sonst viel später verfügbar wären. Dadurch läuft unsere Arbeit reibungsloser, gezielter und vor allem schneller ab. Zweitens schaffen wir uns einen Fundus von Komponenten, die wir immer wieder einsetzen können. Wenn man ein komplexes Problem allein durch Komponenten lösen kann, wirkt dies von außen betrachtet fast wie Magie. 
 
