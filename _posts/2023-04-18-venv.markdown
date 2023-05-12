@@ -7,7 +7,7 @@ categories: Python
 comments: true
 ---
 
-# Motivation
+
 Im Build-Prozess eines C++-Projekts kann es sinnvoll sein, Python-Skripte einzusetzen, beispielsweise für Codegeneratoren. Um sicherzustellen, dass diese Skripte stets mit denselben Abhängigkeiten arbeiten, unabhängig vom verwendeten Rechner, bietet sich die Nutzung einer virtuellen Python-Umgebung als gute Lösung an.
 
 # Kurze Einführung in venv

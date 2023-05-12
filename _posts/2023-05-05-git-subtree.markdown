@@ -7,7 +7,6 @@ categories: Git
 comments: true
 ---
 
-# Motivation
 Das Internet ist voll von Artikeln, die erklären, warum man keine Git-Submodule verwenden sollte. Aber welche Alternativen gibt es? Eine Möglichkeit ist Git-Subtree, das ich in diesem Artikel gerne näher betrachten möchte.
 
 Git-Subtree verbindet ein externes Repository mit dem Hauptrepository, als wäre es ein einfacher Ordner. Die Historie des externen Repositories bleibt dabei erhalten. Entwickler können Veränderungen im externen Repository durchführen und sie unkompliziert ins Hauptrepository übertragen. Ebenso können sie Änderungen vom Hauptrepository ins externe Repository übernehmen.
