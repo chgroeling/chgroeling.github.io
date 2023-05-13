@@ -38,13 +38,9 @@ Grundsätzlich ist dieses Vorgehen effizient und energiesparend. Je tiefer wir i
 
 Beim Abstieg in unserer Denkhierarchie erreichen wir den Punkt, an dem alles so konkret wird, dass wir durch produktive Arbeit einen tatsächlichen Wert schaffen können. Das Resultat wird anschließend eine Ebene höher integriert und dort weiterverwendet, um ein höheres Ziel zu erreichen.
 
-Allerdings ergeben sich aus diesem Vorgehen auch einige Probleme.
+Allerdings hat dieses Vorgehen auch ein potentiellen Nachteil.
 
-Erstens: Die Welt ist meist nicht vollständig kategorisierbar, zumindest nicht, wenn Wissen fehlt, um dies zu tun. Unsere im Kopf gebildete Hierarchie ist dann "gebrochen". Unser weiteres Vorgehen basiert ab diesem Punkt auf mehr oder weniger guten Vermutungen. Dies ist auch körperlich spürbar, etwa durch ein Gefühl allgemeiner Richtungslosigkeit ("Womit soll ich nur anfangen?"). Ein solches Abdriften kann in Sackgassen führen.
-
-Zweitens: Wir sind fehlbar. Die Erfahrungen und das Wissen, mit denen wir unsere Hierarchien aufbauen, sind unter Umständen falsch. Dies führt nicht zwangsläufig zum Scheitern, aber sicherlich zu Reibung und dem Gefühl, dass etwas nicht stimmt. Schlimmer noch, unser Unterbewusstsein kann überzeugt sein, dass "du das schon immer so gemacht hast, weil es ja funktioniert". Ein sicheres Zeichen, genau hinzuschauen.
-
-Drittens: Wir neigen dazu, Herausforderungen, die wir nicht von Anfang an vollständig erfassen, aufzuschieben. Die Gefahr, Zeit in etwas Unklares zu investieren, ist zu groß.
+Wir springen in unseren Denkstrukturen wie Kaninchen hin und her, arbeiten mal hier und mal dort, je nach Lust und Laune. Das resultierende Gesamtbild entsteht Schritt für Schritt, ähnlich wie beim Malen eines Gemäldes. Dieser Ansatz ist nicht schlecht, sondern sogar wünschenswert, da er Kreativität und freien Willen fördert. Dennoch erlebe ich immer wieder Déjà-vus, die sich als "So etwas Ähnliches habe ich doch schon mal gemacht" zusammenfassen lassen. Trotz aller Anstrengungen, das frühere Arbeitsergebnis ins Bewusstsein zu rufen, scheitere ich und erledige die Arbeit erneut.
 
 Natürlich kann man sagen, dass es einfach unsere Natur ist und wir mit dieser Einschränkung leben müssen. Ärmel hochkrempeln und durch. Ich gebe zu, dass ich das oft auch so handhabe. Dieser Ansatz ist nicht falsch, aber es sollte doch bessere Taktiken geben.
 
