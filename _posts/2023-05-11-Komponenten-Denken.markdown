@@ -6,6 +6,7 @@ date:   2023-05-11 05:50:10 +0200
 categories: Produktentwicklung
 ---
 
+
 Alles, was wir uns über einen längeren Zeitraum vornehmen, unterliegt Unsicherheiten. Bei vollständig bekannten Aufgaben können wir diese Unsicherheiten aufgrund unserer Erfahrungen reduzieren. Wir wissen, was vermutlich passieren wird, und reagieren vorab, um den Einfluss zu minimieren. Dieser Prozess ist iterativ und findet meist unbewusst statt.
 
 In diesem Artikel möchte ich eine Alternative vorstellen, die als Komponenten-Denken bezeichnet wird. Im Gegensatz zur obigen Herangehensweise werden sinnvolle Teilaspekte einer Herausforderung möglichst zu deren Beginn (also sehr früh) bearbeitet. Die Ergebnisse werden anschließend in wiederverwendbare "Komponenten" zusammengefasst, die später wie Lego-Bausteine zusammengesetzt werden können. 
@@ -36,17 +37,15 @@ Grundsätzlich ist dieses Vorgehen effizient und energiesparend. Je tiefer wir i
 
 > "… we have to do so, because, compared with what could be known, we have very, very small heads. …" - E.W. Dijkstra: On the role of scientific thought (EWD447)
 
-Beim Abstieg in unserer Denkhierarchie erreichen wir den Punkt, an dem alles so konkret wird, dass wir durch produktive Arbeit einen tatsächlichen Wert schaffen können. Das Resultat wird anschließend eine Ebene höher integriert und dort weiterverwendet, um ein höheres Ziel zu erreichen.
+Allerdings hat dieses Vorgehen auch einen potenziellen Nachteil.
 
-Allerdings hat dieses Vorgehen auch ein potentiellen Nachteil.
+Um eine große Herausforderung zu bewältigen, springen wir in unseren Denkstrukturen hin und her, arbeiten mal hier und mal dort, je nach Laune. Das resultierende Gesamtbild entsteht schrittweise, ähnlich wie beim Malen eines Gemäldes. Dieser Ansatz ist keineswegs schlecht, sondern sogar wünschenswert, da er Kreativität und freien Willen fördert. Dennoch treten immer wieder Déjà-vus auf, die sich mit "So etwas Ähnliches habe ich doch schon mal gemacht" umschreiben lassen. Trotz aller Bemühungen, das frühere Arbeitsergebnis ins Bewusstsein zu holen, scheitern wir und erledigen die Aufgabe meist erneut.
 
-Wir springen in unseren Denkstrukturen wie Kaninchen hin und her, arbeiten mal hier und mal dort, je nach Lust und Laune. Das resultierende Gesamtbild entsteht Schritt für Schritt, ähnlich wie beim Malen eines Gemäldes. Dieser Ansatz ist nicht schlecht, sondern sogar wünschenswert, da er Kreativität und freien Willen fördert. Dennoch erlebe ich immer wieder Déjà-vus, die sich als "So etwas Ähnliches habe ich doch schon mal gemacht" zusammenfassen lassen. Trotz aller Anstrengungen, das frühere Arbeitsergebnis ins Bewusstsein zu rufen, scheitere ich und erledige die Arbeit erneut.
-
-Natürlich kann man sagen, dass es einfach unsere Natur ist und wir mit dieser Einschränkung leben müssen. Ärmel hochkrempeln und durch. Ich gebe zu, dass ich das oft auch so handhabe. Dieser Ansatz ist nicht falsch, aber es sollte doch bessere Taktiken geben.
+Natürlich könnte man argumentieren, dass dies einfach unserer menschlichen Natur geschuldet ist und wir mit dieser Einschränkung leben müssen. Ärmel hochkrempeln und durch. Ich gebe zu, dass ich das oft auch so handhabe. Dieser Ansatz ist nicht falsch, aber es sollte doch bessere Strategien geben.
 
 # Eine neue Form zu Arbeiten
 
-Das Komponenten-Denken nutzt unserer Tendenz hierarchisch zu denken. Haben wir alle Teilaspekte einer Herausforderung isoliert, beginnen wir intuitiv in unsere Denkhierarchie abzusteigen. Allerdings stoppen wir diesen Vorgang bewusst, wenn wir einem Teilaspekt begegnen, der von den anderen isolierbar erscheint. 
+Das Komponenten-Denken nutzt unserer Tendenz, hierarchisch zu denken. Haben wir alle Teilaspekte einer Herausforderung isoliert, beginnen wir intuitiv in unsere Denkhierarchie abzusteigen. Allerdings stoppen wir diesen Vorgang bewusst, wenn wir einem Teilaspekt begegnen, der von den anderen isolierbar erscheint. 
 
 Diesen Teilaspekt trennen wir von der Herausforderung ab und bearbeiten ihn völlig unabhängig von der ursprünglichen Herausforderung. Wir fokussieren uns ausschließlich auf dieses Thema, optimiere es und entwickeln es zu einer wiederverwendbaren Komponente weiter. Die Ziele dabei sind, diese Komponente in verschiedenen Kontexten einsetzbar zu machen, sodass wir die damit verbunden Unsicherheiten möglichst in allen Herausforderungen eliminieren können, indem es auftritt. Erst, wenn die Komponente abgeschlossen wurde, gehen wir zurück zur Ursprungsaufgabe – diesmal jedoch mit dem Wissen des gesamten Teilbaums.
 
