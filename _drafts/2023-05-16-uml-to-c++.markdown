@@ -6,23 +6,120 @@ date:   2023-05-16 06:00:10 +0200
 categories: Software-Design
 comments: true
 ---
+Ein UML-Klassendiagramm stellt die verschiedenen Klassen in einem System, ihre Attribute, Operationen und ihre Beziehungen zueinader dar. Da ich ein sehr "Code-lastiger" Mensch bin frage ich mich jedes mal wie ein 
+dargestelltes Klassendiagramm letzlich in Code realisiert wird.  Dieser Artikel soll diese Fragestellung aufklären. Da ich Hauptberuflich im embedded Segment arbeite und wir dort C++ einsetzen möchte ich dies am Beispiel von C++ tun. Allerdings lassen sich die Erkenntnisse ohne weiteres auf andere Sprachen übertragen.
 
-### Abhängigkeit
+Der Artikel wendet sich an Entwickler die mit Klassendiagrammen schon Erfahrung haben. Allerdings glaube ich das auch Anfänger davon profitieren können wie ein Klassendiagramm letzlich in Code realisiert wird.
+
+# Beziehungen
+
+Bei richtiger Anwendung vermittelt UML präzise, wie Code aus Diagrammen implementiert werden sollte. Wenn ein Diagramm genau interpretiert wird, spiegelt es die Absicht des Design im Code korrekt wider. Das Kernelement hierbei sind die Beziehungen der Klassen zueinander. 
+
+## Abhängigkeit
 
 ![Abhängigkeit]({{ site.url }}{{ site.baseurl }}/assets/img/uml/uml_elements-Abhängigkeit.drawio.png){:width="60%"}
-{% include figure image_path="/assets/img/uml/uml_elements-Abhängigkeit.drawio.png" alt="Abhängigkeit" caption="Abhängigkeit" %}{:width="40%"}
+```c++
+class X {
+ ...
+ void f1(Y y) {…; y.Foo(); }
+ void f2(Y *y) {…; y->Foo(); }
+ void f3(Y &y) {…; y.Foo(); }
+ void f4() { Y y; y.Foo(); …}
+ void f5() {…; Y::StaticFoo(); }
+ ...
+};
+```
 
-### Aggregation
-{% include figure image_path="/assets/img/uml/uml_elements-Aggregation.drawio.png" alt="Aggregation" caption="Aggregation" %}{:width="40%"}
 
 ### Assoziation
-{% include figure image_path="/assets/img/uml/uml_elements-Assoziation.drawio.png" alt="Assoziation" caption="Assoziation" %}{:width="40%"}
+![Assoziation]({{ site.url }}{{ site.baseurl }}/assets/img/uml/uml_elements-Assoziation.drawio.png){:width="60%"}
+Association is the weakest relationship between the three. It isn't a “has-a” relationship, none of the objects are parts or members of another.
+
+Assoziation bedeutet lediglich, dass sich die Objekte gegenseitig "kennen". 
+
+Ein Beispiel: eine Mutter und ihr Kind.
+
+Die Assoziation ist die schwächste der drei Beziehungen. Es handelt sich nicht um eine "hat-eine"-Beziehung, keines der Objekte ist Teil oder Mitglied eines anderen.
+
+
+Aber Moment mal, wie können wir feststellen, ob eine Referenz Aggregation oder Assoziation bedeutet?
+
+Nun, das können wir nicht. Der Unterschied ist nur logisch: ob eines der Objekte Teil des anderen ist oder nicht.
+
+Außerdem müssen wir die Verweise auf beiden Seiten manuell pflegen, wie wir es bei der Aggregation getan haben:
+class Child {}
+
+```c++
+class Mother {
+List<Child> children;
+}
+```
+
+Ein Objekt weiß von einem anderen; es enthält einen Zeiger oder Verweis auf ein anderes Objekt.
+
+Assoziation - Ich habe eine Beziehung zu einem Objekt. Foo verwendet Bar
+
+```c++
+public class Foo {         
+    private Bar bar;
+};
+```
+
+
+### Aggregation
+![Aggregation]({{ site.url }}{{ site.baseurl }}/assets/img/uml/uml_elements-Aggregation.drawio.png){:width="60%"}
+
+Eine Aggregation kann auftreten, wenn eine Klasse eine Sammlung oder ein Container für andere Klassen ist, die enthaltenen Klassen aber keine starke Abhängigkeit vom Container haben, d. h. wenn der Container zerstört wird, ist sein Inhalt nicht betroffen. Möglicherweise verwechseln Sie Aggregation und Assoziation, denn die Assoziation unterscheidet sich von der Aggregation nur dadurch, dass sie kein Containment voraussetzt.
+
+Aggregation - Ich habe ein Objekt, das ich mir von jemand anderem geliehen habe. Wenn Foo stirbt, kann Bar weiterleben.
+```c++
+public class Foo { 
+    private Bar bar; 
+    Foo(Bar bar) { 
+       this.bar = bar; 
+    }
+}
+```
+
+```c++
+class Window
+{
+ public:
+  //...
+ private:
+ vector itsShapes;
+};
+``` 
+
+### Assoziation
+![Assoziation]({{ site.url }}{{ site.baseurl }}/assets/img/uml/uml_elements-Assoziation.drawio.png){:width="60%"}
+
 
 ### Generalisierung
-{% include figure image_path="/assets/img/uml/uml_elements-Generalisierung.drawio.png" alt="Generalisierung" caption="Generalisierung" %}{:width="40%"}
+![Generalisierung]({{ site.url }}{{ site.baseurl }}/assets/img/uml/uml_elements-Generalisierung.drawio.png){:width="60%"}
+
 
 ### Komposition
-{% include figure image_path="/assets/img/uml/uml_elements-Komposition.drawio.png" alt="Komposition" caption="Komposition" %}{:width="40%"}
+![Komposition]({{ site.url }}{{ site.baseurl }}/assets/img/uml/uml_elements-Komposition.drawio.png){:width="60%"}
+
+class Circle
+{
+private:
+     ...
+    Point center;
+....
+};
+
+Komposition - Ich besitze ein Objekt und bin für seine Lebensdauer verantwortlich. Wenn Foo stirbt, stirbt auch Bar
+public class Foo {
+    private Bar bar = new Bar(); 
+}
 
 ### Realisierung
-{% include figure image_path="/assets/img/uml/uml_elements-Realisierung.drawio.png" alt="Realisierung" caption="Realisierung" %}{:width="40%"}
+![Realisierung]({{ site.url }}{{ site.baseurl }}/assets/img/uml/uml_elements-Realisierung.drawio.png){:width="60%"}
+
+Fall 1: Wenn X einen Vektor enthält, handelt es sich um eine Komposition;
+Fall 2: Wenn X einen Vektor enthält und die Konstruktion und Zerstörung von Y* innerhalb von X (im Konstruktor/Destruktor) stattfindet, handelt es sich um eine Komposition.
+Fall 3: Wenn X einen Vektor enthält und der Aufbau und die Zerstörung von Y* nicht innerhalb von X (im Konstruktor/Destruktor) stattfindet, kann es sich je nach Szenario um eine Aggregation/Aggregation handeln.
+
+
