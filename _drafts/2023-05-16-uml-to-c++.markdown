@@ -1,0 +1,26 @@
+---
+layout: single
+toc: false
+title:  "UML to C++"
+date:   2023-05-16 06:00:10 +0200
+categories: Software-Design
+comments: true
+---
+
+### Abhängigkeit
+{% include figure image_path="/assets/img/uml/uml_elements-Abhängigkeit.drawio.png" alt="Abhängigkeit" caption="Abhängigkeit" %}{:width="40%"}
+
+### Aggregation
+{% include figure image_path="/assets/img/uml/uml_elements-Aggregation.drawio.png" alt="Aggregation" caption="Aggregation" %}{:width="40%"}
+
+### Assoziation
+{% include figure image_path="/assets/img/uml/uml_elements-Assoziation.drawio.png" alt="Assoziation" caption="Assoziation" %}{:width="40%"}
+
+### Generalisierung
+{% include figure image_path="/assets/img/uml/uml_elements-Generalisierung.drawio.png" alt="Generalisierung" caption="Generalisierung" %}{:width="40%"}
+
+### Komposition
+{% include figure image_path="/assets/img/uml/uml_elements-Komposition.drawio.png" alt="Komposition" caption="Komposition" %}{:width="40%"}
+
+### Realisierung
+{% include figure image_path="/assets/img/uml/uml_elements-Realisierung.drawio.png" alt="Realisierung" caption="Realisierung" %}{:width="40%"}
