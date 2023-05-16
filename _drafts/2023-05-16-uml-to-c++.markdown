@@ -8,6 +8,8 @@ comments: true
 ---
 
 ### Abhängigkeit
+
+![Abhängigkeit]({{ site.url }}{{ site.baseurl }}/assets/img/uml/uml_elements-Abhängigkeit.drawio.png){:width="60%"}
 {% include figure image_path="/assets/img/uml/uml_elements-Abhängigkeit.drawio.png" alt="Abhängigkeit" caption="Abhängigkeit" %}{:width="40%"}
 
 ### Aggregation
