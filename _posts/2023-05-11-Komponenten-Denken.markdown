@@ -41,7 +41,7 @@ Allerdings hat dieses Vorgehen auch einen potenziellen Nachteil.
 
 Um eine große Herausforderung zu bewältigen, springen wir in unseren Denkstrukturen hin und her, arbeiten mal hier und mal dort, je nach Laune. Das resultierende Gesamtbild entsteht schrittweise, ähnlich wie beim Malen eines Gemäldes. Dieser Ansatz ist keineswegs schlecht, sondern sogar wünschenswert, da er Kreativität und freien Willen fördert. Dennoch treten immer wieder Déjà-vus auf, die sich mit "So etwas Ähnliches habe ich doch schon mal gemacht" umschreiben lassen. Trotz aller Bemühungen, das frühere Arbeitsergebnis ins Bewusstsein zu holen, scheitern wir und erledigen die Aufgabe meist erneut.
 
-Natürlich könnte man argumentieren, dass dies einfach unserer menschlichen Natur geschuldet ist und wir mit dieser Einschränkung leben müssen. Ärmel hochkrempeln und durch. Ich gebe zu, dass ich das oft auch so handhabe. Dieser Ansatz ist nicht falsch, aber es sollte doch bessere Strategien geben.
+Natürlich könnte man argumentieren, dass dies einfach unserer menschlichen Natur geschuldet ist und wir mit dieser Einschränkung leben müssen. Ärmel hochkrempeln und durch. Dieser Ansatz ist nicht falsch, aber es sollte doch bessere Strategien geben.
 
 # Eine neue Form zu Arbeiten
 
@@ -51,7 +51,7 @@ Diesen Teilaspekt trennen wir von der Herausforderung ab und bearbeiten ihn völ
 
 Dieses Vorgehen ist aus zwei Gründen vorteilhaft. Erstens sammeln wir zu Beginn einer Herausforderung wertvolles Wissen, erkunden frühzeitig den Lösungsraum und erhalten damit Erkenntnisse, die sonst viel später verfügbar wären. Dadurch läuft unsere Arbeit reibungsloser, gezielter und vor allem schneller ab. Zweitens schaffen wir uns einen Fundus von Komponenten, die wir immer wieder einsetzen können. Wenn man ein komplexes Problem allein durch Komponenten lösen kann, wirkt dies von außen betrachtet fast wie Magie. 
 
-Deinen Fundus an Komponenten kannst du ständig erweitern. Dies erhöht deine Flexibilität in hohem Maße. Deine Arbeit wird strategischer; was setzt zu ein, was nicht? 
+Deinen Fundus an Komponenten kannst du ständig erweitern. Dies erhöht deine Flexibilität in hohem Maße. Deine Arbeit wird strategischer. Was setzt zu ein, was nicht? 
 
 # Wie definiert man eine gute Komponente?
 
