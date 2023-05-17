@@ -8,153 +8,207 @@ comments: true
 ---
 {:refdef: style="text-align: center;padding: 20px"}
 
-Ein UML-Klassendiagramm stellt die verschiedenen Klassen in einem System, ihre Attribute, Operationen und ihre Beziehungen zueinader dar. Da ich ein sehr "Code-lastiger" Mensch bin frage ich mich jedes mal wie ein 
-dargestelltes Klassendiagramm letzlich in Code realisiert wird.  Dieser Artikel soll diese Fragestellung aufklären. Da ich Hauptberuflich im embedded Segment arbeite und wir dort C++ einsetzen möchte ich dies am Beispiel von C++ tun. Allerdings lassen sich die Erkenntnisse ohne weiteres auf andere Sprachen übertragen.
+Ein UML-Klassendiagramm stellt die verschiedenen Klassen in einem System, ihre Attribute, Operationen und ihre Beziehungen zueinader dar. Bei richtiger Anwendung vermittelt UML präzise, wie Code aus Diagrammen implementiert werden sollte. Wenn ein Diagramm genau interpretiert wird, spiegelt es die Absicht des Designers im Code korrekt wider. Das Kernelement hierbei sind die Beziehungen der Klassen zueinander die ich in diesem Artikel genauer beleuchten will.
 
-Der Artikel wendet sich an Entwickler die mit Klassendiagrammen schon Erfahrung haben. Allerdings glaube ich das auch Anfänger davon profitieren können wie ein Klassendiagramm letzlich in Code realisiert wird.
+Im folgenden stelle ich wichtigsten Beziehungstypen in UML Klassen-Diagrammen dar. Jede Beziehung wird kurz erklärt, danach folgt ein Alltagsbeispiel um die Beziehung mit physikalisch greifbaren Objekten zu veranschaulichen und letzlich wird ein Abschnitt mit einem C++ Codebeispiel abgeschlossen.
 
-# Beziehungen
+Die Intention dieses Artikels ist es, auch "Code-lastigen" Menschen, wie z.B. mir, klar zu machen wie  ein UML-Diagram in Code realisiert wird. Es wendet sich daher an Entwickler die mit Klassendiagrammen schon Erfahrung haben. Allerdings glaube ich das auch Anfänger davon profitieren können wie ein Klassendiagramm letzlich in Code realisiert wird.
 
-Bei richtiger Anwendung vermittelt UML präzise, wie Code aus Diagrammen implementiert werden sollte. Wenn ein Diagramm genau interpretiert wird, spiegelt es die Absicht des Design im Code korrekt wider. Das Kernelement hierbei sind die Beziehungen der Klassen zueinander. 
+# Assoziation 
 
-## Abhängigkeit
+Bei einer Assoziation handelt sich nicht um eine "hat-eine"-Beziehung, keines der Objekte ist Teil oder Mitglied eines anderen. Eine Assoziation bedeutet lediglich, dass sich die Objekte "kennen". Sie ist die schwächste Beziehung die ..
 
-![Abhängigkeit]({{ site.url }}{{ site.baseurl }}/assets/img/uml/uml_elements-Abhängigkeit.drawio.png){:width="60%"}
+Das folgende Bild stellt die gerichtete Assozation "``Foo`` hat (kennt) ein ``Bar``" dar.
+
+![Assoziation](/assets/img/uml/uml_elements-Assoziation.drawio.png){:width="60%"}
 {:refdef}
 
+
+Wenn man den Pfeil weglässt bedeutet das nur, dass sich beide Klassen gegenseitig kennen. Der Einfachheit halber bleibe ich hier beim Fall der gerichteten Assoziation.
+
+**Alltagsbeispiel:** Arzt und Patient - Eine Klasse "Arzt" und eine Klasse "Patient" können eine gerichtete Assoziation haben. Ein Arzt kümmert sich um seine Patienten und kennt deren medizinische Geschichte, aber ein Patient kennt normalerweise nicht alle Details über seinen Arzt. In diesem Fall ist die Assoziation vom Arzt zum Patienten gerichtet.
+
+## Implementierung
 ```c++
-class X {
- ...
- void f1(Y y) {…; y.Foo(); }
- void f2(Y *y) {…; y->Foo(); }
- void f3(Y &y) {…; y.Foo(); }
- void f4() { Y y; y.Foo(); …}
- void f5() {…; Y::StaticFoo(); }
- ...
-};
-```
+class Foo {
+  Foo(Bar *bar) : bar_ptr(bar) {}
+ 
+  void SetBar(Bar *bar) { bar_ptr = bar; }
+ 
+  void F() { bar_ptr->FuncA(); }
 
-Abhängigkeiten in UML repräsentieren eine "benutzt-ein"-Beziehung zwischen zwei Klassen, bei der eine Änderung in einer Klasse Änderungen in der abhängigen Klasse erfordern kann. 
+  …
 
-Koch und Rezept: Ein Koch ist abhängig von einem Rezept, um ein Gericht zuzubereiten. Wenn das Rezept geändert wird (zum Beispiel die Zutaten oder die Zubereitungsanweisungen), muss der Koch seine Methode zum Zubereiten des Gerichts entsprechend ändern.
-
-
-### Assoziation mit Navigation
-
-![Assoziation]({{ site.url }}{{ site.baseurl }}/assets/img/uml/uml_elements-Assoziation.drawio.png){:width="60%"}
-{:refdef}
-
-Arzt und Patient: Eine Klasse "Arzt" und eine Klasse "Patient" können eine gerichtete Assoziation haben. Ein Arzt kümmert sich um seine Patienten und kennt deren medizinische Geschichte, aber ein Patient kennt normalerweise nicht alle Details über seinen Arzt. In diesem Fall ist die Assoziation vom Arzt zum Patienten gerichtet.
-
-
-Association is the weakest relationship between the three. It isn't a “has-a” relationship, none of the objects are parts or members of another.
-
-Assoziation bedeutet lediglich, dass sich die Objekte gegenseitig "kennen". 
-
-Ein Beispiel: eine Mutter und ihr Kind.
-
-Die Assoziation ist die schwächste der drei Beziehungen. Es handelt sich nicht um eine "hat-eine"-Beziehung, keines der Objekte ist Teil oder Mitglied eines anderen.
-
-
-Aber Moment mal, wie können wir feststellen, ob eine Referenz Aggregation oder Assoziation bedeutet?
-
-Nun, das können wir nicht. Der Unterschied ist nur logisch: ob eines der Objekte Teil des anderen ist oder nicht.
-
-Außerdem müssen wir die Verweise auf beiden Seiten manuell pflegen, wie wir es bei der Aggregation getan haben:
-class Child {}
-
-```c++
-class Mother {
-List<Child> children;
-}
-```
-
-Ein Objekt weiß von einem anderen; es enthält einen Zeiger oder Verweis auf ein anderes Objekt.
-
-Assoziation - Ich habe eine Beziehung zu einem Objekt. Foo verwendet Bar
-
-```c++
-public class Foo {         
-    private Bar bar;
+  Bar *bar_ptr; // pointer
 };
 ```
 
 
-### Aggregation
-
-![Aggregation]({{ site.url }}{{ site.baseurl }}/assets/img/uml/uml_elements-Aggregation.drawio.png){:width="60%"}
-{:refdef}
+# Aggregation
 
 Die Aggregation ist eine spezielle Form der Assoziation, die eine "hat-ein" Beziehung darstellt. 
 
-Fußballteam und Spieler: Ein Fußballteam besteht aus vielen Spielern. In diesem Fall ist das Fußballteam das Ganze und die Spieler sind die Teile. Ein Fußballteam "hat" Spieler.
+Das folgende Bild stellt die Aggregation "``Foo`` hat ein ``Bar``" dar.
 
-Eine Aggregation kann auftreten, wenn eine Klasse eine Sammlung oder ein Container für andere Klassen ist, die enthaltenen Klassen aber keine starke Abhängigkeit vom Container haben, d. h. wenn der Container zerstört wird, ist sein Inhalt nicht betroffen. Möglicherweise verwechseln Sie Aggregation und Assoziation, denn die Assoziation unterscheidet sich von der Aggregation nur dadurch, dass sie kein Containment voraussetzt.
+![Aggregation](/assets/img/uml/uml_elements-Aggregation.drawio.png){:width="60%"}
+{:refdef}
+
+Eine Aggregation kann auftreten, wenn eine Klasse eine Sammlung oder ein Container für andere Klassen ist, die enthaltenen Klassen aber keine starke Abhängigkeit vom Container haben, d. h. wenn der Container zerstört wird, ist sein Inhalt nicht betroffen.
+
+Möglicherweise verwechselst du Aggregation und Assoziation, denn die Assoziation unterscheidet sich von der Aggregation nur dadurch, dass sie kein Containment voraussetzt. Der Unterschied ist nur logisch: ob eines der Objekte Teil des anderen ist oder nicht.
+
+**Alltagsbeispiel:** Fußballteam und Spieler - Ein Fußballteam besteht aus vielen Spielern. In diesem Fall ist das Fußballteam das Ganze und die Spieler sind die Teile. Ein Fußballteam "hat" Spieler.
+
+## Implementierung
 
 Aggregation - Ich habe ein Objekt, das ich mir von jemand anderem geliehen habe. Wenn Foo stirbt, kann Bar weiterleben.
 
 ```c++
-public class Foo { 
-    private Bar bar; 
-    Foo(Bar bar) { 
-       this.bar = bar; 
-    }
+class Bar {
+  …
 }
+
+class Foo {
+public:
+  Foo(Bar *bar) : bar_ptr(bar) {}
+ 
+  void SetBar(Bar *bar) { bar_ptr = bar; }
+ 
+  void F() { bar_ptr->FuncA(); }
+
+  …
+
+  Bar *bar_ptr; // pointer
+};
 ```
 
-```c++
-class Window
-{
- public:
-  //...
- private:
- vector itsShapes;
-};
-``` 
-
-### Generalisierung
-
-![Generalisierung]({{ site.url }}{{ site.baseurl }}/assets/img/uml/uml_elements-Generalisierung.drawio.png){:width="60%"}
-{:refdef}
-
-Tier und Hund: Ein Hund ist ein Tier. In diesem Fall wäre "Tier" die Basisklasse und "Hund" wäre eine abgeleitete Klasse.
-
-Generalisierung ist ein anderer Begriff für Vererbung oder "ist-ein"-Beziehungen. 
 
 
-### Komposition
-
-![Komposition]({{ site.url }}{{ site.baseurl }}/assets/img/uml/uml_elements-Komposition.drawio.png){:width="60%"}
-{:refdef}
+# Komposition
 
 Eine Komposition ist eine spezielle Form der Aggregation, die eine "besitzt-eine" oder "gehört-zu" Beziehung darstellt. Sie ist eine starke Form der "hat-ein" Beziehung, die impliziert, dass die Lebensdauer des Teil-Objekts (der "Besitz") an die des Ganzen gebunden ist.
 
-Mensch und Herz: Ein Mensch hat ein Herz, und das Herz kann nicht ohne den Menschen existieren. Wenn der Mensch stirbt, stirbt auch das Herz. Hier ist die Komposition von der Klasse "Mensch" zur Klasse "Herz".
+Das folgende Bild stellt die Komposition "``Foo`` besitzt ein ``Bar``" dar.
 
-class Circle
-{
-private:
-     ...
-    Point center;
-....
-};
+![Komposition](/assets/img/uml/uml_elements-Komposition.drawio.png){:width="60%"}
+{:refdef}
 
 Komposition - Ich besitze ein Objekt und bin für seine Lebensdauer verantwortlich. Wenn Foo stirbt, stirbt auch Bar
-public class Foo {
-    private Bar bar = new Bar(); 
+
+**Alltagsbeispiel:** Mensch und Herz - Ein Mensch hat ein Herz, und das Herz kann nicht ohne den Menschen existieren. Wenn der Mensch stirbt, stirbt auch das Herz. Hier ist die Komposition von der Klasse "Mensch" zur Klasse "Herz".
+
+## Implementierung
+
+```c++
+// Example 1
+class Foo {
+public:
+  Foo() : bar_ptr(nullptr) { bar_ptr = new Bar()}
+  ~Foo() { delete bar_ptr; }
+  …
+private:
+  …
+  Bar *bar_ptr; // pointer
+};
+
+// Example 2
+class Foo {
+   …
+   Bar bar;
+}
+```
+# Generalisierung
+
+Generalisierung ist ein anderer Begriff für Vererbung oder "ist-ein"-Beziehungen. 
+
+Das folgende Bild stellt die Generalisierung "``Foo`` ist ein ``Bar``" dar.
+
+![Generalisierung](/assets/img/uml/uml_elements-Generalisierung.drawio.png){:width="60%"}
+{:refdef}
+
+**Alltagsbeispiel:** Tier und Hund - Ein Hund ist ein Tier. In diesem Fall wäre "Tier" die Basisklasse und "Hund" wäre eine abgeleitete Klasse.
+
+
+## Implementierung
+
+```c++
+class Bar {
+public:
+  ~virtual Bar() {};
+
+  virtual void FuncA() { … /* Bar::FuncA implementation */ }
+  virtual void FuncB() { … /* Bar::FuncB implementation */ }
+  …
+};
+
+// Generalization of Bar
+class Foo : public Bar{
+public:
+   virtual void FuncA() { Bar::FuncA(); … /* Foo::FuncA implementation */}
+   virtual void FuncB() { Bar::FuncB(); … /* Foo::FuncB implementation */}
 }
 
-### Realisierung
+```
 
-![Realisierung]({{ site.url }}{{ site.baseurl }}/assets/img/uml/uml_elements-Realisierung.drawio.png){:width="60%"}
+# Abhängigkeit
+
+Abhängigkeiten in UML repräsentieren eine "benutzt-ein"-Beziehung zwischen zwei Klassen, bei der eine Änderung in einer Klasse Änderungen in der abhängigen Klasse erfordern kann. 
+
+Das folgende Bild stellt die Abhängigkeit "``Foo`` benutzt-ein ``Bar``" dar.
+
+![Abhängigkeit](/assets/img/uml/uml_elements-Abhängigkeit.drawio.png){:width="60%"}
 {:refdef}
+
+**Alltagsbeispiel:** Koch und Rezept - Ein Koch ist abhängig von einem Rezept, um ein Gericht zuzubereiten. Wenn das Rezept geändert wird (zum Beispiel die Zutaten oder die Zubereitungsanweisungen), muss der Koch seine Methode zum Zubereiten des Gerichts entsprechend ändern.
+
+## Implementierung
+```c++
+class Foo {
+ ...
+ void F1(Bar y) {…; y.FuncA(); }
+ void F2(Bar *y) {…; y->FuncB(); }
+ void F3(Bar &y) {…; y.FuncC(); }
+ void F4() { Bar y; y.FuncD(); …}
+ void F5() {…; Y::StaticFunc(); }
+ ...
+};
+```
+
+# Realisierung
 
 Eine Realisierung ist eine Beziehung zwischen zwei Klassen in UML, bei der eine Klasse die Implementierung oder das Verhalten, das durch eine andere Klasse oder in vielen Fällen durch eine Schnittstelle definiert ist, verspricht oder "realisiert". Man könnte sagen, dass es sich um eine "erfüllt-die"-Beziehung handelt.
 
-Zum Beispiel, in der objektorientierten Programmierung, könnte eine Klasse eine Schnittstelle "Laufbar" implementieren, die eine Methode "laufen" definiert. Diese Klasse könnte ein "Hund", ein "Mensch" oder ein "Roboter" sein - alles, was "laufen" kann.
+Das folgende Bild stellt die Abhängigkeit "``Foo`` erfüllt das ``Bar`` Interface" dar.
+
+![Realisierung](/assets/img/uml/uml_elements-Realisierung.drawio.png){:width="60%"}
+{:refdef}
+
 
 Fall 1: Wenn X einen Vektor enthält, handelt es sich um eine Komposition;
 Fall 2: Wenn X einen Vektor enthält und die Konstruktion und Zerstörung von Y* innerhalb von X (im Konstruktor/Destruktor) stattfindet, handelt es sich um eine Komposition.
 Fall 3: Wenn X einen Vektor enthält und der Aufbau und die Zerstörung von Y* nicht innerhalb von X (im Konstruktor/Destruktor) stattfindet, kann es sich je nach Szenario um eine Aggregation/Aggregation handeln.
 
+
+**Alltagsbeispiel:**  Zum Beispiel, in der objektorientierten Programmierung, könnte eine Klasse eine Schnittstelle "Laufbar" implementieren, die eine Methode "laufen" definiert. Diese Klasse könnte ein "Hund", ein "Mensch" oder ein "Roboter" sein - alles, was "laufen" kann.
+
+## Implementierung
+
+```c++
+// Abstract interface
+class IBar {
+  ~virtual IBar() {};
+
+  …
+  virtual void FuncA() = 0;
+  virtual void FuncB() = 0;
+};
+
+// Realization of interface IBar
+class Foo : public IBar{
+   …
+   virtual void FuncA() { … /* FuncA implementation */}
+   virtual void FuncB() { … /* FuncB implementation */}
+}
+
+```
 
