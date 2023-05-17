@@ -6,7 +6,6 @@ date:   2023-05-11 05:50:10 +0200
 categories: Produktentwicklung
 ---
 
-
 Alles, was wir uns über einen längeren Zeitraum vornehmen, unterliegt Unsicherheiten. Bei vollständig bekannten Aufgaben können wir diese Unsicherheiten aufgrund unserer Erfahrungen reduzieren. Wir wissen, was vermutlich passieren wird, und reagieren vorab, um den Einfluss zu minimieren. Dieser Prozess ist iterativ und findet meist unbewusst statt.
 
 In diesem Artikel möchte ich eine Alternative vorstellen, die als Komponenten-Denken bezeichnet wird. Im Gegensatz zur obigen Herangehensweise werden sinnvolle Teilaspekte einer Herausforderung möglichst zu deren Beginn (also sehr früh) bearbeitet. Die Ergebnisse werden anschließend in wiederverwendbare "Komponenten" zusammengefasst, die später wie Lego-Bausteine zusammengesetzt werden können. 
@@ -58,8 +57,8 @@ Deinen Fundus an Komponenten kannst du ständig erweitern. Dies erhöht deine Fl
 Eine Komponente definiere ich als unabhängiges, wiederverwendbares Wissen, das zur Lösung eines spezifischen Problems geeignet ist (ähnlich einer Library für Programmierer, nur allgemeiner). Dadurch ist sie aber noch nicht gut. Folgende Eigenschaften verbinde ich mit einer guten Komponente:
 
 - **Feedback:** Eine Komponente sollte möglichst früh anderen Leuten gezeigt werden. Feedback zu Komponenten einzuholen, ist einfach und ermöglicht rechtzeitige Verbesserungen. Den Wert von Feedback erkennend, suchst du aktiv nach Meinungen anderer, um eine Komponente zu verfeinern.
-- **Dokumentation:** Eine Komponente sollte umfassend dokumentiert werden. Schreibe die Dokumentation so, dass dein zukünftiges Ich schnell erkennt, worum es sich handelt. Eine kurze Zusammenfassung hilft z.B. immens.
-- **Auffindbarkeit:** Eine Komponente muss gut auffindbar sein. Denke darüber nach, wie dein zukünftiges Ich die Komponente auffinden kann. Ich schreibe z.B. Stichwortlisten.
+- **Dokumentation:** Eine Komponente sollte umfassend dokumentiert sein. Erstelle die Dokumentation mit dem Ziel, dass du sie auch in einer ungewissen Zukunft schnell und einfach verstehst. Eine kurze Zusammenfassung kann dabei sehr hilfreich sein.
+- **Auffindbarkeit:** Eine Komponente muss gut auffindbar sein. Plane und organisiere, wie du diese Komponente auch in einer ungewissen Zukunft leicht finden kannst. Hier kann insbesondere eine Stichwortliste hilfreich sein.
 - **Unabhängigkeit:** Eine Komponente sollte möglichst wenig Abhängigkeiten zu anderen Komponenten, Unsicherheiten oder Unklarheiten aufweisen. Sie sollte möglichst für sich allein stehen und in sich schlüssig sein.
 - **Separierbarkeit:** Eine Komponente sollte möglichst nur eine spezifische Aufgabe lösen oder Frage beantworten.
 - **Nützlichkeit:** Sie sollte möglichst mehrfach angewendet und dabei iterativ verfeinert worden sein. Bedenke, Wissen, das nicht angewendet wird, ist nutzlos.
