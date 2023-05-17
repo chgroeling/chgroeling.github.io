@@ -57,11 +57,13 @@ Eine Aggregation kann auftreten, wenn eine Klasse eine Sammlung oder ein Contain
 
 Möglicherweise verwechselst du Aggregation und Assoziation, denn die Assoziation unterscheidet sich von der Aggregation nur dadurch, dass sie kein Containment voraussetzt. Der Unterschied ist nur logisch: ob eines der Objekte Teil des anderen ist oder nicht.
 
+Aggregation - Ich habe ein Objekt, das ich mir von jemand anderem geliehen habe. Wenn Foo stirbt, kann Bar weiterleben.
+
+
 **Alltagsbeispiel:** Fußballteam und Spieler - Ein Fußballteam besteht aus vielen Spielern. In diesem Fall ist das Fußballteam das Ganze und die Spieler sind die Teile. Ein Fußballteam "hat" Spieler.
 
 ## Implementierung
 
-Aggregation - Ich habe ein Objekt, das ich mir von jemand anderem geliehen habe. Wenn Foo stirbt, kann Bar weiterleben.
 
 ```c++
 class Bar {
@@ -117,6 +119,7 @@ class Foo {
    Bar bar;
 }
 ```
+
 # Generalisierung
 
 Generalisierung ist ein anderer Begriff für Vererbung oder "ist-ein"-Beziehungen. 
@@ -184,12 +187,7 @@ Das folgende Bild stellt die Abhängigkeit "``Foo`` erfüllt das ``Bar`` Interfa
 {:refdef}
 
 
-Fall 1: Wenn X einen Vektor enthält, handelt es sich um eine Komposition;
-Fall 2: Wenn X einen Vektor enthält und die Konstruktion und Zerstörung von Y* innerhalb von X (im Konstruktor/Destruktor) stattfindet, handelt es sich um eine Komposition.
-Fall 3: Wenn X einen Vektor enthält und der Aufbau und die Zerstörung von Y* nicht innerhalb von X (im Konstruktor/Destruktor) stattfindet, kann es sich je nach Szenario um eine Aggregation/Aggregation handeln.
-
-
-**Alltagsbeispiel:**  Zum Beispiel, in der objektorientierten Programmierung, könnte eine Klasse eine Schnittstelle "Laufbar" implementieren, die eine Methode "laufen" definiert. Diese Klasse könnte ein "Hund", ein "Mensch" oder ein "Roboter" sein - alles, was "laufen" kann.
+**Alltagsbeispiel:**  Es fällt schwer ein … Zum Beispiel, in der objektorientierten Programmierung, könnte eine Klasse eine Schnittstelle "Laufbar" implementieren, die eine Methode "laufen" definiert. Diese Klasse könnte ein "Hund", ein "Mensch" oder ein "Roboter" sein - alles, was "laufen" kann.
 
 ## Implementierung
 
