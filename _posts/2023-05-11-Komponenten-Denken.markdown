@@ -6,7 +6,7 @@ date:   2023-05-11 05:50:10 +0200
 categories: Produktentwicklung
 ---
 
-Alles, was wir uns über einen längeren Zeitraum vornehmen, unterliegt Unsicherheiten. Bei vollständig bekannten Herausforderungen sind wir in der Lage, diese Unsicherheiten aufgrund unserer Erfahrungen zu reduzieren. Wir wissen, was vermutlich passieren wird, und reagieren vorab und intuitiv, damit ein von uns gewünschtes Ziel erreicht werden kann. Ist der Weg weniger klar sichtbar, neigen wir zu iterativen Vorgehen. Wir springen gedanklich zwischen verschiedenen Teilproblemen hin und her und bearbeiten sie nach Lust und Laune. So reduzieren wir Risiken allmählich über den Verlauf eines Vorhabens.
+Alles, was wir uns über einen längeren Zeitraum vornehmen, unterliegt Unsicherheiten. Bei vollständig bekannten Herausforderungen sind wir in der Lage, diese Unsicherheiten aufgrund unserer Erfahrungen zu reduzieren. Wir wissen, was vermutlich passieren wird, und reagieren vorab und intuitiv, damit ein von uns gewünschtes Ziel erreicht wird. Ist der Weg weniger klar sichtbar, neigen wir zu iterativen Vorgehen. Wir springen gedanklich zwischen verschiedenen Teilproblemen hin und her und bearbeiten sie nach Lust und Laune. So reduzieren wir Risiken allmählich über den Verlauf eines Vorhabens.
 
 In diesem Artikel möchte ich eine Alternative vorstellen, die als Komponenten-Denken bezeichnet wird. Im Gegensatz zur obigen Herangehensweise werden sinnvolle Teilaspekte einer Herausforderung möglichst zu deren Beginn (also sehr früh) bearbeitet. Die Ergebnisse werden anschließend in wiederverwendbare "Komponenten" zusammengefasst, die später wie Lego-Bausteine zusammengesetzt werden können. 
 
