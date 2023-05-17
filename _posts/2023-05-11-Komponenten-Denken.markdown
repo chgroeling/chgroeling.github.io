@@ -58,7 +58,7 @@ Eine Komponente definiere ich als unabhängiges, wiederverwendbares Wissen, das 
 
 - **Feedback:** Eine Komponente sollte möglichst früh anderen Leuten gezeigt werden. Feedback zu Komponenten einzuholen, ist einfach und ermöglicht rechtzeitige Verbesserungen. Den Wert von Feedback erkennend, suchst du aktiv nach Meinungen anderer, um eine Komponente zu verfeinern.
 - **Dokumentation:** Eine Komponente sollte umfassend dokumentiert sein. Erstelle die Dokumentation mit dem Ziel, dass du sie auch in einer ungewissen Zukunft schnell und einfach verstehst. Eine kurze Zusammenfassung kann dabei sehr hilfreich sein.
-- **Auffindbarkeit:** Eine Komponente muss gut auffindbar sein. Plane und organisiere, wie du diese Komponente auch in einer ungewissen Zukunft leicht finden kannst. Hier kann insbesondere eine Stichwortliste hilfreich sein.
+- **Auffindbarkeit:** Eine Komponente muss gut auffindbar sein. Plane und organisiere die Information in einer Komponente so, dass du sie in einer ungewissen Zukunft leicht finden kannst. Hier kann insbesondere eine Stichwortliste hilfreich sein.
 - **Unabhängigkeit:** Eine Komponente sollte möglichst wenig Abhängigkeiten zu anderen Komponenten, Unsicherheiten oder Unklarheiten aufweisen. Sie sollte möglichst für sich allein stehen und in sich schlüssig sein.
 - **Separierbarkeit:** Eine Komponente sollte möglichst nur eine spezifische Aufgabe lösen oder Frage beantworten.
 - **Nützlichkeit:** Sie sollte möglichst mehrfach angewendet und dabei iterativ verfeinert worden sein. Bedenke, Wissen, das nicht angewendet wird, ist nutzlos.
