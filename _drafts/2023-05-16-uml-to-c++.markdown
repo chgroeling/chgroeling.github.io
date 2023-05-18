@@ -6,6 +6,7 @@ date:   2023-05-16 06:00:10 +0200
 categories: Software-Design
 comments: true
 ---
+
 {:refdef: style="text-align: center;padding: 20px"}
 
 Ein UML-Klassendiagramm stellt die verschiedenen Klassen in einem System, ihre Attribute, Operationen und ihre Beziehungen zueinader dar. Bei richtiger Anwendung vermittelt UML präzise, wie Code aus Diagrammen implementiert werden sollte. Das Kernelement für eine korrekte Interpretation hierbei sind die Beziehungen der Klassen zueinander. 
@@ -16,7 +17,7 @@ Die Intention dieses Artikels ist es, auch "Code-lastigen" Menschen, wie z.B. mi
 
 # Assoziation 
 
-Bei einer Assoziation handelt sich nicht um eine "hat-eine"-Beziehung, keines der Objekte ist Teil oder Mitglied eines anderen. Eine Assoziation bedeutet lediglich, dass sich die Objekte "kennen". Sie ist die schwächste Beziehung die ..
+Bei einer Assoziation handelt sich nicht um eine "hat-eine"-Beziehung, keines der Objekte ist Teil oder Mitglied eines anderen. Eine Assoziation besagt lediglich, dass sich die Objekte "kennen". Sie ist die schwächste der Besitz anzeigenden Beziehung.
 
 Das folgende Bild stellt die gerichtete Assozation "``Foo`` hat (kennt) ein ``Bar``" dar.
 
@@ -47,7 +48,7 @@ class Foo {
 
 # Aggregation
 
-Die Aggregation ist eine spezielle Form der Assoziation, die eine "hat-ein" Beziehung darstellt. Ich habe ein Objekt, das ich mir von jemand anderem geliehen habe. Wenn das Objekt stirbt, kann ich weiterleben.
+Die Aggregation ist eine spezielle Form der Assoziation, die eine "hat-ein" Beziehung darstellt. Ich habe ein Objekt, das ich mir von jemand anderem geliehen habe. Auch wenn das Objekt stirbt, kann ich weiterleben.
 
 Das folgende Bild stellt die Aggregation "``Foo`` hat ein ``Bar``" dar.
 
@@ -99,7 +100,7 @@ Das folgende Bild stellt die Komposition "``Foo`` besitzt ein ``Bar``" dar.
 
 Sie ist eine starke Form der „hat-ein“ Beziehung, die impliziert, dass die Lebensdauer des Teil-Objekts (der „Besitz“) an die des Ganzen gebunden ist.
 
-**Alltagsbeispiel:** Mensch und Herz - Ein Mensch hat ein Herz, und das Herz kann nicht ohne den Menschen existieren. Wenn der Mensch stirbt, stirbt auch das Herz. Hier ist die Komposition von der Klasse "Mensch" zur Klasse "Herz".
+**Alltagsbeispiel:** Mensch und Herz - Ein Mensch hat ein Herz. Der Mensch kann nicht ohne das Herz existieren. Wenn das Herz stirbt, stirbt auch der Mensch. Hier ist die Komposition von der Klasse "Herz" zur Klasse "Mensch".
 
 ## Implementierung
 
@@ -157,7 +158,7 @@ public:
 
 # Abhängigkeit
 
-Abhängigkeiten in UML repräsentieren eine "benutzt-ein"-Beziehung zwischen zwei Klassen, bei der eine Änderung in einer Klasse Änderungen in der abhängigen Klasse erfordern kann. 
+Abhängigkeiten repräsentieren eine "benutzt-ein"-Beziehung zwischen zwei Klassen, bei der eine Änderung in einer Klasse Änderungen in der abhängigen Klasse erfordern kann. 
 
 Das folgende Bild stellt die Abhängigkeit "``Foo`` benutzt-ein ``Bar``" dar.
 
@@ -181,7 +182,7 @@ class Foo {
 
 # Realisierung
 
-Eine Realisierung ist eine Beziehung zwischen zwei Klassen in UML, bei der eine Klasse die Implementierung oder das Verhalten, das durch eine andere Klasse oder in vielen Fällen durch eine Schnittstelle definiert ist, verspricht oder "realisiert". Man könnte sagen, dass es sich um eine "erfüllt-die"-Beziehung handelt.
+Eine Realisierung ist eine Beziehung zwischen zwei Klassen, bei der eine Klasse die Implementierung oder das Verhalten, das durch eine andere Klasse oder in vielen Fällen durch eine Schnittstelle definiert ist, verspricht oder "realisiert". Man könnte sagen, dass es sich um eine "erfüllt-die"-Beziehung handelt.
 
 Das folgende Bild stellt die Abhängigkeit "``Foo`` erfüllt das ``Bar`` Interface" dar.
 
