@@ -8,11 +8,11 @@ comments: true
 ---
 {:refdef: style="text-align: center;padding: 20px"}
 
-Ein UML-Klassendiagramm stellt die verschiedenen Klassen in einem System, ihre Attribute, Operationen und ihre Beziehungen zueinader dar. Bei richtiger Anwendung vermittelt UML präzise, wie Code aus Diagrammen implementiert werden sollte. Wenn ein Diagramm genau interpretiert wird, spiegelt es die Absicht des Designers im Code korrekt wider. Das Kernelement hierbei sind die Beziehungen der Klassen zueinander die ich in diesem Artikel genauer beleuchten will.
+Ein UML-Klassendiagramm stellt die verschiedenen Klassen in einem System, ihre Attribute, Operationen und ihre Beziehungen zueinader dar. Bei richtiger Anwendung vermittelt UML präzise, wie Code aus Diagrammen implementiert werden sollte. Das Kernelement für eine korrekte Interpretation hierbei sind die Beziehungen der Klassen zueinander. 
 
 Im folgenden stelle ich wichtigsten Beziehungstypen in UML Klassen-Diagrammen dar. Jede Beziehung wird kurz erklärt, danach folgt ein Alltagsbeispiel um die Beziehung mit physikalisch greifbaren Objekten zu veranschaulichen und letzlich wird ein Abschnitt mit einem C++ Codebeispiel abgeschlossen.
 
-Die Intention dieses Artikels ist es, auch "Code-lastigen" Menschen, wie z.B. mir, klar zu machen wie  ein UML-Diagram in Code realisiert wird. Es wendet sich daher an Entwickler die mit Klassendiagrammen schon Erfahrung haben. Allerdings glaube ich das auch Anfänger davon profitieren können wie ein Klassendiagramm letzlich in Code realisiert wird.
+Die Intention dieses Artikels ist es, auch "Code-lastigen" Menschen, wie z.B. mir, klar zu machen wie  ein UML-Diagram in Code realisiert wird. Er wendet sich daher an Entwickler die mit Klassendiagrammen schon Erfahrung haben. Allerdings glaube ich das auch Anfänger davon profitieren können wie ein Klassendiagramm letzlich in Code realisiert wird.
 
 # Assoziation 
 
@@ -29,6 +29,7 @@ Wenn man den Pfeil weglässt bedeutet das nur, dass sich beide Klassen gegenseit
 **Alltagsbeispiel:** Arzt und Patient - Eine Klasse "Arzt" und eine Klasse "Patient" können eine gerichtete Assoziation haben. Ein Arzt kümmert sich um seine Patienten und kennt deren medizinische Geschichte, aber ein Patient kennt normalerweise nicht alle Details über seinen Arzt. In diesem Fall ist die Assoziation vom Arzt zum Patienten gerichtet.
 
 ## Implementierung
+
 ```c++
 class Foo {
   Foo(Bar *bar) : bar_ptr(bar) {}
@@ -46,24 +47,24 @@ class Foo {
 
 # Aggregation
 
-Die Aggregation ist eine spezielle Form der Assoziation, die eine "hat-ein" Beziehung darstellt. 
+Die Aggregation ist eine spezielle Form der Assoziation, die eine "hat-ein" Beziehung darstellt. Ich habe ein Objekt, das ich mir von jemand anderem geliehen habe. Wenn das Objekt stirbt, kann ich weiterleben.
 
 Das folgende Bild stellt die Aggregation "``Foo`` hat ein ``Bar``" dar.
 
 ![Aggregation](/assets/img/uml/uml_elements-Aggregation.drawio.png){:width="60%"}
 {:refdef}
 
+
 Eine Aggregation kann auftreten, wenn eine Klasse eine Sammlung oder ein Container für andere Klassen ist, die enthaltenen Klassen aber keine starke Abhängigkeit vom Container haben, d. h. wenn der Container zerstört wird, ist sein Inhalt nicht betroffen.
 
-Möglicherweise verwechselst du Aggregation und Assoziation, denn die Assoziation unterscheidet sich von der Aggregation nur dadurch, dass sie kein Containment voraussetzt. Der Unterschied ist nur logisch: ob eines der Objekte Teil des anderen ist oder nicht.
-
-Aggregation - Ich habe ein Objekt, das ich mir von jemand anderem geliehen habe. Wenn Foo stirbt, kann Bar weiterleben.
+Möglicherweise verwechselst du Aggregation und Assoziation, denn der Unterschied ist nur logisch: nämlich ob das Objekt Teil des anderen ist oder nicht.
 
 
 **Alltagsbeispiel:** Fußballteam und Spieler - Ein Fußballteam besteht aus vielen Spielern. In diesem Fall ist das Fußballteam das Ganze und die Spieler sind die Teile. Ein Fußballteam "hat" Spieler.
 
 ## Implementierung
 
+Wie zuvor beschrieben unterscheiden sich die Implementierungen von Assoziation und Aggregation nicht. 
 
 ```c++
 class Bar {
@@ -88,14 +89,15 @@ public:
 
 # Komposition
 
-Eine Komposition ist eine spezielle Form der Aggregation, die eine "besitzt-eine" oder "gehört-zu" Beziehung darstellt. Sie ist eine starke Form der "hat-ein" Beziehung, die impliziert, dass die Lebensdauer des Teil-Objekts (der "Besitz") an die des Ganzen gebunden ist.
+Eine Komposition ist eine spezielle Form der Aggregation, die eine "besitzt-eine" oder "gehört-zu" Beziehung darstellt. Ich besitze ein Objekt und bin für seine Lebensdauer verantwortlich. Wenn das Objekt stirbt, sterbe auch ich.
 
 Das folgende Bild stellt die Komposition "``Foo`` besitzt ein ``Bar``" dar.
 
 ![Komposition](/assets/img/uml/uml_elements-Komposition.drawio.png){:width="60%"}
 {:refdef}
 
-Komposition - Ich besitze ein Objekt und bin für seine Lebensdauer verantwortlich. Wenn Foo stirbt, stirbt auch Bar
+
+Sie ist eine starke Form der „hat-ein“ Beziehung, die impliziert, dass die Lebensdauer des Teil-Objekts (der „Besitz“) an die des Ganzen gebunden ist.
 
 **Alltagsbeispiel:** Mensch und Herz - Ein Mensch hat ein Herz, und das Herz kann nicht ohne den Menschen existieren. Wenn der Mensch stirbt, stirbt auch das Herz. Hier ist die Komposition von der Klasse "Mensch" zur Klasse "Herz".
 
