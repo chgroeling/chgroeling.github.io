@@ -9,15 +9,15 @@ comments: true
 
 {:refdef: style="text-align: center;padding: 20px"}
 
-Ein UML-Klassendiagramm stellt die verschiedenen Klassen in einem System, ihre Attribute, Operationen und ihre Beziehungen zueinader dar. Bei richtiger Anwendung vermittelt UML präzise, wie Code aus Diagrammen implementiert werden sollte. Das Kernelement für eine korrekte Interpretation hierbei sind die Beziehungen der Klassen zueinander. 
+Ein UML-Klassendiagramm stellt die verschiedenen Klassen in einem System, ihre Attribute, Operationen und ihre Beziehungen zueinader dar. Bei richtiger Anwendung vermittelt UML präzise, wie Klassen Diagramme in Code umgewandelt werden können. Das Kernelement, und auch das was am meisten Schwierigkeiten macht, ist die  korrekte Interpretation der verschiedenen Beziehungen der Klassen zueinander. 
 
-Im folgenden stelle ich wichtigsten Beziehungstypen in UML Klassen-Diagrammen dar. Jede Beziehung wird kurz erklärt, danach folgt ein Alltagsbeispiel um die Beziehung mit physikalisch greifbaren Objekten zu veranschaulichen und letzlich wird ein Abschnitt mit einem C++ Codebeispiel abgeschlossen.
+Im folgenden stelle ich wichtigsten Beziehungstypen in UML Klassen-Diagrammen dar. Jede Beziehung wird kurz erklärt, danach folgt ein Alltagsbeispiel um sie mit physikalisch greifbaren Objekten zu veranschaulichen. Letzlich wird ein Abschnitt mit einem C++ Codebeispiel abgeschlossen.
 
-Die Intention dieses Artikels ist es, auch "Code-lastigen" Menschen, wie z.B. mir, klar zu machen wie  ein UML-Diagram in Code realisiert wird. Er wendet sich daher an Entwickler die mit Klassendiagrammen schon Erfahrung haben. Allerdings glaube ich das auch Anfänger davon profitieren können wie ein Klassendiagramm letzlich in Code realisiert wird.
+Die Intention dieses Artikels ist es, auch "Code-lastigen" Menschen, wie z.B. mir, klar zu machen wie  ein UML-Klassendiagran in Code realisiert wird. Er wendet sich  an Entwickler die mit UML schon Erfahrung haben. Allerdings glaube ich das auch das Anfänger davon profitieren können die die ersten Gehversuche mit UML unternehmen.
 
 # Assoziation 
 
-Bei einer Assoziation handelt sich nicht um eine "hat-eine"-Beziehung, keines der Objekte ist Teil oder Mitglied eines anderen. Eine Assoziation besagt lediglich, dass sich die Objekte "kennen". Sie ist die schwächste der Besitz anzeigenden Beziehung.
+Bei einer Assoziation handelt sich nicht um eine "kennt ein"-Beziehung, keines der Objekte ist Teil oder Mitglied eines anderen. Sie ist die schwächste der Besitz anzeigenden Beziehung.
 
 Das folgende Bild stellt die gerichtete Assozation "``Foo`` hat (kennt) ein ``Bar``" dar.
 
@@ -125,7 +125,7 @@ class Foo {
 
 # Generalisierung
 
-Generalisierung ist ein anderer Begriff für Vererbung oder "ist-ein"-Beziehungen. 
+Generalisierung ist ein anderer Begriff für Vererbung. Es handelt sich um eine "ist-ein"-Beziehungen. Wir weisen damit einen Objekt ein Oberbegriff (Kategorie) zu. 
 
 Das folgende Bild stellt die Generalisierung "``Foo`` ist ein ``Bar``" dar.
 
@@ -182,7 +182,7 @@ class Foo {
 
 # Realisierung
 
-Eine Realisierung ist eine Beziehung zwischen zwei Klassen, bei der eine Klasse die Implementierung oder das Verhalten, das durch eine andere Klasse oder in vielen Fällen durch eine Schnittstelle definiert ist, verspricht oder "realisiert". Man könnte sagen, dass es sich um eine "erfüllt-die"-Beziehung handelt.
+Eine Realisierung ist eine Beziehung zwischen zwei Klassen, bei der eine Klasse das Verhalten, das durch eine andere Klasse oder in vielen Fällen durch eine Schnittstelle definiert ist, verspricht oder "realisiert". Man könnte sagen, dass es sich um eine "erfüllt-die"-Beziehung handelt.
 
 Das folgende Bild stellt die Abhängigkeit "``Foo`` erfüllt das ``Bar`` Interface" dar.
 
@@ -190,7 +190,7 @@ Das folgende Bild stellt die Abhängigkeit "``Foo`` erfüllt das ``Bar`` Interfa
 {:refdef}
 
 
-**Alltagsbeispiel:**  Es fällt schwer ein … Zum Beispiel, in der objektorientierten Programmierung, könnte eine Klasse eine Schnittstelle "Laufbar" implementieren, die eine Methode "laufen" definiert. Diese Klasse könnte ein "Hund", ein "Mensch" oder ein "Roboter" sein - alles, was "laufen" kann.
+**Alltagsbeispiel:**  Es fällt schwer ein Alltagsbeispiel zu finden da sich dieses Konzept der realen Welt weitestgehend entzieht. Ganz grob könnte man behaupten das eine Klasse eine Schnittstelle "Laufbar" implementieren, die eine Methode "laufen" definiert. Diese Klasse könnte ein "Hund", ein "Mensch" oder ein "Roboter" sein - alles, was "laufen" kann.
 
 ## Implementierung
 
