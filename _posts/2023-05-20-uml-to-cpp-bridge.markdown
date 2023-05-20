@@ -52,7 +52,7 @@ class Foo {
 
 # Aggregation
 
-Die Aggregation ist eine spezielle Form der Assoziation und stellt eine "hat-ein"-Beziehung dar. Es bedeutet, dass ich ein Objekt habe, das ich mir geliehen habe. Ich kann weiterleben, auch wenn dieses Objekt nicht mehr existiert.
+Die Aggregation ist eine spezielle Form der Assoziation und stellt eine "hat-ein"-Beziehung dar. Sie bedeutet, dass ich ein Objekt habe, das ich mir geliehen habe. Ich kann weiterleben, auch wenn dieses Objekt nicht mehr existiert.
 
 Das folgende Bild stellt die Aggregation "``Foo`` hat ein ``Bar``" dar.
 
