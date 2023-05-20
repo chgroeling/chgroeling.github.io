@@ -22,7 +22,7 @@ Eine Assoziation ist eine "kennt-ein"-Beziehung; keines der Objekte ist Teil ode
 Das folgende Bild illustriert die gerichtete Assoziation "``Foo`` kennt ein ``Bar``".
 
 
-![Assoziation](/assets/img/uml/uml_elements-Assoziation.drawio.png){:width="60%"}
+![Assoziation](/assets/img/uml/uml_elements-Assoziation.drawio.png){:width="75%"}
 {:refdef}
 
 Wenn der Pfeil weggelassen wird, bedeutet dies, dass beide Klassen sich gegenseitig kennen. Aus Gründen der Einfachheit konzentriere ich mich auf das Beispiel der gerichteten Assoziation.
@@ -56,7 +56,7 @@ Die Aggregation ist eine spezielle Form der Assoziation und stellt eine "hat-ein
 
 Das folgende Bild stellt die Aggregation "``Foo`` hat ein ``Bar``" dar.
 
-![Aggregation](/assets/img/uml/uml_elements-Aggregation.drawio.png){:width="60%"}
+![Aggregation](/assets/img/uml/uml_elements-Aggregation.drawio.png){:width="75%"}
 {:refdef}
 
 
@@ -97,7 +97,7 @@ Eine Komposition ist eine spezielle Form der Aggregation und stellt eine "besitz
 
 Das folgende Bild stellt die Komposition "``Foo`` besitzt ein ``Bar``" dar.
 
-![Komposition](/assets/img/uml/uml_elements-Komposition.drawio.png){:width="60%"}
+![Komposition](/assets/img/uml/uml_elements-Komposition.drawio.png){:width="75%"}
 {:refdef}
 
 
@@ -132,7 +132,7 @@ Generalisierung ist ein anderer Ausdruck für Vererbung. Es handelt sich hierbei
 
 Das folgende Bild stellt die Generalisierung "``Foo`` ist ein ``Bar``" dar.
 
-![Generalisierung](/assets/img/uml/uml_elements-Generalisierung.drawio.png){:width="60%"}
+![Generalisierung](/assets/img/uml/uml_elements-Generalisierung.drawio.png){:width="75%"}
 {:refdef}
 
 **Alltagsbeispiel:** Tier und Hund - Ein Hund ist ein Tier. In diesem Fall wäre "Tier" die Basisklasse und "Hund" wäre eine abgeleitete Klasse.
@@ -165,7 +165,7 @@ Abhängigkeiten repräsentieren eine "benutzt-ein"-Beziehung zwischen zwei Klass
 
 Das folgende Bild stellt die Abhängigkeit "``Foo`` benutzt-ein ``Bar``" dar.
 
-![Abhängigkeit](/assets/img/uml/uml_elements-Abhängigkeit.drawio.png){:width="60%"}
+![Abhängigkeit](/assets/img/uml/uml_elements-Abhängigkeit.drawio.png){:width="75%"}
 {:refdef}
 
 **Alltagsbeispiel:** Koch und Rezept - Ein Koch ist abhängig von einem Rezept, um ein Gericht zuzubereiten. Wenn das Rezept geändert wird (etwa die Zutaten oder die Zubereitungsanweisungen), muss der Koch seine Methode zum Zubereiten des Gerichts entsprechend ändern.
@@ -189,7 +189,7 @@ Eine Realisierung ist eine Beziehung zwischen zwei Klassen, in der eine Klasse d
 
 Das folgende Bild stellt die Realisierung "``Foo`` erfüllt das ``IBar`` Interface" dar.
 
-![Realisierung](/assets/img/uml/uml_elements-Realisierung.drawio.png){:width="60%"}
+![Realisierung](/assets/img/uml/uml_elements-Realisierung.drawio.png){:width="75%"}
 {:refdef}
 
 
