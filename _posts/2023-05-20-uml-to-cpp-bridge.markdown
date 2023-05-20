@@ -1,13 +1,11 @@
 ---
 layout: single
 toc: false
-title:  "UML to C++"
-date:   2023-05-16 06:00:10 +0200
+title: "Die Brücke zwischen UML und C++: Beziehungen in Klassendiagrammen und ihre Implementierung"
+date: 2023-05-20 06:00:10 +0200
 categories: Software-Design
 comments: true
 ---
-
-{:refdef: style="text-align: center;padding: 20px"}
 
 Ein UML-Klassendiagramm visualisiert die unterschiedlichen Klassen eines Systems, ihre Attribute, Operationen und Beziehungen zueinander. Bei korrekter Anwendung veranschaulicht UML genau, wie Klassendiagramme in Code umgesetzt werden können. Das Kernproblem - und oft der schwierigste Teil - besteht darin, die vielfältigen Klassenbeziehungen korrekt zu interpretieren.
 
@@ -15,11 +13,13 @@ Im Folgenden erläutere ich die wichtigsten Beziehungstypen in UML-Klassendiagra
 
 Ziel dieses Artikels ist es, auch codeorientierten Menschen - wie mir selbst - klarzumachen, wie ein UML-Klassendiagramm in Code umgesetzt wird. Der Artikel richtet sich an Entwickler mit bereits vorhandener UML-Erfahrung, kann jedoch auch Anfängern helfen, die ihre ersten Schritte mit UML machen.
 
+{:refdef: style="text-align: center;padding: 20px"}
+
 # Assoziation 
 
-Eine Assoziation ist keine "kennt-ein"-Beziehung; keines der Objekte ist Teil oder Mitglied des anderen. Es ist die schwächste Beziehung, die Besitz anzeigt.
+Eine Assoziation ist eine "kennt-ein"-Beziehung; keines der Objekte ist Teil oder Mitglied des anderen. Es ist die schwächste Beziehung, die Besitz anzeigt.
 
-Das folgende Bild illustriert die gerichtete Assoziation "``Foo`` hat (kennt) ein ``Bar``".
+Das folgende Bild illustriert die gerichtete Assoziation "``Foo`` kennt ein ``Bar``".
 
 
 ![Assoziation](/assets/img/uml/uml_elements-Assoziation.drawio.png){:width="60%"}
@@ -29,15 +29,19 @@ Wenn der Pfeil weggelassen wird, bedeutet dies, dass beide Klassen sich gegensei
 
 **Alltagsbeispiel:** Arzt und Patient - Eine Klasse "Arzt" und eine Klasse "Patient" können eine gerichtete Assoziation haben. Ein Arzt kümmert sich um seine Patienten und kennt deren medizinische Geschichte, aber ein Patient kennt normalerweise nicht alle Details über seinen Arzt. In diesem Fall ist die Assoziation vom Arzt zum Patienten gerichtet.
 
-## Implementierung
+## Beispiel-Implementierung
 
 ```c++
+class Bar {
+  …
+}
+
 class Foo {
   Foo(Bar *bar) : bar_ptr(bar) {}
  
   void SetBar(Bar *bar) { bar_ptr = bar; }
  
-  void F() { bar_ptr->FuncA(); }
+  void Func() { bar_ptr->FuncA(); }
 
   …
 
@@ -62,7 +66,7 @@ Man könnte Aggregation und Assoziation verwechseln, da der Unterschied lediglic
 
 **Alltagsbeispiel:** Fußballteam und Spieler - Ein Fußballteam besteht aus vielen Spielern. In diesem Fall ist das Fußballteam das Ganze und die Spieler sind die Teile. Ein Fußballteam "hat" Spieler.
 
-## Implementierung
+## Beispiel-Implementierung
 
 Wie zuvor beschrieben unterscheiden sich die Implementierungen von Assoziation und Aggregation nicht. 
 
@@ -77,7 +81,7 @@ public:
  
   void SetBar(Bar *bar) { bar_ptr = bar; }
  
-  void F() { bar_ptr->FuncA(); }
+  void Func() { bar_ptr->FuncA(); }
 
   …
 
@@ -99,9 +103,9 @@ Das folgende Bild stellt die Komposition "``Foo`` besitzt ein ``Bar``" dar.
 
 Dies ist eine stärkere Form der "hat-ein"-Beziehung, die impliziert, dass die Lebensdauer des Teil-Objekts (der "Besitz") an die des Ganzen gebunden ist.
 
-**Alltagsbeispiel:** Mensch und Herz - Ein Mensch hat ein Herz. Ein Mensch kann ohne sein Herz nicht existieren. Wenn das Herz aufhört zu existieren, stirbt auch der Mensch. Hierbei ist die Komposition von der Klasse "Herz" zur Klasse "Mensch".
+**Alltagsbeispiel:** Mensch und Herz - Ein Mensch besitzt ein Herz. Ein Mensch kann ohne sein Herz nicht existieren. Wenn das Herz aufhört zu existieren, stirbt auch der Mensch. Hierbei ist die Komposition von der Klasse "Herz" zur Klasse "Mensch".
 
-## Implementierung
+## Beispiel-Implementierung
 
 ```c++
 // Example 1
@@ -134,7 +138,7 @@ Das folgende Bild stellt die Generalisierung "``Foo`` ist ein ``Bar``" dar.
 **Alltagsbeispiel:** Tier und Hund - Ein Hund ist ein Tier. In diesem Fall wäre "Tier" die Basisklasse und "Hund" wäre eine abgeleitete Klasse.
 
 
-## Implementierung
+## Beispiel-Implementierung
 
 ```c++
 class Bar {
@@ -147,10 +151,10 @@ public:
 };
 
 // Generalization of Bar
-class Foo : public Bar{
+class Foo : public Bar {
 public:
-   virtual void FuncA() { Bar::FuncA(); … /* Foo::FuncA implementation */}
-   virtual void FuncB() { Bar::FuncB(); … /* Foo::FuncB implementation */}
+  virtual void FuncA() { Bar::FuncA(); … /* Foo::FuncA implementation */}
+  virtual void FuncB() { Bar::FuncB(); … /* Foo::FuncB implementation */}
 }
 
 ```
@@ -166,16 +170,16 @@ Das folgende Bild stellt die Abhängigkeit "``Foo`` benutzt-ein ``Bar``" dar.
 
 **Alltagsbeispiel:** Koch und Rezept - Ein Koch ist abhängig von einem Rezept, um ein Gericht zuzubereiten. Wenn das Rezept geändert wird (etwa die Zutaten oder die Zubereitungsanweisungen), muss der Koch seine Methode zum Zubereiten des Gerichts entsprechend ändern.
 
-## Implementierung
+## Beispiel-Implementierung
 ```c++
 class Foo {
- ...
- void F1(Bar y) {…; y.FuncA(); }
- void F2(Bar *y) {…; y->FuncB(); }
- void F3(Bar &y) {…; y.FuncC(); }
- void F4() { Bar y; y.FuncD(); …}
- void F5() {…; Y::StaticFunc(); }
- ...
+  ...
+  void F1(Bar y) {…; y.FuncA(); }
+  void F2(Bar *y) {…; y->FuncB(); }
+  void F3(Bar &y) {…; y.FuncC(); }
+  void F4() { Bar y; y.FuncD(); …}
+  void F5() {…; Y::StaticFunc(); }
+  ...
 };
 ```
 
@@ -191,7 +195,7 @@ Das folgende Bild stellt die Realisierung "``Foo`` erfüllt das ``IBar`` Interfa
 
 **Alltagsbeispiel:**  Es ist schwierig, ein Alltagsbeispiel zu finden, da dieses Konzept in der realen Welt kaum greifbar ist. Grob gesagt könnte eine Klasse eine Schnittstelle "Laufbar" implementieren, die eine Methode "laufen" definiert. Diese Klasse könnte ein "Hund", ein "Mensch" oder ein "Roboter" sein - alles, was "laufen" kann.
 
-## Implementierung
+## Beispiel-Implementierung
 
 ```c++
 // Abstract interface
@@ -205,9 +209,9 @@ class IBar {
 
 // Realization of interface IBar
 class Foo : public IBar{
-   …
-   virtual void FuncA() { … /* FuncA implementation */}
-   virtual void FuncB() { … /* FuncB implementation */}
+  …
+  virtual void FuncA() { … /* FuncA implementation */}
+  virtual void FuncB() { … /* FuncB implementation */}
 }
 
 ```
@@ -216,3 +220,11 @@ class Foo : public IBar{
 
 Dieser Artikel beleuchtet die Beziehungsarten in UML-Klassendiagrammen und ihre Umsetzung in C++ Code. Die wichtigsten Beziehungsarten sind Assoziation, Aggregation, Komposition, Generalisierung, Abhängigkeit und Realisierung. Durch den Vergleich mit Alltagsbeispielen und konkreten C++-Implementierungen werden diese Konzepte anschaulich und verständlich dargestellt.
 
+
+
+# Bibliografie
+
+[1] Sadique, Ali. [UML Class Diagram Explained With C++ samples](https://cppcodetips.wordpress.com/2013/12/23/uml-class-diagram-explained-with-c-samples/)  
+[2] [UML 2 Tutorial - Class Diagram](https://sparxsystems.com/resources/tutorials/uml2/class-diagram.html)  
+[3] [C++ Mapping to UML](https://docs.nomagic.com/pages/viewpage.action?pageId=38044261)  
+[4] [Wikipedia - Class diagram](https://en.wikipedia.org/wiki/Class_diagram)
