@@ -55,3 +55,12 @@ Die 6 Punkte sind für mich Leitplanken, an denen man sich orientieren kann, um 
 
 Der Artikel untersucht, warum Menschen oft Probleme mit Verlusten haben, und bietet Vorschläge zur Verbesserung dieses Verhaltens. Unter Bezugnahme auf Friedrich Nietzsches Konzept "Amor Fati" wird empfohlen, Verluste als Gelegenheiten zum Lernen zu sehen. Sechs praktische Tipps, darunter Flexibilität, Akzeptanz der Unkontrollierbarkeit und der Fokus auf persönliches Wachstum, sollen eine gesunde Einstellung zu Verlusten fördern.
 
+
+# Bibliografie
+
+[1] Jia Jisng.[100 day of rejection therapy](https://www.rejectiontherapy.com/100-days-of-rejection-therapy)  
+[2] Green, Robert. The Laws of Human Nature, Profile Books, 2018  
+[3] Seneca. Briefe an Lucilius, Reclam, 2014  
+[4] Seneca. Vom glückseligen Leben / Von der Kürze des Lebens, Nikol, 2019  
+[5] Aurelius, Marcus. [Des Kaisers Marcus Aurelius Antonius Selbstbetrachtungen](https://www.projekt-gutenberg.org/antonius/selbstbe/selbstbe.html)  
+[6] Luerweg, Frank. Spektrum der Wissenschaft. [Aufstehen, Krone richten, weitergehen](https://www.spektrum.de/news/warum-faellt-es-uns-schwer-mit-niederlagen-umzugehen/1808378) 
