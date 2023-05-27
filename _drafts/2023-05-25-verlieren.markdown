@@ -11,25 +11,7 @@ header:
   
 ---
 
-Unser Leben ist unweigerlich mit Hindernissen, Frustrationen, Schmerzen und Trennungen verbunden. 
-
-- Viele Menschen werden durch  schwierigen Momente dazu inspiriert, das, was sie sehen und erleben, einzuschränken.
-- Sie versuchen, jeder Art von Widrigkeit aus dem Weg zu gehen.
-- Anstatt aus negativen Erfahrungen zu lernen, wollen sie diese verdrängen.
-
-Ihr Ziel ist es, in die **entgegengesetzte Richtung zu gehen** und alle Hindernisse als Lernerfahrungen zu begreifen, als Mittel, um stärker zu werden. 
-
-Sie müssen sich entscheiden, **in die entgegengesetzte Richtung zu gehen.** Sie sollten sich auf Folgendes einlassen
-    - negative Erfahrungen
-    - Einschränkungen
-    - Schmerzen
-    
-Dies sind die **perfekten Mittel zum Ausbau deiner Fähigkeiten und zur Schärfung deiner** Ziele.
-
-Ich habe eine Neuigkeit für dich... **Durch Schmollen gewinnst du das Spiel nicht,** durch passives Aggressivsein gewinnst du keine Freunde, und aussteigen, nun ja, das ist einfach ein totaler Blödsinn, denn in den meisten Fällen ruiniert es das Spiel für alle.
-
-Um Verluste besser bewältigen zu können, ist es wichtig, Resilienz zu entwickeln und eine gesunde Perspektive auf das Gewinnen und Verlieren zu haben. Mit ihrem Verhalten schaden sie ihrer Umgebung. Sie säen Zwietracht und Zweifel; im schlimmsten Fall unterminieren sie das Vertrauen in die Fairness des Systems.
-
+Unser Leben ist unweigerlich mit der Erfahrung verbunden das wir verlieren und eine andere Person gewinnt. Dies ist sehr schmerzhaft. So schmerzhaft das die meisten von uns alles tun damit dies nicht passiert. Wir gehen dabei sehr weit, bis hin zu unkontrollierbarer Wut und Sabotage. Doch warum ist das so? Und wir können wir es besser machen?
 
 ## Warum haben Menschen Probleme mit dem Verlieren
 
@@ -46,6 +28,8 @@ In Summe bedeutet dies, dass wir bei Verlusten sehr real und intensiv psychische
 Doch eines muss dir bewusst sein, alle Menschen haben mit denselben "negativen" Emotionen und vererbten Verhaltensweisen zu kämpfen. Warum gelingt es einigen so viel besser, damit klarzukommen?
 
 ## Was macht einen guten Verlierer aus?
+
+Ihr Ziel ist es, in die **entgegengesetzte Richtung zu gehen** und alle Hindernisse als Lernerfahrungen zu begreifen, als Mittel, um stärker zu werden. 
 
 Einen guten Verlierer macht in erster Linie eine gesunde Einstellung zu Verlusten aus. Und eben diese Einstellung, können wir beeinflussen und verändern. Nur wohin?
 
