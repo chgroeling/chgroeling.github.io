@@ -41,9 +41,9 @@ Diese Einstellung umzusetzen ist nicht leicht, aber der Aufwand lohnt sich. Basi
 
 2. Erinne dich stets daran, dass alles, was dir widerfährt, meist außerhalb deiner Kontrolle liegt. In unserer komplexen Welt herrscht oft Chaos. Du kannst zur falschen Zeit am falschen Ort sein – ist das deine Schuld? Sicherlich nicht. Aber es liegt in deiner Verantwortung, wie du damit umgehst. Lasse dein Ego beiseite und vergiss nicht, dass sowohl Glück als auch Pech unpersönlich sind.
 
-3. Sei flexibel. Starres Festhalten an Ideen, Verhaltensweisen oder Jobs kann langfristige Probleme verursachen und sogar Krankheiten hervorrufen. Das buddhistische Prinzip  "Geistes des Anfängers" kann hier hilfreich sein: Im Geist des Anfängers gibt es viele Möglichkeiten, im Geist des Profis nur wenige. Versuche Verluste als Anfänger zu betrachen dem alle Möglichkeiten offen stehen darauf zu reagieren.
+3. Sei flexibel. Starres Festhalten an Ideen, Verhaltensweisen oder Jobs kann langfristige Probleme verursachen und sogar Krankheiten hervorrufen. Das buddhistische Prinzip  "Geist des Anfängers" kann hier hilfreich sein: Im Geist des Anfängers gibt es viele Möglichkeiten, im Geist des Profis nur wenige. Versuche Verluste als Anfänger zu betrachen dem alle Möglichkeiten offen stehen darauf zu reagieren.
 
-4. Begehre nicht, was du nicht bereits hast. So kann man es dir auch nicht wegnehmen. Aber nutze alles, was dir eigen ist, um dich zu verbessern. 
+4. Begehre nicht, was du nicht bereits hast. So kann man es dir auch nicht wegnehmen. Aber nutze alles, was dir eigen ist, um dich zu verbessern.  
 
 5. Wut ist schlechter Treibstoff. Manche raten dazu, aus der Wut, die ein Verlust hervorrufen kann, Energie zu ziehen. Das jedoch führt oft zu emotionaler "Umweltverschmutzung" und einem allgemein miserablen Gefühl. Ja, man könnte so gewinnen, aber um welchen Preis?
 
