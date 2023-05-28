@@ -5,6 +5,7 @@ title: "Die Kunst, ein guter Verlierer zu sein"
 date: 2023-05-27 11:19:10 +0200
 categories: Persönlichkeitsentwicklung
 comments: true
+tagline: Eine Reise in unser tief verwurzeltes Unbehagen bei Verlusten, angereichert mit praktischen Strategien, um Verluste als Chancen zum Wachstum zu nutzen.
 header:
   overlay_image: assets/img/frontmatter/handshake.jpg
   caption:  "Image generated using midjourney"
