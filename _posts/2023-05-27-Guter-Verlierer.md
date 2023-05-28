@@ -11,9 +11,7 @@ header:
   
 ---
 
-
-
-Es ist schmerzhaft, zu verlieren. Doch warum? Und vor allem wie schaffen wir es Verluste besser zu akzeptieren und sie als Gelegenheit zum persönlichen Wachstum zu betrachten. Dieser Artikel gibt Antworten.
+Es ist schmerzhaft, zu verlieren. Doch warum? Und vor allem wie schaffen wir es, Verluste besser zu akzeptieren und sie als Gelegenheit zum persönlichen Wachstum zu betrachten. Dieser Artikel gibt Antworten.
 
 # Warum können die Menschen schlecht verlieren?
 
@@ -21,19 +19,19 @@ Der Wunsch, zu gewinnen, ist tief in unserer DNA verwurzelt. Unsere Vorfahren ha
 
 Ferner konnte die Ablehnung anderer Menschen, die mit Verlusten einhergeht, in prähistorischen Zeiten ein echtes Problem darstellen. Damals waren wir, viel mehr als heute,  von der Meinung der Gruppe abhängig. Eine Ausstoßung aus der Gruppe war gleichbedeutend mit einem Todesurteil. Daher ist es nicht verwunderlich, dass wir eine tief verwurzelte Angst vor Ablehnung durch andere Menschen haben. Sie ist nicht anerzogen, sondern angeboren.
 
-Im Laufe der Jahrtausende haben wir uns einfache Strategien ausgedacht, wie wir diese Probleme umgehen können. Sie summieren sich wie folgt: Übe vollständige Kontrolle aus, dann kannst du nicht verlieren und wirst auch nicht abgelehnt. Sehr einfach und augenscheinlich falsch; dennoch bringen wir ebendies unseren Kindern bei, indem wir ihren Wert an das Erlangen von Erfolgen binden. Die Devise lautet: Du musst gewinnen, sonst bist du nichts wert und wirst ausgestoßen.
+Im Laufe der Jahrtausende haben wir uns einfache Strategien ausgedacht, wie wir diese Probleme umgehen können. Sie summieren sich wie folgt: Übe vollständige Kontrolle aus, dann kannst du nicht verlieren und wirst auch nicht abgelehnt. Sehr einfach und augenscheinlich falsch; dennoch bringen wir ebendies unseren Kindern bei, indem wir ihren Wert an das Erlangen von Erfolgen binden. Die Devise lautet: Du musst gewinnen!
 
 Erschwerend kommt hinzu, dass Menschen Verluste überproportional stärker wahrnehmen als gleichwertige Gewinne (vgl. [Prospect Theory](https://www.uibk.ac.at/ibf/blog-wirtschaft-und-verantwortung/posts/empfindet-man-verluste-staerker-als-gewinne.html) ) dies erklärt auch, warum Bestrafung, trotz ihres schlechten Rufs, "kurzfristig" ein gewünschtes Verhalten bewirkt.
 
 In Summe bedeutet dies, dass wir bei Verlusten sehr real und intensiv Schmerz erleiden. Für viele Menschen, die in ihrer Kindheit nicht auf diesen Effekt vorbereitet wurden, kann dieser Schmerz geradezu unerträglich sein. Sie fühlen sich gezwungen, etwas dagegen zu unternehmen. Je nach Persönlichkeitstyp äußert sich dies in Vermeidungsverhalten (Totstellen), Wutreaktionen (unkontrollierter Angriff) oder durch Spielverderberei (Weglaufen).
 
-Doch eines muss dir bewusst sein, alle Menschen haben mit denselben "negativen" Emotionen und vererbten Verhaltensweisen zu kämpfen. Warum gelingt es einigen so viel besser, damit klarzukommen?
+Doch eines muss uns stets bewusst sein, alle Menschen haben mit denselben "negativen" Emotionen und vererbten Verhaltensweisen zu kämpfen. Warum gelingt es einigen so viel besser, damit klarzukommen?
 
 # Was macht einen guten Verlierer aus?
 
 Einen guten Verlierer macht in erster Linie eine gesunde Einstellung zu Verlusten aus. Und ebendiese Einstellung können wir beeinflussen und verändern. Nur wohin?
 
-Für mich gibt der Schrifstelle Friedirch Nietzsche hier eine klare Empfehlung, die er in nur zwei Wörtern zusammenfasst: "Amor Fati", was so viel bedeutet wie "Liebe dein Schicksal". Laut ihm müssen wir versuchen, alles, was uns widerfährt (insbesondere Veluste) vorbehaltlos akzeptieren und sogar lieben. Denn wenn wir die Realität so akzeptieren, wie sie ist, und das Beste daraus machen, werden wir unabhängig von den Umständen immer gewinnen. Wir lieben das was kommt; was immer auch kommt.
+Für mich gibt der Schrifstelle Friedirch Nietzsche hier eine klare Empfehlung, die er in nur zwei Wörtern zusammenfasst: "Amor Fati", was so viel bedeutet wie "Liebe dein Schicksal". Laut ihm müssen wir versuchen, alles, was uns widerfährt (insbesondere Veluste) vorbehaltlos zu akzeptieren und sogar lieben. Denn wenn wir die Realität so akzeptieren, wie sie ist, und das Beste daraus machen, werden wir unabhängig von den Umständen immer gewinnen. Wir lieben das was kommt; was immer auch kommt.
 
 Diese Einstellung umzusetzen ist nicht leicht, aber der Aufwand lohnt sich. Basierend auf Amor Fati möchte ich mit euch Sichtweisen teilen, die helfen können, einen auch noch so schweren Verlust zu verkraften:
 
