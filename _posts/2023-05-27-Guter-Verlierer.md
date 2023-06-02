@@ -32,7 +32,7 @@ Doch eines muss uns stets bewusst sein, alle Menschen haben mit denselben "negat
 
 Einen guten Verlierer macht in erster Linie eine gesunde Einstellung zu Verlusten aus. Und ebendiese Einstellung können wir beeinflussen und verändern. Nur wohin?
 
-Für mich gibt der Schrifstelle Friedirch Nietzsche hier eine klare Empfehlung, die er in nur zwei Wörtern zusammenfasst: "Amor Fati", was so viel bedeutet wie "Liebe dein Schicksal". Laut ihm müssen wir versuchen, alles, was uns widerfährt (insbesondere Veluste) vorbehaltlos akzeptieren und sogar lieben. Denn wenn wir die Realität so akzeptieren, wie sie ist, und das Beste daraus machen, werden wir unabhängig von den Umständen immer gewinnen. Wir lieben das was kommt; was immer auch kommt.
+Für mich gibt der Schriftsteller Friedrich Nietzsche hier eine klare Empfehlung, die er in nur zwei Wörtern zusammenfasst: "Amor Fati", was so viel bedeutet wie "Liebe dein Schicksal". Laut ihm müssen wir versuchen, alles, was uns widerfährt (insbesondere Veluste) vorbehaltlos akzeptieren und sogar lieben. Denn wenn wir die Realität so akzeptieren, wie sie ist, und das Beste daraus machen, werden wir unabhängig von den Umständen immer gewinnen. Wir lieben das was kommt; was immer auch kommt.
 
 Diese Einstellung umzusetzen ist nicht leicht, aber der Aufwand lohnt sich. Basierend auf Amor Fati möchte ich mit euch Sichtweisen teilen, die helfen können, einen auch noch so schweren Verlust zu verkraften:
 
