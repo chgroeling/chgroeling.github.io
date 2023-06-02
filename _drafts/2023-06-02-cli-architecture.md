@@ -62,7 +62,8 @@ Am besten kann man die Details der Architektur am Beispiel erklären. Hierzu geh
 my_tool file1.xyz file2.xyz
 ```
 
-Es folgt folgender Ablauf. Durch Code im Namespace ``external`` werden die Kommandozeilenargumente ausgewertet und anschließend ein Use Case, aus dem Namespace ``use_cases``, ausgeführt. Ich betrachte einen Use Case als eine eigenständige Aufgabe des Kommandozeilenwerkzeugs.
+
+Aus den Kommandozeilenargumenten wird ein Use Case, abgeleitet und aus dem Namespace `use_cases` ausgeführt. Ich betrachte den Use Case als eine eigenständige Aufgabe des Kommandozeilenwerkzeugs.
 
 Gehen wir beispielsweise davon aus, dass die Aufgabe von `my_tool` ist, alle Zeichen in einer Datei in Großbuchstaben umwandeln. Hier könnte der zugehörige Use-Case folgendermaßen lauten:
 
