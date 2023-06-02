@@ -28,7 +28,7 @@ Das Bild zeigt ein UML-Klassendiagramm. Lass Dich jedoch nicht von dieser Bezeic
 {: .notice--info} 
 In Python definiere ich einen Namespace einfach als Modul inklusive Untermodulen.
 
-Die Pfeile im Diagramm symbolisieren Abhängigkeiten, welche am besten durch den Satz "A benutzt B" erklärt werden. Bezogen auf das Diagramm bedeutet dies zum Beispiel "``cli`` benutzt ``use_cases``". Beachte dabei, dass die Beziehungen gerichtet sind: es ist ``use_cases`` verboten, ``cli`` zu "benutzen".
+Die Pfeile im Diagramm symbolisieren Abhängigkeiten, welche am besten durch den Satz "A benutzt B" erklärt werden. Bezogen auf das Diagramm bedeutet dies zum Beispiel "`cli` benutzt `use_cases`". Beachte dabei, dass die Beziehungen gerichtet sind: es ist `use_cases` verboten, `cli` zu "benutzen".
 
 
 Für weiterführende Informationen über die verschiedenen Arten von Abhängigkeiten in UML verweise ich auf meinen eigenen Artikel zu diesem Thema. [link]({% post_url 2023-05-20-uml-to-cpp-bridge %})
@@ -47,7 +47,7 @@ Bei Python bevorzuge ich [Click](https://click.palletsprojects.com/en/) für die
 
 __Use-Cases__: In dieser Schicht liegen die  Anwendungsfälle, hier Use-Case, des Tools. Ein Use-Case beschreibt eine auszuführenden Aufgabe, etwa "Konvertiere Datei von Format A nach Format B". Er sollte entsprechend benannt und dokumentiert werden. 
 
-__Operations__: In dieser Schicht liegen die für die Durchführung der Aufgabe notwendigen Klassen. Im vorliegenden Fall sind das Klassen zum Lesen des Datenmodells  (``read``), Klassen zum umwandeln eines Datenmodells in eine anderes (``transform``) und schließlich Klassen zum anzeigen eines Datenmodells (``view``).
+__Operations__: In dieser Schicht liegen die für die Durchführung der Aufgabe notwendigen Klassen. Im vorliegenden Fall sind das Klassen zum Lesen des Datenmodells  (`read`), Klassen zum umwandeln eines Datenmodells in eine anderes (`transform`) und schließlich Klassen zum anzeigen eines Datenmodells (`view`).
 
 __Models__: Schließlich gibt es die Models-Schicht. Diese enthält alle Datenmodelle. Gemäß [Wikipedia](https://de.wikipedia.org/wiki/Datenmodell) definieren wir hier ein Datenmodell als ein "Modell der zu verarbeitenden Daten eines Anwendungsbereichs und ihrer Beziehungen zueinander". Diese Schicht sollte möglichst keine Logik enthalten.
 
@@ -56,49 +56,48 @@ Bei Python empfehle ich den Einsatz von [dataclasses](https://docs.python.org/3/
 
 
 # Detailierte Erklärung
-Am besten kann man die Details der Architektur am Beispiel erklären. Hierzu gehen wir davon aus das ein Benutzer unser Kommandozeilenwerkzeug wie folgt aufruft:
+Die Details unserer Architektur lassen sich am besten anhand eines Beispiels erklären. Wir nehmen an, dass ein Benutzer unser Kommandozeilenwerkzeug folgendermaßen verwendet:
 
 ```
 my_tool file1.xyz file2.xyz
 ```
 
+Nach diesem Aufruf geschieht Folgendes: Der Code im Namespace `external` wertet die Kommandozeilenargumente aus und führt anschließend einen Use Case aus dem Namespace `use_cases` aus. Ich sehe den Use Case als eine eigenständige Aufgabe des Kommandozeilenwerkzeugs.
 
-Aus den Kommandozeilenargumenten wird ein Use Case, abgeleitet und aus dem Namespace `use_cases` ausgeführt. Ich betrachte den Use Case als eine eigenständige Aufgabe des Kommandozeilenwerkzeugs.
-
-Gehen wir beispielsweise davon aus, dass die Aufgabe von `my_tool` ist, alle Zeichen in einer Datei in Großbuchstaben umwandeln. Hier könnte der zugehörige Use-Case folgendermaßen lauten:
+Nehmen wir beispielsweise an, dass `my_tool` die Aufgabe hat, alle Zeichen in einer Datei in Großbuchstaben zu konvertieren. In diesem Fall könnte der entsprechende Use Case folgendermaßen aussehen:
 
 ```python
 uc_convert_all_chars_to_uppercase(…)
 ```
 
-Innerhalb des Use Cases wird die tatsächliche Aufgabe ausgeführt. Da ein Kommandozeilenwerkzeug in der Regel keine weiteren Eingaben unterstützt, kann man es stets gemäß dem [EVA Prinzips](https://de.wikipedia.org/wiki/EVA-Prinzip) organisieren. Das bedeutet wir teilen die Aufgabe in einen Eingabe-, einen Verarbeitungs- sowie einen Ausgabeschritt auf. Der Use Case führt diese Schritte immer in dieser Reihenfolge aus, ohne Abweichung!
-
-{: .notice--warning} 
-Beachte, dass es verführerisch sein kann, Dateien während der gesamten Programmlaufzeit zu lesen. Mein Ratschlag lautet: Vermeide das! Du hast ausreichend Speicherplatz. Lade alles, was du benötigst, in den Speicher und arbeite dann damit. Das macht den Vorgang viel übersichtlicher.
-
-Das EVA Prinzip wird wie folgt auf die Architektur abgebildet:
-
-**Eingabe** -  entspricht dem ``read`` Namespace    
-**Verarbeitung** - entspricht dem ``transform`` Namespace  
-**Ausgabe** - entspricht dem ``view`` Namespace  
-
-Unsere Architektur bietet also jedem der genannten Vorgänge einen eigenen Namespace und somit einen Raum für Implementierungen.
-
-Im ``read`` Namespace werden Dateien eingelesen und in ein Datenmodell konvertiert. Im vorliegenden Beispiel wäre dies das lesen der Datei `file1.xyz`. Das resultierende Datenmodell wird dem Use Case zurückgegeben.
-
-Mit diesem Modell als Argument führt der Use Case eine oder mehrere Operationen im ``transform`` Namespace aus, um die Daten in das gewünschte Format zu bringen. Wiederum auf das Beispiel bezogen wandeln wir die im Speicher liegenden Zeichenketten in eine Großbuchstabendarstellung um. Anschließend folgt die Rückgabe an den Use-Case.
-
-Abschließend wird das umgewandelte Modell durch Operationen aus dem ``view`` Namespace übergeben und angezeigt. Für das Beispiel beudetet das, wir speichern die Ergebnisse in `file2.xyz`.
-
-Der Namespace ``model_ops``, wie im UML-Diagramm dargestellt, hat eine Sonderstellung. Er enthält Modelllogik, die so allgemein ist, dass sie auch von Views verwendet werden kann und sollte. Häufig handelt es sich dabei um Iteratoren, die ein Modell auf eine bestimmte Weise darstellen. Es wäre natürlich paradox derartige Logik in jedem Namespace separat auszuführen, da für gibt es eben ``model_ops``. 
+Innerhalb des Use Case wird die eigentliche Aufgabe ausgeführt. Da ein Kommandozeilenwerkzeug in der Regel keine weiteren Eingaben während der Ausführung erfordert, kannst du es immer nach dem [EVA-Prinzip](https://de.wikipedia.org/wiki/EVA-Prinzip) strukturieren. Dies bedeutet, dass du die Aufgabe in einen Eingabe-, einen Verarbeitungs- und einen Ausgabeschritt aufteilst. Der Use Case führt diese Schritte stets in dieser Reihenfolge aus, ohne Ausnahmen!
 
 {: .notice--warning}
-Ein Wort der Warnung: Der Namespace ``models`` dient nicht dazu Business Logic zu integrieren die über den Scope eines Models hinausgeht. Hierür kann der Namespace ``model_ops`` ebenfalls verwenden werden. Wo genau die Grenze gezogen wird ist abhängig von der persönlichen Einschätzung.
+Es ist verführerisch, Dateien während der gesamten Programmlaufzeit zu lesen. Mein Rat: Vermeide das! Du hast ausreichend Speicherplatz. Lade alles, was du benötigst, in den Speicher und verarbeite es dort. Das macht den Prozess viel klarer.
+
+Das EVA-Prinzip wird in unserer Architektur wie folgt abgebildet:
+
+__Eingabe__ - entspricht dem `read` Namespace  
+__Verarbeitung__ - entspricht dem `transform` Namespace  
+__Ausgabe__ - entspricht dem `view` Namespace  
+
+Unsere Architektur bietet also jedem dieser Schritte einen eigenen Namespace und damit einen Raum für seine Implementierung.
+
+Im `read` Namespace werden Dateien eingelesen und in ein Datenmodell konvertiert, beispielsweise das Lesen von `file1.xyz`. Das resultierende Datenmodell wird dem Use Case zurückgegeben.
+
+Mit diesem Modell als Argument führt der Use Case eine oder mehrere Operationen im `transform` Namespace aus, um die Daten in das gewünschte Format zu bringen. Im Beispiel würden wir die im Speicher vorhandenen Zeichenketten in Großbuchstaben umwandeln und sie dann an den Use Case zurückgeben.
+
+Schließlich wird das transformierte Modell durch Operationen im `view` Namespace zur Anzeige gebracht. Im Beispiel bedeutet das, wir speichern die Ergebnisse in `file2.xyz`.
+
+Der Namespace `model_ops`, wie im UML-Diagramm dargestellt, nimmt eine Sonderstellung ein. Er enthält allgemeine Modelllogik, die auch von den Views verwendet werden kann und sollte. Oft handelt es sich dabei um Iteratoren, die ein Modell auf bestimmte Weise darstellen. Es wäre paradox, diese Logik in jedem Namespace separat zu implementieren, deshalb gibt es den `model_ops` Namespace.
+
+{: .notice--warning}
+__Ein Wort der Warnung:__ Der Namespace `models` ist nicht dazu gedacht, Geschäftslogik zu beinhalten, die über den Anwendungsbereich eines Modells hinausgeht. Für diesen Zweck kann der Namespace `model_ops` ebenfalls genutzt werden. Wo genau die Grenze gezogen wird, hängt von deiner persönlichen Einschätzung ab.
 
 # Projektstruktur
-Abschließend bleibt die Frage, wie die Architektur auf ein Projekt abgebildet werden kann. Momentan verfolge ich den Ansatz, für jeden Namespace ein Verzeichnis zu erstellen. Dabei bevorzuge ich eine flache Abbildung der Architektur auf die Verzeichnisse, d.h. alle Namespaces befinden sich direkt unter dem Hauptverzeichnis.
+Zum Abschluss steht die Frage im Raum, wie sich die Architektur in einem Projekt umsetzen lässt. Momentan verwende ich den Ansatz, für jeden Namespace ein Verzeichnis zu erstellen. Dabei bevorzuge ich eine flache Abbildung der Architektur auf die Verzeichnisse, sprich, alle Namespaces befinden sich unmittelbar unter dem Hauptverzeichnis.
 
-Das bedeutet jedoch nicht, dass wir die Schichtenarchitektur nicht befolgen müssen. Aus dieser Perspektive schlage ich folgende Projektstruktur vor:
+Das bedeutet allerdings nicht, dass die Schichtenarchitektur missachtet werden sollte. Mit Blick auf diese Aspekte schlage ich folgende Projektstruktur vor:
 
 ```
 .\external
@@ -110,16 +109,21 @@ Das bedeutet jedoch nicht, dass wir die Schichtenarchitektur nicht befolgen müs
 .\views
 ```
 
-{: .notice--info} 
-Bei Python sind unter der Verzeichnissen die Module zu finden in denen die jeweiligen Objekte abliegen.
+{: .notice--info}
+In Python finden sich unter den Verzeichnissen die Module, in denen die jeweiligen Objekte gespeichert sind.
 
-Für sehr einfache Projekte kann man die vorgeschlagene Struktur auch in einer einzigen Datei umsetzen. Es liegt im Ermessen des Anwenders, die Struktur so zu gestalten, dass sie hilfreich ist und bleibt.
+Für sehr einfache Projekte lässt sich die vorgeschlagene Struktur auch in einer einzigen Datei umsetzen. Es liegt in deinem Ermessen, die Struktur so zu gestalten, dass sie stets nützlich und praktikabel bleibt.
 
 # Warum so konkret? Das ist schlecht testbar!
 
-Wenn man die Architektur betrachtet stellt man fest das alles direkte "use" Beziehungen sind. Wir können hier natürlich auch alles als Objekte in den Namespaces ausführen und zwischen den Objekten Interfaces zur Kommunikation verwenden. Dies als [Dependency Inversion](https://de.wikipedia.org/wiki/Dependency-Inversion-Prinzip) bekannte Prinzip ist natürlich nicht ausgeschlossen. Insbesondere bei statischen typisierten Programmiersprachen würde ich bei komplexen Aufgaben selber diesen Weg gehen. Dies erlaubt eine besser Testbare Applikation, macht das Ganze aber meiner Meinung nach deutlich weniger übersichtlich. Für einfache Projekte rate ich daher davon ab. 
+Wenn du die Architektur betrachtest, stellst du fest, dass es ausschließlich direkte "use"-Beziehungen gibt. Natürlich kannst du auch alles als Objekte innerhalb der Namespaces ausführen und diese Objekte gegen Interfaces implementieren. Diese Interface fungieren dann als Schnittstellen zwischen den Schichten. Dieses als [Dependency Inversion](https://de.wikipedia.org/wiki/Dependency-Inversion-Prinzip) bekannte Prinzip ist natürlich nicht ausgeschlossen. Insbesondere bei statisch typisierten Programmiersprachen (z.B. C++) würde ich bei komplexen Aufgaben diesen Weg wählen. Es ermöglicht eine besser testbare Applikation, macht das Ganze aber meiner Meinung nach deutlich weniger übersichtlich. Für einfache Projekte rate ich daher davon ab.
 
-Für dynamisch typisierte Programmiersprachen gibt es noch den Weg Aufrufe für Tests zu "patchen". Als Beispiel sei hier das unter Python bekannte [monkey patching](https://en.wikipedia.org/wiki/Monkey_patch#:~:text=Monkey%20patching%20is%20a%20technique,Python%2C%20Groovy%2C%20etc.) gennant. Es erlaubt Code während der Laufzeit zu modifizieren.. Auch dies erlaubt das einfügen von Mocks wie beim Dependency Inversion Prinzip, aber ohne den zusätzlichen Schritt interfaces einzufügen. Dies ist häufig eine gute Alternative sollten Tests benötigt werden.
+Für dynamisch typisierte Programmiersprachen (z.B. Python) besteht zudem die Möglichkeit, Aufrufe für Tests zu "patchen". Ein Beispiel hierfür ist das unter Python bekannte [Monkey Patching](https://en.wikipedia.org/wiki/Monkey_patch#:~:text=Monkey%20patching%20is%20a%20technique,Python%2C%20Groovy%2C%20etc.). Es ermöglicht die Modifikation von Code während der Laufzeit. Dies erlaubt das Einfügen von Mocks, wie beim Dependency Inversion Prinzip, aber ohne den zusätzlichen Schritt, Interfaces einzufügen. Dies stellt häufig eine gute Alternative dar, sollten Tests erforderlich sein.
+
+# Zusammenfassung
+
+Der Artikel präsentiert eine einfache, schichtenbasierte Architektur für die Entwicklung von Kommandozeilenwerkzeugen. Die Architektur besteht aus vier Hauptbestandteilen: External, Use-Cases, Operations und Models. Dabei dient die External-Schicht als Brücke zur Außenwelt, die Use-Cases-Schicht definiert die Aufgaben des Tools, die Operations-Schicht stellt Funktionen zur Aufgabendurchführung bereit und die Models-Schicht beherbergt die Datenmodelle. Diese Struktur erleichtert das Verständnis und die Entwicklung solcher Werkzeuge und kann in der Projektstruktur widergespiegelt werden.
+
 
 # Bibliografie
 
