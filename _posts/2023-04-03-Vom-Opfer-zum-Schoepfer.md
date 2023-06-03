@@ -44,17 +44,13 @@ Wir können uns nicht entziehen, dass wir soziale Wesen sind. Dies ist unserer N
 Was ist das wertvollste, was wir besitzen? Unsere Lebenszeit.  Es ist simpel, alles, was wir tun ist ein Tauschgeschäft. Wir investieren unsere Lebenszeit und bekommen etwas dafür. Meist Geld. Es ist unsere Aufgabe unsere Lebenszeit klug zu investieren in unsere positive Veränderung. Hierzu bewährte Taktiken:
 
 - **Systeme:** Wir können uns nicht auf unser Gehirn verlassen. Alles, was wir aufnehmen, ist spätestens ein paar Tage später nicht mehr in unseren Köpfen vorhanden. Vergessen!  Die Zeit, die wir z.B. in das Lesen eines Buches oder das Hören eines Vortrages investieren, ist verschwendet. Doch gibt es einen Ausweg, das Notieren und aufbewahren von Informationen in einem vertrauenswürdigen System. Ob digital oder analog. So sind wir in der Lage, unsere Aufmerksamkeit zu speichern und sie bei Bedarf abzurufen.
-- **Komponenten denken:** Arbeitsresultate, Zwischenstände, Protokolle usw. sehen wir als unwichtig an. Doch sind sie die Bausteine eines Resultats. Um Zeit zu sparen, müssen wir in der Lage sein ganze Projekte wie Lego aufzubauen. Die Lego Bausteine sind Komponenten, die wir über längere Zeiträume aus unseren Notizen herausschneiden und ständig verfeinern. Dies können Vorlagen, Fragenkatalog, Diagramme usw. sein. Wichtig ist, dass wir sie verallgemeinern und stets auffinden können, wenn wir sie benötigen. Dies wirkt, wenn richtig durchgeführt, fast wie Magie.
+- **Komponenten denken** Arbeitsresultate, Zwischenstände, Protokolle usw. sehen wir als unwichtig an. Doch sind sie die Bausteine eines Resultats. Um Zeit zu sparen, müssen wir in der Lage sein ganze Projekte wie Lego aufzubauen. Die Lego Bausteine sind Komponenten, die wir über längere Zeiträume aus unseren Notizen herausschneiden und ständig verfeinern. Dies können Vorlagen, Fragenkatalog, Diagramme usw. sein. Wichtig ist, dass wir sie verallgemeinern und stets auffinden können, wenn wir sie benötigen. Dies wirkt, wenn richtig durchgeführt, fast wie Magie. (Übrigens habe ich mittlerweile meinen eigenen Artikel zum Thema "Komponenten-Denken" veröffentlicht. Du kannst ihn [hier]({% post_url 2023-05-11-Komponenten-Denken %}) finden!)
 - **Grenzen:** Um Prioritäten zu setzen, musst du Optionen haben. Optionen bekommst du, wenn du deine Zeit massiv einschränkst, die du investieren willst. Nun **musst** du wählen, was wichtig ist. Jetzt kannst du auch nicht mehr verschwenderisch sein, sondern musst dich fokussieren.  Die Zeit, die du so frei machst, gehört dir allein. Nutze sie gut.
 
 # Bibliografie
 
-[1] Green, Robert. The Laws of Human Nature, Profile Books, 2018
-
-[2] Forte, Tjago. [Just-In-Time PM #13: Component Thinking](https://fortelabs.com/blog/just-in-time-pm-13-component-thinking/)
-
-[3] Seneca. Briefe an Lucilius, Reclam, 2014
-
-[4] Cal, Newport. Deep Work: Rules for Focused Success in a Distracted World. Piatkus, 2016
- 
-[5] Forte, Tjao. Building a Second Brain: A Proven Method to Organise Your Digital Life and Unlock Your Creative Potential (English Edition), Profile Books, 2022
+[1] Green, Robert. The Laws of Human Nature, Profile Books, 2018  
+[2] Forte, Tjago. [Just-In-Time PM #13: Component Thinking](https://fortelabs.com/blog/just-in-time-pm-13-component-thinking/)  
+[3] Seneca. Briefe an Lucilius, Reclam, 2014  
+[4] Cal, Newport. Deep Work: Rules for Focused Success in a Distracted World. Piatkus, 2016  
+[5] Forte, Tjao. Building a Second Brain: A Proven Method to Organise Your Digital Life and Unlock Your Creative Potential (English Edition), Profile Books, 2022  

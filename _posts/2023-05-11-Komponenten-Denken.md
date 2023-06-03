@@ -1,7 +1,7 @@
 ---
 layout: single
 toc: false
-title:  "Erfolgsgeheimnis Komponenten-Denken: Meistere Herausforderungen mit modularen Lösungen"
+title:  "Erfolgsgeheimnis Komponenten-Denken: Überwinde Herausforderungen mit modularen Lösungen"
 date:   2023-05-11 05:50:10 +0200
 categories: Produktentwicklung
 ---
