@@ -18,7 +18,7 @@ Es ist schmerzhaft, zu verlieren. Doch warum? Und vor allem wie schaffen wir es,
 
 Der Wunsch, zu gewinnen, ist tief in unserer DNA verwurzelt. Unsere Vorfahren haben ständig um begrenzte Ressourcen konkurriert, der Sieg war dabei stets ein Überlebensvorteil. Dieser "Wettbewerb um Ressourcen"-Mechanismus bleibt, bis heute, tief in unserer Psyche integriert  und resultiert in einem starken Unbehagen bei Verlusten.
 
-Ferner konnte die Ablehnung anderer Menschen, die mit Verlusten einhergeht, in prähistorischen Zeiten ein echtes Problem darstellen. Damals waren wir, viel mehr als heute,  von der Meinung der Gruppe abhängig. Eine Ausstoßung aus der Gruppe war gleichbedeutend mit einem Todesurteil. Daher ist es nicht verwunderlich, dass wir eine tief verwurzelte Angst vor Ablehnung durch andere Menschen haben. Sie ist nicht anerzogen, sondern angeboren.
+Ferner konnte die Ablehnung anderer Menschen, die mit Verlusten einhergeht, in prähistorischen Zeiten ein echtes Problem darstellen. Damals waren wir, viel mehr als heute, von der Meinung der Gruppe abhängig. Eine Ausstoßung aus der Gruppe war gleichbedeutend mit einem Todesurteil. Daher ist es nicht verwunderlich, dass wir eine tief verwurzelte Angst vor Ablehnung durch andere Menschen haben. Sie ist nicht anerzogen, sondern angeboren.
 
 Im Laufe der Jahrtausende haben wir uns einfache Strategien ausgedacht, wie wir diese Probleme umgehen können. Sie summieren sich wie folgt: Übe vollständige Kontrolle aus, dann kannst du nicht verlieren und wirst auch nicht abgelehnt. Sehr einfach und augenscheinlich falsch; dennoch bringen wir ebendies unseren Kindern bei, indem wir ihren Wert an das Erlangen von Erfolgen binden. Die Devise lautet: Du musst gewinnen!
 
