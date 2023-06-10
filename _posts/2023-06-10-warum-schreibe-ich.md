@@ -1,8 +1,8 @@
 ---
 layout: single
 toc: false
-title: "Warum ich schreibe."
-date: 2023-06-09 09:00:10 +0200
+title: "Warum ich schreibe"
+date: 2023-06-10 20:50:10 +0200
 categories: Persönlichkeitsentwicklung
 comments: true
 tagline: "Schreiben als Verknüpfungspunkt: Netzwerk, kreativer Ausdruck und persönliches Wachstum im digitalen Zeitalter."
