@@ -10,29 +10,29 @@ header:
   overlay_image: assets/img/frontmatter/feather.jpg
   caption:  "Image generated using midjourney"
 ---
-In den letzten Wochen wurde ich öfter gefragt, warum ich schreibe und meine Texte im Internet veröffentliche. Nein, ich erwarte nicht, dadurch plötzlich berühmt zu werden. Ich will auch kein Geld damit verdienen. Jedenfalls nicht direkt. Dieser Artikel erklärt meine persönlichen Gründe, warum ich mir die Mühe mache, zu schreiben, in absteigender Reihenfolge der Wichtigkeit. Ich vermute, dass der ein oder andere sich selbst Gedanken zu diesem Thema macht. Vielleicht gibt ihm meine Liste die Inspiration, mit dem Schreiben zu beginnen.
+In den letzten Wochen wurde ich öfter gefragt, warum ich schreibe und meine Texte im Internet veröffentliche. Nein, ich erwarte nicht, dadurch plötzlich berühmt zu werden. Ich will auch kein Geld damit verdienen. Dieser Artikel erklärt meine persönlichen Gründe, warum ich mir die Mühe mache, zu schreiben, in absteigender Reihenfolge der Wichtigkeit. Ich hoffe er bietet Erklärung und Inspiration für jedermann der meine Artikel liest oder vielleicht sogar selbst mit dem schreiben beginnen möchte.
 
 # Verknüpfungspunkt
 > "You are the average of the five people you spend the most time with." - Jim Rohn
 
 Ich strebe danach, großartige Menschen zu treffen und mich mit ihnen auszutauschen. Doch womit beginne ich das Gespräch? Das ist eine Frage, die mich lange beschäftigt hat. Es gibt einfach nichts, was uns verbindet. Und das macht es verdammt schwer, Kontakt aufzunehmen. Insbesondere über so anonyme Medien wie das Internet. 
 
-Ein Ansatz wäre das, was Verkäufer als "Kaltakquise" bezeichnen: Einfach den ersten Schritt machen und versuchen, "spontan" in Kontakt zu kommen. Es wird sich schon etwas ergeben. Aber ich antworte selten auf solche Anfragen, und ihr wahrscheinlich auch. Es fehlt oft einfach ein gemeinsames Thema. 
+Ein Ansatz wäre das, was Verkäufer als "Kaltakquise" bezeichnen: Einfach den ersten Schritt machen und versuchen, "spontan" in Kontakt zu kommen. Es wird sich schon etwas ergeben. Aber ehrlicherweise antworte ich selbst selten auf solche Anfragen. Es fehlt oft einfach ein gemeinsames Thema. 
 
-Eine interessante Lösung für dieses Dilema bietet der Autor Austin Cleon in seinem Buch [Show Your Work](https://www.amazon.de/Show-Your-Work-Austin-Kleon/dp/076117897X) an, die ich aktuell verfolge. Cleon schlägt vor, dass wir die Rolle eines "wechselseitigen Verknüpfungspunktes" einnehmen sollten, um Beziehungen zu anderen Menschen aufzubauen.
+Eine interessante Lösung für dieses Dilemma bietet der Autor Austin Cleon in seinem Buch [Show Your Work](https://www.amazon.de/Show-Your-Work-Austin-Kleon/dp/076117897X) an, die ich aktuell verfolge. Cleon schlägt vor, dass wir die Rolle eines "wechselseitigen Verknüpfungspunktes" einnehmen sollten, um Beziehungen zu anderen Menschen aufzubauen.
 
 Dabei geht es einerseits darum, durch das Schreiben von Artikeln, Posts, Tweets etc.  einen Anknüpfungspunkt im Internet zu schaffen den Menschen finden und auf den sie sich beziehen können. So entsteht die Möglichkeit, auf die Gedanken und Themen, die ich teile, zu reagieren und so mit mir in einen konstruktiven Austausch zu treten.
 
-Andererseits, was das "wechselseitige" betrifft, geht es darum, die Beiträge anderer im Internet zu kommentieren, ihnen Unterstützung anzubieten und proaktiv Beziehungen aufzubauen. Das mache ich bereits bei meiner Arbeit und würde gerne diesen Ansatz auf ein breiteres Publikum ausweiten, um diese Brücke zu bauen, von der ich hier spreche.
+Andererseits, was das "wechselseitige" betrifft, geht es darum, die Beiträge anderer im Internet zu kommentieren, ihnen Unterstützung anzubieten und proaktiv Beziehungen aufzubauen. Das mache ich bereits bei meiner Arbeit und würde diesen Ansatz gerne auf ein breiteres Publikum ausweiten. 
 
-Mit meinen Artikel möchte ich versuchen ein "wechselseitige Verknüpfungspunkt" zu sein, daher traut euch ruhig mit mir in Kontakt zu treten. Ich würde mich sehr über jeden freuen, der dieses Angebot annimmt. 
+Mit meinen Artikeln und Aktivitäten im Internet möchte ich versuchen ein "wechselseitige Verknüpfungspunkt" zu sein, daher traut euch ruhig mit mir in Kontakt zu treten. Ich würde mich sehr über jeden freuen, der dieses Angebot annimmt. 
 
 # Feedback
 > "Absorb what is useful, Discard what is not, Add what is uniquely your own." - Bruce Lee
 
-Ich wünsche mir Feedback, einschließlich konstruktiver Kritik, zu meinen Gedanken und meiner Arbeit von Menschen innerhalb und außerhalb meines direkten Einflussbereichs, um mein "Werk" zu verbessern. Deshalb veröffentliche ich meine Überlegungen und Arbeitsmethoden, um frühzeitig und regelmäßig Feedback zu erhalten. Statt ausschließlich in "meinem eigenen Sud zu schmoren" und die alten Wege zu beschreiten, erhoffe ich mir so frischen Wind. Vielleicht sogar neue Herausforderungen und Zusammenarbeit. 
+Ich wünsche mir Feedback, einschließlich konstruktiver Kritik, zu meinen Gedanken und meiner Arbeit von Menschen innerhalb und außerhalb meines direkten Einflussbereichs, um mein "Werk" zu verbessern. Deshalb veröffentliche ich meine Überlegungen und Arbeitsmethoden, um frühzeitig und regelmäßig Feedback zu erhalten. 
 
-Daher stelle ich all das, was mir wichtig ist, auf den Prüfstand der Öffentlichkeit, um es und mich selbst zu verbessern. Das erreiche ich, indem ich ein Medium, in meinem Fall das Schreiben, nutze, um euch an meiner Arbeit und meinen Gedanken teilhaben zu lassen. 
+Daher stelle ich all das, was mir wichtig ist, auf den Prüfstand der Öffentlichkeit, um es und mich selbst zu verbessern. Das möchte ich erreichen, indem ich ein Medium, in meinem Fall das Schreiben, nutze, um euch an meiner Arbeit und meinen Gedanken teilhaben zu lassen. 
 
 Ich tue das mit gleichem Maß an Stolz und Demut. Stolz, weil ich den Mut habe, meine Gedanken mit euch zu teilen. Demut, um meine Standpunkte verändern zu können. 
 
@@ -85,6 +85,7 @@ Insbesondere ist diese Fähigkeit auch beim schreibe von e-Mails wertvoll. Versu
 
 # Zusammenfassung
 Ich schreibe und veröffentliche Texte im Internet, um als "wechselseitiger Verknüpfungspunkt" einen inspirierenden Austausch zu ermöglichen. Das Schreiben dient dazu, mein Denken zu klären, kreativ zu sein, mein Portfolio zu erweitern, neue Dinge zu lernen und meine Kommunikationsfähigkeiten zu verbessern.
+
 
 # Bibliografie
  
