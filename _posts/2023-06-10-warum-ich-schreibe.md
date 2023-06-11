@@ -1,7 +1,7 @@
 ---
 layout: single
 toc: false
-title: "Warum ich schreibe"
+title: "Lernen, Kreativität und Austausch: Warum ich schreibe."
 date: 2023-06-10 20:50:10 +0200
 categories: Persönlichkeitsentwicklung
 comments: true
