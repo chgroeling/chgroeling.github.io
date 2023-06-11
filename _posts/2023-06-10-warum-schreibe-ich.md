@@ -61,7 +61,7 @@ Beim Schreiben ist das anders. Zugegeben, es fällt mir schwer. Stellenweise seh
 
 Es gibt Zeiten im Leben, in denen man etwas Vorzeigbares braucht. Und wenn man einfach etwas "aus der Tasche" ziehen kann, um eine eigene Argumentationskette zu stützen, wirkt das auf andere fast wie Magie. Nehmen wir etwa diesen Artikel: Wenn mich jemand fragt, warum ich das alles mache und was ich mir davon verspreche, kann ich ihn darauf verweisen. Die Person erhält dann keine stammelnde Antwort, sondern ein ausformuliertes Gedankenkonstrukt, das ich bei Bedarf auch verbal wiedergeben kann. 
 
-Das wirkt nicht nur professionell, sondern ist für mich der Inbegriff von Professionalität. Insbesondere gilt das für meine technischen Artikel. Es ist schon toll, wenn jemand eine "Roadmap" erstellen möchte und ich daraufhin einen [Link](ROADMAP) zu diesem Thema vorzeigen kann. 
+Das wirkt nicht nur professionell, sondern ist für mich der Inbegriff von Professionalität. Insbesondere gilt das für meine technischen Artikel. Es ist schon toll, wenn jemand eine "Roadmap" erstellen möchte und ich daraufhin einen [Link]({% post_url 2023-04-06-Roadmap %}) zu diesem Thema vorzeigen kann. 
 
 Der Bezug muss nicht unbedingt direkt sein; auch entferntere Artikel, die nur Aspekte einer Aufgabe beleuchten, die vor einem liegt, können helfen, bei einer anderen Person Vertrauen aufzubauen. Ich finde das äußerst praktisch!
 
