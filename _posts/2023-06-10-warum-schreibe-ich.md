@@ -10,7 +10,7 @@ header:
   overlay_image: assets/img/frontmatter/feather.jpg
   caption:  "Image generated using midjourney"
 ---
-In den letzten Wochen wurde ich öfter gefragt, warum ich schreibe und meine Texte im Internet veröffentliche. Nein, ich erwarte nicht, dadurch plötzlich berühmt zu werden. Ich will auch kein Geld damit verdienen. Dieser Artikel erklärt meine persönlichen Gründe, warum ich mir die Mühe mache, zu schreiben, in absteigender Reihenfolge der Wichtigkeit. Ich hoffe er bietet Erklärung und Inspiration für jedermann der meine Artikel liest oder vielleicht sogar selbst mit dem schreiben beginnen möchte.
+In den letzten Wochen wurde ich öfter gefragt, warum ich schreibe und meine Texte im Internet veröffentliche. Nein, ich erwarte nicht, dadurch plötzlich berühmt zu werden. Ich will auch kein Geld damit verdienen. Dieser Artikel erklärt meine persönlichen Gründe, warum ich mir die Mühe mache, zu schreiben, in absteigender Reihenfolge der Wichtigkeit. Ich hoffe, er bietet Erklärung und Inspiration für jedermann, der meine Inhalte liest oder vielleicht sogar selbst mit dem Schreiben beginnen möchte.
 
 # Verknüpfungspunkt
 > "You are the average of the five people you spend the most time with." - Jim Rohn
@@ -21,11 +21,11 @@ Ein Ansatz wäre das, was Verkäufer als "Kaltakquise" bezeichnen: Einfach den e
 
 Eine interessante Lösung für dieses Dilemma bietet der Autor Austin Cleon in seinem Buch [Show Your Work](https://www.amazon.de/Show-Your-Work-Austin-Kleon/dp/076117897X) an, die ich aktuell verfolge. Cleon schlägt vor, dass wir die Rolle eines "wechselseitigen Verknüpfungspunktes" einnehmen sollten, um Beziehungen zu anderen Menschen aufzubauen.
 
-Dabei geht es einerseits darum, durch das Schreiben von Artikeln, Posts, Tweets etc.  einen Anknüpfungspunkt im Internet zu schaffen den Menschen finden und auf den sie sich beziehen können. So entsteht die Möglichkeit, auf die Gedanken und Themen, die ich teile, zu reagieren und so mit mir in einen konstruktiven Austausch zu treten.
+Dabei geht es einerseits darum, durch das Schreiben von Artikeln, Posts, Tweets etc. einen Anknüpfungspunkt im Internet zu schaffen, den Menschen finden und auf den sie sich beziehen können. So entsteht die Möglichkeit, auf die Gedanken und Themen, die ich teile, zu reagieren und so mit mir in einen konstruktiven Austausch zu treten.
 
 Andererseits, was das "wechselseitige" betrifft, geht es darum, die Beiträge anderer im Internet zu kommentieren, ihnen Unterstützung anzubieten und proaktiv Beziehungen aufzubauen. Das mache ich bereits bei meiner Arbeit und würde diesen Ansatz gerne auf ein breiteres Publikum ausweiten. 
 
-Mit meinen Artikeln und Aktivitäten im Internet möchte ich versuchen ein "wechselseitige Verknüpfungspunkt" zu sein, daher traut euch ruhig mit mir in Kontakt zu treten. Ich würde mich sehr über jeden freuen, der dieses Angebot annimmt. 
+Mit meinen Artikeln und Aktivitäten im Internet möchte ich versuchen ein "wechselseitige Verknüpfungspunkt" zu sein, daher traut euch ruhig, mit mir in Kontakt zu treten. Ich würde mich sehr über jeden freuen, der dieses Angebot annimmt.
 
 # Feedback
 > "Absorb what is useful, Discard what is not, Add what is uniquely your own." - Bruce Lee
@@ -47,7 +47,7 @@ Wenn ich meinen Gedanken freien Lauf lasse, tendieren sie dazu, sich um ein gera
 Eine treffende Metapher dafür ist, sich den Geist wie ein Glas trüben Wassers vorzustellen. Je trüber das Wasser, desto weniger erkennen wir die Welt, wie sie wirklich ist. Das Schreiben dient in diesem Fall als Filter, der das Wasser klärt.
 Es ist ein wunderbares Mittel, um die Realität klarer zu erkennen, mir in Ruhe Gedanken zu machen, Strategien zu entwickeln und Antworten auf wichtige Fragen zu finden. 
 
-Als eher hektische Person, verhilft mir das Schreiben zu Ruhe und lenkt meine Gedanken in konstruktive Bahnen. Es hat für mich die gleiche Qualität wie Meditation. Jedes Mal, wenn ich impulsiv gehandelt habe, hat das meistens zu unerwünschten Ergebnissen geführt. Durch das schreiben kann ich meine Impulsivität reduzieren und dieses Persönlichkeitsmerkmal kontrollieren – manchmal mehr, manchmal weniger. Das allein ist schon ein beachtlich Erfolg für mich!
+Als eher hektische Person verhilft mir das Schreiben zu Ruhe und lenkt meine Gedanken in konstruktive Bahnen. Es hat für mich die gleiche Qualität wie Meditation. Jedes Mal, wenn ich impulsiv gehandelt habe, hat das meistens zu unerwünschten Ergebnissen geführt. Durch das Schreiben kann ich meine Impulsivität reduzieren und dieses Persönlichkeitsmerkmal kontrollieren – manchmal mehr, manchmal weniger. Das allein ist schon ein beachtlicher Erfolg für mich!
 
 # Kreativität
 > "Writing is the painting of the voice." - Voltaire
@@ -81,7 +81,7 @@ Wir haben unter anderem einmal eine Software als "Feature complete" bezeichnet, 
 
 Es ist unsere Verantwortung, unseren Standpunkt so zu kommunizieren, dass unser Gegenüber uns versteht. Das nennt man empfängergerechte Kommunikation. Das Schreiben ist für mich ein guter Weg, ebendiese Art der Kommunikation vorzubereiten. Ich zerlege komplexe Themen in einfache Sprache, um sie an den jeweiligen Empfänger zu transportieren.
 
-Insbesondere ist diese Fähigkeit auch beim schreibe von e-Mails wertvoll. Versucht es selbst!
+Insbesondere ist diese Fähigkeit auch beim schreibe von E-Mails wertvoll. Versucht es selbst!
 
 # Zusammenfassung
 Ich schreibe und veröffentliche Texte im Internet, um als "wechselseitiger Verknüpfungspunkt" einen inspirierenden Austausch zu ermöglichen. Das Schreiben dient dazu, mein Denken zu klären, kreativ zu sein, mein Portfolio zu erweitern, neue Dinge zu lernen und meine Kommunikationsfähigkeiten zu verbessern.
