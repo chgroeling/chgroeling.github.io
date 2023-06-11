@@ -23,7 +23,7 @@ Eine interessante Lösung für dieses Dilemma bietet der Autor Austin Cleon in s
 
 Dabei geht es einerseits darum, durch das Schreiben von Artikeln, Posts, Tweets etc. einen Anknüpfungspunkt im Internet zu schaffen, den Menschen finden und auf den sie sich beziehen können. So entsteht die Möglichkeit, auf die Gedanken und Themen, die ich teile, zu reagieren und so mit mir in einen konstruktiven Austausch zu treten.
 
-Andererseits, was das "wechselseitige" betrifft, geht es darum, die Beiträge anderer im Internet zu kommentieren, ihnen Unterstützung anzubieten und proaktiv Beziehungen aufzubauen. Das mache ich bereits bei meiner Arbeit und würde diesen Ansatz gerne auf ein breiteres Publikum ausweiten. 
+Andererseits, was das "Wechselseitige" betrifft, geht es darum, die Beiträge anderer im Internet zu kommentieren, ihnen Unterstützung anzubieten und proaktiv Beziehungen aufzubauen. Das mache ich bereits bei meiner Arbeit und würde diesen Ansatz gerne auf ein breiteres Publikum ausweiten. 
 
 Mit meinen Artikeln und Aktivitäten im Internet möchte ich versuchen ein "wechselseitige Verknüpfungspunkt" zu sein, daher traut euch ruhig, mit mir in Kontakt zu treten. Ich würde mich sehr über jeden freuen, der dieses Angebot annimmt.
 
@@ -47,7 +47,7 @@ Wenn ich meinen Gedanken freien Lauf lasse, tendieren sie dazu, sich um ein gera
 Eine treffende Metapher dafür ist, sich den Geist wie ein Glas trüben Wassers vorzustellen. Je trüber das Wasser, desto weniger erkennen wir die Welt, wie sie wirklich ist. Das Schreiben dient in diesem Fall als Filter, der das Wasser klärt.
 Es ist ein wunderbares Mittel, um die Realität klarer zu erkennen, mir in Ruhe Gedanken zu machen, Strategien zu entwickeln und Antworten auf wichtige Fragen zu finden. 
 
-Als eher hektische Person verhilft mir das Schreiben zu Ruhe und lenkt meine Gedanken in konstruktive Bahnen. Es hat für mich die gleiche Qualität wie Meditation. Jedes Mal, wenn ich impulsiv gehandelt habe, hat das meistens zu unerwünschten Ergebnissen geführt. Durch das Schreiben kann ich meine Impulsivität reduzieren und dieses Persönlichkeitsmerkmal kontrollieren – manchmal mehr, manchmal weniger. Das allein ist schon ein beachtlicher Erfolg für mich!
+Als eher hektische Person verhilft mir das Schreiben zur Ruhe und lenkt meine Gedanken in konstruktive Bahnen. Es hat für mich die gleiche Qualität wie Meditation. Jedes Mal, wenn ich impulsiv gehandelt habe, hat das meistens zu unerwünschten Ergebnissen geführt. Durch das Schreiben kann ich meine Impulsivität reduzieren und dieses Persönlichkeitsmerkmal kontrollieren – manchmal mehr, manchmal weniger. Das allein ist schon ein beachtlicher Erfolg für mich!
 
 # Kreativität
 > "Writing is the painting of the voice." - Voltaire
