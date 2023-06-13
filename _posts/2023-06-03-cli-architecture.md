@@ -12,7 +12,7 @@ header:
   
 ---
 
-Bei Softwareprojekten besteht oft Bedarf an Kommandozeilenwerkzeugen, die spezifische Aufgaben, wie etwa Code-Generierung, Auswertungen, Paketierung usw., automatisieren. Allzu häufig werden diese Tools ad hoc und unstrukturiert entwickelt, implementiert, rasch fertiggestellt  und danach vergessen. Das führt leider dazu, dass sie später schwer zu verstehen und wartungsintensiv sind. Eine gute Software-Dokumentation kann dabei helfen, dieses Problem zu umgehen. Dieser Artikel schlägt eine ergänzende Maßnahme vor: Eine einfache Architektur für Kommandozeilenwerkzeuge, die das Verstehen und die Weiterentwicklung derselbigen erleichtern soll.
+Bei Softwareprojekten besteht oft Bedarf an Kommandozeilenwerkzeugen, die spezifische Aufgaben, wie etwa Code-Generierung, Auswertungen, Paketierung usw., automatisieren. Allzu häufig werden diese Tools ad hoc und unstrukturiert entwickelt, implementiert, rasch fertiggestellt  und danach vergessen. Das führt leider dazu, dass sie später schwer zu verstehen und wartungsintensiv sind. Eine gute Software-Dokumentation kann dabei helfen, dieses Problem zu umgehen. Dieser Artikel schlägt eine ergänzende Maßnahme vor: Eine einfache Software-Architektur für Kommandozeilenwerkzeuge, die das Verstehen und die Weiterentwicklung derselbigen erleichtern soll.
 
 # Software-Architektur
 
@@ -110,6 +110,12 @@ Der Namespace `model_ops`, wie im UML-Diagramm dargestellt, nimmt eine Sonderste
 {: .notice--warning}
 __Ein Wort der Warnung:__ Der Namespace `models` ist nicht dazu gedacht, Geschäftslogik zu beinhalten, die über den Anwendungsbereich eines Modells hinausgeht. Für diesen Zweck kann der Namespace `model_ops` ebenfalls genutzt werden. Wo genau die Grenze gezogen wird, hängt von Deiner persönlichen Einschätzung ab.
 
+
+# Warum so konkret? Das ist schlecht testbar!
+Wenn du das vorherige Beispiel und die Architektur genauer anschaust, wirst du sehen, dass Funktionen aus einem Namespace direkt von Funktionen in einem anderen Namespace aufgerufen werden. Beispielsweise verwendet ein Anwendungsfall  Funktionen aus dem `transform` Namespace. Selbstverständlich ist es auch möglich, alles als Objekte auszuführen und diese Objekte gegen Interfaces zu implementieren. Diese Interfaces werden anschließend als Kommunikationskanal zwischen den Schichten verwendet. Dieses als [Dependency Inversion](https://de.wikipedia.org/wiki/Dependency-Inversion-Prinzip) bekannte Prinzip ist natürlich nicht ausgeschlossen. Insbesondere bei statisch typisierten Programmiersprachen (z.B. C++) würde ich bei komplexen Aufgaben diesen Weg wählen. Es ermöglicht eine testbarere Applikation, macht das Ganze aber meiner Meinung nach weniger übersichtlich. Für einfache Projekte rate ich daher davon ab.
+
+Für dynamisch typisierte Programmiersprachen (z.B. Python) besteht zudem die Möglichkeit, Aufrufe in zu testendem Code zu "patchen". Ein Beispiel hierfür ist das unter Python bekannte [Monkey Patching](https://en.wikipedia.org/wiki/Monkey_patch#:~:text=Monkey%20patching%20is%20a%20technique,Python%2C%20Groovy%2C%20etc.). Es ermöglicht die Modifikation von Code während der Laufzeit. Dies erlaubt das Einfügen von Mocks, wie beim Dependency Inversion Prinzip, aber ohne den zusätzlichen Schritt, Interfaces einzufügen. Dies stellt häufig eine gute Alternative dar, sollte eine testbares Tool erforderlich sein.
+
 # Projektstruktur
 Zum Abschluss steht die Frage im Raum, wie sich die Architektur in einem Projekt umsetzen lässt. Momentan verwende ich den Ansatz, für jeden Namespace ein eigenes Verzeichnis zu erstellen. Dabei bevorzuge ich eine flache Abbildung der Architektur auf die Verzeichnisse, sprich, alle Namespaces befinden sich unmittelbar unter dem Hauptverzeichnis.
 
@@ -129,12 +135,6 @@ Das bedeutet allerdings nicht, dass die Schichtenarchitektur missachtet werden s
 In Python finden sich unter den Verzeichnissen die Module, in denen die jeweiligen Objekte gespeichert sind.
 
 Für sehr einfache Projekte lässt sich die vorgeschlagene Struktur auch in einer einzigen Datei umsetzen. Es liegt in Deinem Ermessen, die Struktur so zu gestalten, dass sie stets nützlich und praktikabel bleibt.
-
-# Warum so konkret? Das ist schlecht testbar!
-
-Wenn Du das vorige Beispiel und die Architektur betrachtest, so stellst Du fest, dass aus einem Namespace Funktionen aus einem anderen Namespace direkt aufgerufen werden. Z.b. ruft ein Use-Case eine Funktion aus dem `transform` Namespace direkt auf. Natürlich kannst Du auch alles als Objekte innerhalb der Namespaces ausführen und diese Objekte gegen Interfaces implementieren. Diese Interfaces fungieren dann als Schnittstellen zwischen den Schichten. Dieses als [Dependency Inversion](https://de.wikipedia.org/wiki/Dependency-Inversion-Prinzip) bekannte Prinzip ist natürlich nicht ausgeschlossen. Insbesondere bei statisch typisierten Programmiersprachen (z.B. C++) würde ich bei komplexen Aufgaben diesen Weg wählen. Es ermöglicht eine testbarere Applikation, macht das Ganze aber meiner Meinung nach weniger übersichtlich. Für einfache Projekte rate ich daher davon ab.
-
-Für dynamisch typisierte Programmiersprachen (z.B. Python) besteht zudem die Möglichkeit, Aufrufe in zu testendem Code zu "patchen". Ein Beispiel hierfür ist das unter Python bekannte [Monkey Patching](https://en.wikipedia.org/wiki/Monkey_patch#:~:text=Monkey%20patching%20is%20a%20technique,Python%2C%20Groovy%2C%20etc.). Es ermöglicht die Modifikation von Code während der Laufzeit. Dies erlaubt das Einfügen von Mocks, wie beim Dependency Inversion Prinzip, aber ohne den zusätzlichen Schritt, Interfaces einzufügen. Dies stellt häufig eine gute Alternative dar, sollte eine testbares Tool erforderlich sein.
 
 # Zusammenfassung
 
