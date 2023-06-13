@@ -22,7 +22,7 @@ Das folgende Bild stellt die vorgeschlagene Software-Architektur eines Kommandoz
 
 ![cli-architecture](/assets/img/cli-architecture/cli-architecture.png)
 
-Das Bild zeigt ein UML-Klassendiagramm. Lass Dich jedoch nicht von dieser Bezeichnung irritieren - im Diagramm werden lediglich Namespaces und ihre Beziehungen zueinander abgebildet. Ein Namespace oder Namensraum ist dabei nichts anderes als ein Container für Code (z. B. Klassen).
+Das Bild zeigt ein UML-Paketdiagramm. Lass Dich jedoch nicht von dieser Bezeichnung irritieren - im vorliegenden Fall werden lediglich Namespaces und ihre Beziehungen zueinander abgebildet. Ein Namespace oder Namensraum ist dabei nichts anderes als ein Container für Code (z. B. Klassen).
 
 {: .notice--info} 
 In Python definiere ich einen Namespace einfach als Modul inklusive Untermodulen.
@@ -132,7 +132,7 @@ Für sehr einfache Projekte lässt sich die vorgeschlagene Struktur auch in eine
 
 # Warum so konkret? Das ist schlecht testbar!
 
-Wenn Du die Architektur betrachtest, stellst Du fest, dass ausschließlich direkte "benutze" (use) Beziehungen verwendet werden. Natürlich kannst Du auch alles als Objekte innerhalb der Namespaces ausführen und diese Objekte gegen Interfaces implementieren. Dieses Interface fungieren dann als Schnittstellen zwischen den Schichten. Dieses als [Dependency Inversion](https://de.wikipedia.org/wiki/Dependency-Inversion-Prinzip) bekannte Prinzip ist natürlich nicht ausgeschlossen. Insbesondere bei statisch typisierten Programmiersprachen (z.B. C++) würde ich bei komplexen Aufgaben diesen Weg wählen. Es ermöglicht eine testbarere Applikation, macht das Ganze aber meiner Meinung nach weniger übersichtlich. Für einfache Projekte rate ich daher davon ab.
+Wenn Du das vorige Beispiel und die Architektur betrachtest, so stellst Du fest, dass aus einem Namespace Funktionen aus einem anderen Namespace direkt aufgerufen werden. Z.b. ruft ein Use-Case eine Funktion aus dem `transform` Namespace direkt auf. Natürlich kannst Du auch alles als Objekte innerhalb der Namespaces ausführen und diese Objekte gegen Interfaces implementieren. Diese Interfaces fungieren dann als Schnittstellen zwischen den Schichten. Dieses als [Dependency Inversion](https://de.wikipedia.org/wiki/Dependency-Inversion-Prinzip) bekannte Prinzip ist natürlich nicht ausgeschlossen. Insbesondere bei statisch typisierten Programmiersprachen (z.B. C++) würde ich bei komplexen Aufgaben diesen Weg wählen. Es ermöglicht eine testbarere Applikation, macht das Ganze aber meiner Meinung nach weniger übersichtlich. Für einfache Projekte rate ich daher davon ab.
 
 Für dynamisch typisierte Programmiersprachen (z.B. Python) besteht zudem die Möglichkeit, Aufrufe in zu testendem Code zu "patchen". Ein Beispiel hierfür ist das unter Python bekannte [Monkey Patching](https://en.wikipedia.org/wiki/Monkey_patch#:~:text=Monkey%20patching%20is%20a%20technique,Python%2C%20Groovy%2C%20etc.). Es ermöglicht die Modifikation von Code während der Laufzeit. Dies erlaubt das Einfügen von Mocks, wie beim Dependency Inversion Prinzip, aber ohne den zusätzlichen Schritt, Interfaces einzufügen. Dies stellt häufig eine gute Alternative dar, sollte eine testbares Tool erforderlich sein.
 
