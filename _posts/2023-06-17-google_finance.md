@@ -75,11 +75,11 @@ Historische Kursdaten helfen, Muster zu erkennen, Strategien zu testen, Risiken 
 Auch hier  lässt `GOOGLEFINANCE` einem nicht im Stich. Durch die Angabe eines Zeitraums
 von `[start_date]` bis  `[end_date]` sowie dem  `[interval]` im oben dargestellten Funktionsaufruf können Kursdaten für einen beachtlichen langen Zeitraum heruntergeladen werden.
 
-Die habe ich im folgenden Bild exemplarisch dargestellt:
+Die Möglichkeit die dies bietet habe ich im folgenden Bild exemplarisch dargestellt:
 
 ![Google Finance Example](/assets/img/googlefinance_hist.png)
 
-Wie im Bild dargestellt ist der Kursverlauf der "Mercedes-Benz-Group" über mehr als ein Jahrzehnt verfügbar. Gleiches gilt für viele andere Aktienwerte.
+Wie abgebildet ist der Kursverlauf der "Mercedes-Benz-Group" über mehr als ein Jahrzehnt verfügbar. Gleiches gilt für viele andere Aktienwerte.
 
 # Ausblick
 
