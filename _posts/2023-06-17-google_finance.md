@@ -11,15 +11,15 @@ header:
   caption:  "Image generated using midjourney"
 ---
 
-Seit einiger Zeit interessiere ich mich für das Thema der Aktienanlage. Der Großteil meines Vermögens lege ich gemäß einer ETF-Anlagestrategie an. Dabei folge ich weitestgehend Gerd Kommers Buch "Souverän investieren für Einsteiger: Wie Sie mit ETFs ein Vermögen bilden". Es handelt sich um eine passive Anlagestrategie, die nur wenig Eingriffe von meiner Seite erfordert. 
+Seit einiger Zeit interessiere ich mich für das Thema der Aktienanlage. Dabei folge ich weitestgehend Gerd Kommers Buch "Souverän investieren für Einsteiger: Wie Sie mit ETFs ein Vermögen bilden". Im Buch präsentiert der Autor eine sogenannte passive Anlagestrategie, die nur wenig Eingriffe des Anlegers erfordert. Mein Geld lege ich gemäß dieser Strategie an und habe damit bis jetzt eine gute Rendite erzielt.
 
 Trotz dieser gemütlichen Herangehensweise schielt ein Teil von mir immer wieder neugierig auf Internetseiten und Blogs, die "aktive" Anlagestrategien verfolgen und hiermit vermeidlich erfolgreich sind. Daher habe ich mich entschlossen, im Rahmen kleiner Experimente zu starten, um mir selbst das Thema aktive Anlage vertraut zu machen.
 
-Als Ingenieur bin ich ein Freund harter Fakten und Zahlen. Deshalb habe ich auf den bekannten Internet-Portalen nach Aktien gesucht, um mich dort rational und nüchtern zu informieren. Was mir dabei sofort ins Auge stach, war die schier endlose Auswahl Aktienwerten, die sehr bunt präsentiert und auf Basis eher undurchsichtiger Metriken sortiert wurden. Mir ist klar, welchen Einfluss die Psychologie auf eine aktive Anlagestrategie hat. Alles schreit "Kauf mich!" Als Anfänger ist es schwer, dort einen klaren Kopf zu bewahren. Weiterhin bieten die meisten Portale kaum Unterstützung für eigene Berechnungen, etwa, welche Verluste man akzeptieren kann. Man sitzt dann schnell mit dem Taschenrechner vor dem Bildschirm - ziemlich umständlich.
+Als Ingenieur bin ich ein Freund von Fakten und Zahlen. Deshalb habe ich auf den bekannten Internet-Portalen nach Aktien gesucht, um mich dort rational und nüchtern zu informieren. Was mir dabei sofort ins Auge stach, war die schier endlose Auswahl von Aktienwerten, die sehr bunt präsentiert und auf Basis eher undurchsichtiger Metriken sortiert wurden. Mir ist klar, welchen Einfluss die Psychologie auf eine aktive Anlagestrategie hat. Alles schreit "Kauf mich!" Als Anfänger ist es schwer, dort einen klaren Kopf zu bewahren. Weiterhin bieten die meisten Portale kaum Unterstützung für eigene Berechnungen, etwa, welche Verluste man akzeptieren kann. Man sitzt dann schnell mit dem Taschenrechner vor dem Bildschirm - ziemlich umständlich.
 
 Aus diesem Grund habe ich nach einer Lösung gesucht, die es mir erlaubt, meine Entscheidungen unabhängig von den psychologisch hoch optimierten Internetseiten zu treffen, aber gleichzeitig aktuelle Daten zu einem Aktienwert liefert.
 
-Zu meiner großen Überraschung war die einfachste Lösung für mein Problem das allseits bekannte Online-Tabellenkalkulation [Google Sheets](https://www.google.com/sheets).
+Zu meiner großen Überraschung war die einfachste Lösung für mein Problem die  bekannte Online-Tabellenkalkulation [Google Sheets](https://www.google.com/sheets).
 
 # Kurze Einführung: Google Finance 
 
@@ -39,11 +39,11 @@ Es gibt einige Quellen im Internet, wie diese Funktion zu verwenden ist. Am best
 
 # Ein eigenes Aktiendashboard mit Google Sheets erstellen
 
-Ausgerüstet mit diesen Kenntnissen habe ich nachstehenden Tabelle erstellt, die als Grundlage für mein persönliches Aktiendashboard dienen soll. Die in der Tabelle genannten Unternehmen sind lediglich Beispiele:
+Ausgerüstet mit diesen Kenntnissen habe ich beispielhaft die nachstehenden Tabelle erstellt, die als Grundlage für mein persönliches Aktiendashboard dienen soll. Die in der Tabelle genannten Unternehmen sind lediglich Beispiele, halte sie also nicht für einen Anlagetip:
 
 ![Google Finance Example](/assets/img/Google_Sheets_Finance.png)
 
-Diese Tabelle zeigt alle verfügbaren Informationen, die die `GOOGLEFINANCE`-Funktion für einen Aktienwert liefert. Man kann sofort wichtige Kennzahlen erkennen und entsprechend reagieren. Besonders hervorzuheben sind folgende Werte, die gerade am Anfang sehr hilfreich sein können:
+In der Tabelle enthalten sind alle verfügbaren Informationen, die die `GOOGLEFINANCE`-Funktion für einen Aktienwert liefert. Man kann sofort wichtige Kennzahlen erkennen und entsprechend reagieren. Besonders hervorzuheben sind folgende Werte, die gerade am Anfang sehr hilfreich sein können:
 
 | __Attribut:__ | __Erklärung__:
 | :---- | :----- 
@@ -75,7 +75,7 @@ Historische Kursdaten helfen, Muster zu erkennen, Strategien zu testen, Risiken 
 Auch hier  lässt `GOOGLEFINANCE` einem nicht im Stich. Durch die Angabe eines Zeitraums
 von `[start_date]` bis  `[end_date]` sowie dem  `[interval]` im oben dargestellten Funktionsaufruf können Kursdaten für einen beachtlichen langen Zeitraum heruntergeladen werden.
 
-Die Möglichkeit die dies bietet habe ich im folgenden Bild exemplarisch dargestellt:
+Die Möglichkeit, die dies bietet, habe ich im folgenden Bild exemplarisch dargestellt:
 
 ![Google Finance Example](/assets/img/googlefinance_hist.png)
 
