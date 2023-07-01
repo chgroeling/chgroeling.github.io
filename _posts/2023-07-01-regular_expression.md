@@ -81,11 +81,9 @@ if __name__ == "__main__":
 
 Exemplarisch wird hier ein regulärer Ausdruck getestet, der Ip Adressen erkennt. Dies dient allerdings nur der Veranschaulichung der Arbeitsweise.
 
-Am Ende des Skripts sorgt der Aufruf `doctest.testmod()` dafür, dass das ``doctest`` Modul das aufrufende Modul testet. Das bedeutet, alle Docstrings im Modul werden nach der Zeichenkette ``>>>`` durchsucht. Alles, was danach folgt, wird im Python Interpreter ausgeführt. 
+Um die Funktionsweise des Skriptes zu verstehen, ist die letzte Zeile des Skriptes, also der Aufruf `doctest.testmod()` entscheidend. Dieser sorgt dafür, dass ``doctest`` Modul das aufrufende Modul testet. Das bedeutet, alle Docstrings im Modul werden nach der Zeichenkette ``>>>`` durchsucht. Alles, was danach folgt, wird im Python Interpreter ausgeführt. Der Rückgabewert jedes dieser Funktionsaufrufe wird anschließend mit dem Text in der nächsten Zeile verglichen.
 
-Der Rückgabewert, und das ist der entscheidende Punkt, wird anschließend mit dem Text in der nächsten Zeile verglichen. 
-
-Hier ein Beispiel:
+Hierzu ein Beispiel:
 
 ```python
 >>> test_regex('11.12.13.14')
@@ -125,14 +123,15 @@ Nun ist die Ausgabe etwas interessanter. Es wird angezeigt, dass einer unserer T
 
 # Meine Vorgehensweise
 
-Mithilfe des vorgestellten Templates kann man nun auch sehr komplexe reguläre Ausdrücke erstellen und einfach und verlässlich testen. Meist gehe ich dabei nach folgender Vorgehensweise vor:
+Mithilfe des vorgestellten Templates kann man nun auch sehr komplexe reguläre Ausdrücke einfach und verlässlich testen. Meist gehe ich dabei nach folgender Vorgehensweise vor:
 
-1. Kopiere die oben angegebene Vorlage in eine eigene Datei mit der Endung `.py`. 
+1. Kopiere die oben angegebene Vorlage in eine eigene Datei mit der Endung `.py`
 2. Ersetze den regulären Ausdruck definiert in ``REGEX_UNDER_TEST`` durch den, den du testen oder entwickeln möchtest.
 3. Lösche alle Tests, bis auf einen.
 4. Passe diesen so an, dass er einen Aspekt deines regulären Ausdrucks testet und fehlerfrei abschließt.
 5. Entwickle von hier aus weitere Tests oder passe den regulären Ausdruck an, bis du das gewünschte Endergebnis erreichst.
-6. Speichere das Skript an einem Ort, an dem du es später wiederfinden kannst.
+
+Abschließend habe ich mit dem so entwickelten Test-Skript auch eine gute Möglichkeit das Ergebnis zu dokumentieren und im jeweiligen Projekt abzulegen. 
 
 
 # Zusammenfassung
