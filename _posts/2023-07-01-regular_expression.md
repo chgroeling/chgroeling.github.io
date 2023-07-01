@@ -1,7 +1,7 @@
 ---
 layout: single
 toc: false
-title: "Effizientes Testen von regulären Ausdrücken mit Python und doctest"
+title: "Einfaches Testen von regulären Ausdrücken mit Python und doctest"
 date: 2023-07-01 10:00:10 +0200
 categories: Python
 comments: true
