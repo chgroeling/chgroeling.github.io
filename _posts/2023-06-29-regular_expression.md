@@ -79,7 +79,11 @@ if __name__ == "__main__":
     doctest.testmod()
 ```
 
-Am Ende des Skripts sorgt der Aufruf `doctest.testmod()` dafür, dass das ``doctest`` Modul das aufrufende Modul testet. Das bedeutet, es durchsucht alle Docstrings nach der Zeichenkette `>>>`. Alles, was danach folgt, wird im Python Interpreter ausgeführt. Das Resultat wird anschließend mit dem Text in der nächsten Zeile verglichen.
+Exemplarisch wird hier ein regulärer Ausdruck getestet der Ip Adressen erkennt. Dies dient allerdings nur der Veranschaulichung der Arbeitsweise.
+
+Am Ende des Skripts sorgt der Aufruf `doctest.testmod()` dafür, dass das ``doctest`` Modul das aufrufende Modul testet. Das bedeutet, alle Docstrings im Modul werden nach der Zeichenkette ``>>>`` durchsucht. Alles, was danach folgt, wird im Python Interpreter ausgeführt. 
+
+Der Rückgabewert, und das ist der Entscheidende Punkt, wird anschließend mit dem Text in der nächsten Zeile verglichen. 
 
 Hier ein Beispiel:
 
@@ -89,12 +93,12 @@ Hier ein Beispiel:
 ```
 Dieser Abschnitt ist aus dem vorherigen Skript entnommen. Die Funktion `test_regex` wird mit dem Argument `'11.12.13.14'` durch ``doctest`` aufgerufen. Es folgt der zuvor angesprochene Vergleich. Wenn das Ergebnis stimmt, geht `doctest` zum nächsten Test über. Findet ``doctest`` aber eine Abweichung, wird diese als Fehler auf der Konsole ausgegeben.
 
-Um dies zu verdeutlichen, führen wir zuerst das obige Skript aus.
+Um dies zu verdeutlichen, führen wir das obige Skript aus.
 ```
 >> python test_regex.py
 ```
 
-Zunächst passiert nichts. Es gibt keine Ausgabe, keine Reaktion. Das liegt daran, dass das `doctest` Modul bei erfolgreichen Tests eben einfach nichts auf der Konsole ausgibt.
+Zunächst passiert nichts. Das liegt daran, dass das `doctest` Modul bei erfolgreichen Tests eben einfach nichts auf der Konsole ausgibt.
 
 {: .notice--info} 
 **Information:** Wenn dir die Ausgabe zu knapp ist, kannst du auch die erfolgreich abgeschlossenen Tests anzeigen lassen. Dazu musst du das Argument `verbose=True` dem Aufruf `testmod` übergeben.
