@@ -3,6 +3,7 @@ title: Impressum
 hideMeta: true
 ShowShareButtons: false
 disableShare: true
+ShowBreadCrumbs: false
 ---
 
 Die Datenschutzerklärung findest Du hier: [Datenschutzerklärung](/datenschutz)

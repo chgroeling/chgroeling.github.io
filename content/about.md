@@ -4,6 +4,7 @@ title: Über mich
 hideMeta: true
 ShowShareButtons: false
 disableShare: true
+ShowBreadCrumbs: false
 ---
 
 Herzlich willkommen auf meiner Webseite! Ich heiße Christian Gröling und bin zurzeit als Lead Software Engineer tätig. Meine Expertise liegt in der Softwareentwicklung für eingebettete Systeme. Seit vielen Jahren arbeite ich in dieser Branche und verfüge über umfangreiche Erfahrungen in der Entwicklung von Firmware, Software Architekturen und Build-Systemen.

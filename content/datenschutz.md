@@ -3,6 +3,8 @@ title: Datenschutzerklärung
 hideMeta: true
 ShowShareButtons: false
 disableShare: true
+ShowBreadCrumbs: false
+ShowToc: true
 ---
 
 # 1. Datenschutz auf einen Blick
