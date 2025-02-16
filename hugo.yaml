@@ -1,0 +1,137 @@
+baseURL: "https://www.christingroeling.de/"
+title: Christian Grölings Blog
+pagination.pagerSize: 5
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: Christian Grölings Blog
+  description: "Danke für den Besuch. Diese Seite beschreibt, wie ich mein Leben
+  führe, woran ich arbeite und was mich beschäftigt. Ich lade Sie
+  herzlich ein, an meinen Ideen teilzuhaben und gemeinsam mit mir zu wachsen."
+  keywords: [Blog, Portfolio, PaperMod]
+  author: Christian Gröling
+
+  #images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: dark
+  disableThemeToggle: true
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  footer:
+    text:
+      "[Impressum]({{< ref \"/impressum\" >}}) · [Datenschutzerklärung]({{< ref \"/datenschutz\" >}})"
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "/favicon.ico"
+    favicon16x16: "/favicon-16x16.png"
+    favicon32x32: "/favicon-32x32.png"
+    apple_touch_icon: "/apple-touch-icon.png"
+    #safari_pinned_tab: "<link / abs url>"
+
+  # Obsolete
+  # label:
+  #   text: "christiangroeling.de"
+
+  # home-info mode
+  homeInfoParams:
+
+    # Obsolete
+    # Title: "~ $\ whoami  "
+    Content: >
+      Lead Software Engineer mit Schwerpunkt auf Embedded Systems, spezialisiert auf Firmware-Entwicklung, Software-Architekturen und Build-Systeme. [Lese mehr...]({{< ref \"about\" >}})
+      
+  socialIcons:
+    - name: email
+      url : "mailto: contact@christiangroeling.de"
+    - name: github
+      url: "https://github.com/chgroeling"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/dr-ing-christian-gr%C3%B6ling-48b9691a4/"
+    - name: x
+      url : "https://x.com/luzilius"
+ 
+#  analytics:
+#    google:
+#      SiteVerificationTag: "XYZabc"
+#    bing:
+#      SiteVerificationTag: "XYZabc"
+#    yandex:
+#      SiteVerificationTag: "XYZabc"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - name: Archive
+      url: archives/
+      weight: 5
+    - identifier: categories
+      name: Kategorien
+      url: /categories/
+      weight: 20
+    - name: Suche
+      url: search/
+      weight: 20
+    - name: Über mich
+      url: about/
+      weight: 30
+
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
