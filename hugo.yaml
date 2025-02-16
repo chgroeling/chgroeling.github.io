@@ -1,6 +1,5 @@
 baseURL: "https://www.christingroeling.de/"
 title: Christian Grölings Blog
-pagination.pagerSize: 5
 theme: PaperMod
 
 enableRobotsTXT: true
@@ -14,11 +13,11 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: Christian Grölings Blog
+  title: "Christian Grölings Blog"
   description: "Danke für den Besuch. Diese Seite beschreibt, wie ich mein Leben
   führe, woran ich arbeite und was mich beschäftigt. Ich lade Sie
   herzlich ein, an meinen Ideen teilzuhaben und gemeinsam mit mir zu wachsen."
-  keywords: [Blog, Portfolio, PaperMod]
+  keywords: [Blog, Portfolio, Projekte, C++, Basteln, Python]
   author: Christian Gröling
 
   #images: ["<link or path of image for opengraph, twitter-cards>"]
@@ -30,7 +29,7 @@ params:
   ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
-  ShowCodeCopyButtons: false
+  ShowCodeCopyButtons: true
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
   UseHugoToc: true
@@ -105,7 +104,7 @@ params:
 
 menu:
   main:
-    - name: Archive
+    - name: Archiv
       url: archives/
       weight: 5
     - identifier: categories
@@ -128,7 +127,7 @@ markup:
     # codeFences: true
     # guessSyntax: true
     # lineNos: true
-    # style: monokai
+    style: monokai
 
 outputs:
   home:
