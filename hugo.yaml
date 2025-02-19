@@ -64,7 +64,9 @@ params:
     # Obsolete
     # Title: "~ $\ whoami  "
     Content: >
-      Lead Software Engineer mit Schwerpunkt auf Embedded Systems, spezialisiert auf Firmware-Entwicklung, Software-Architekturen und Build-Systeme. [Lese mehr...]({{< ref \"about\" >}})
+      Hi! Ich bin Christian.
+      Lead Software Engineer im Raum Stuttgart, spezialisiert auf Firmware-Entwicklung und Software-Architektur für Embedded Systems.   
+      Ich bin ein Tüftler durch und durch – ich liebe es, Technologie zu zerlegen, zu verstehen und wieder zusammenzubauen. Meine kleinen Projekte (wie diese Website) sind mir heilig. [Mehr über mich...]({{< ref \"about\" >}})
       
   socialIcons:
     - name: email
