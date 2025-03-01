@@ -65,8 +65,8 @@ params:
     # Title: "~ $\ whoami  "
     Content: >
       Hi! Ich bin Christian.
-      Lead Software Engineer im Raum Stuttgart, spezialisiert auf Firmware-Entwicklung und Software-Architektur für Embedded Systems.   
-      Ich bin ein Tüftler durch und durch – ich liebe es, Technologie zu zerlegen, zu verstehen und wieder zusammenzubauen. Meine kleinen Projekte (wie diese Website) sind mir heilig. [Mehr über mich...]({{< ref \"about\" >}})
+      Lead Software Engineer im Raum Stuttgart, spezialisiert auf Firmware-Entwicklung und Software-Architektur für Embedded Systems.
+      Ich bin ein echter Tüftler – ich liebe es, Technologie zu analysieren, zu verstehen und wieder zusammenzusetzen. Besonders faszinieren mich kleine Projekte wie diese Website, in die ich viel Herzblut stecke. [Mehr über mich...]({{< ref \"about\" >}})
       
   socialIcons:
     - name: email
