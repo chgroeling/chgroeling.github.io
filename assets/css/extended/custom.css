@@ -18,3 +18,18 @@ span.weak {
   animation: cursor-blink 1.5s steps(1) infinite;
 }
 
+/* For the Projects Page*/
+.project-list-content dt ~ dt, .project-list-content dd ~ dd {
+  margin-top: 1.5rem;
+}
+
+.project-list-content dt em {
+  display: block;
+  text-align: left;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-style: normal;
+  
+  color: var(--secondary);
+}
+

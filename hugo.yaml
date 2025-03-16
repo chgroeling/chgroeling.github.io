@@ -63,10 +63,7 @@ params:
 
     # Obsolete
     # Title: "~ $\ whoami  "
-    Content: >
-      Hi! Ich bin Christian.
-      Lead Software Engineer im Raum Stuttgart, spezialisiert auf Firmware-Entwicklung und Software-Architektur für Embedded Systems.
-      Ich bin ein echter Tüftler – ich liebe es, Technologie zu analysieren, zu verstehen und wieder zusammenzusetzen. Besonders faszinieren mich kleine Projekte wie diese Website, in die ich viel Herzblut stecke. [Mehr über mich...]({{< ref \"about\" >}})
+    Content: Hi! I'm Christian. Lead Software Engineer in the Stuttgart area, specializing in firmware development and software architecture for embedded systems. I'm a true tinkerer – I love taking technology apart, understanding how it works, and putting it back together. I'm particularly fascinated by small projects like this website, into which I pour a lot of passion. [More about me...]({{< ref \"about\" >}})
       
   socialIcons:
     - name: email
@@ -75,8 +72,6 @@ params:
       url: "https://github.com/chgroeling"
     - name: linkedin
       url: "https://www.linkedin.com/in/dr-ing-christian-gr%C3%B6ling-48b9691a4/"
-    - name: x
-      url : "https://x.com/luzilius"
  
 #  analytics:
 #    google:
@@ -106,19 +101,22 @@ params:
 
 menu:
   main:
-    - name: Archiv
+    - name: Archives
       url: archives/
       weight: 5
     - identifier: categories
-      name: Kategorien
+      name: Categories
       url: /categories/
       weight: 20
-    - name: Suche
+    - name: Projects
+      url: /projects/
+      weight: 25
+    - name: Search
       url: search/
-      weight: 20
-    - name: Über mich
-      url: about/
       weight: 30
+    - name: About
+      url: about/
+      weight: 35
 
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
