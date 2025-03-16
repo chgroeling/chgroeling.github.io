@@ -101,8 +101,8 @@ params:
 
 menu:
   main:
-    - name: Archives
-      url: archives/
+    - name: Archive
+      url: archive/
       weight: 5
     - identifier: categories
       name: Categories
