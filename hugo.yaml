@@ -61,7 +61,7 @@ params:
   # home-info mode
   homeInfoParams:
 
-    ProfileImage: "/img/avatar.jpg"
+    ProfileImage: "/img/avatar.png"
     # Obsolete
     # Title: "~ $\ whoami  "
     Content: 👋 Hi! I'm Christian. Lead Software Engineer in the Stuttgart area, specializing in firmware development and software architecture for embedded systems. I'm a true tinkerer – I love taking technology apart, understanding how it works, and putting it back together. I'm particularly fascinated by small projects like this website, into which I pour a lot of passion. [More about me...]({{< ref \"about\" >}})
