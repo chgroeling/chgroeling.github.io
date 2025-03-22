@@ -1,13 +1,23 @@
 {{- with site.Params.homeInfoParams }}
 <article class="first-entry home-info">
-    <header class="entry-header">
-        <h1>~$&nbsp whoami&nbsp</h1> 
-    </header>
-    <div class="entry-content">
-        {{ .Content | markdownify }}
-    </div>
-    <footer class="entry-footer">
-        {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
-    </footer>
+   <header class="entry-header">
+      <h1>~$&nbsp;whoami&nbsp;</h1>
+   </header>
+   <div class="flex-container">
+      <div class="flex-item-left">
+         <div class="entry-content" style="padding-right: 1rem;">
+            {{ .Content | markdownify }}
+         </div>
+         <footer class="entry-footer">
+            {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
+      </div>
+      <div class="flex-item-right" style="padding-top: 0.5rem;">
+      {{ $img := resources.Get .ProfileImage }}
+      {{ with $img }}
+      <img src="{{ .RelPermalink }}" alt="Profilbild" style="max-width: 140px; height: auto; border-radius: 50%;"/>
+      {{ end }}
+      </div>
+   </div>
+   </footer>
 </article>
 {{- end -}}
