@@ -44,8 +44,8 @@ The listed projects are categorized into four statuses:
 [mapfile_parser](https://github.com/chgroeling/mapfile_parser) *🌱 trial* *2023-2023*
 : A simple Python-based parser for GNU linker mapfiles.
 
-[cpp_realtime_patterns](https://github.com/chgroeling/cpp_realtime_patterns) *🌱 trial* *2023-2023*
-: Software design patterns in C++ for realtime applications.
+[cpp_rt_patterns](https://github.com/chgroeling/cpp_rt_patterns) *🌱 trial* *2023-2023*
+: Software Design Patterns in C++ with a Focus on Real-Time Applications
 
 [cpp_template](https://github.com/chgroeling/cpp_template) *🌱 trial* *2023-2023*
 : A C++ project template generator using Jinja2.

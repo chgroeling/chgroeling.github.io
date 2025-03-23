@@ -18,7 +18,7 @@ Zu meiner großen Überraschung war die einfachste Lösung für mein Problem die
 
 Google Sheets verfügt über die Funktion `GOOGLEFINANCE`, mit der man völlig kostenfrei Informationen von [www.google.com/finance](https://www.google.com/finance/) abfragen kann. Das folgende Bild zeigt beispielhaft, wie das so funktioniert:
  
-![Google Finance Example](/img/Google_Finance_Simple.png)
+![Google Finance Example](/img/google_finance/Google_Finance_Simple.png)
 
 Der Clou, es handelt sich um Echtzeitdaten (mit ca. 15 Minuten Verzögerung). Das heißt, die Tabelle wird jeweils mit den aktuellsten Werten aktualisiert.
 
@@ -34,7 +34,7 @@ Es gibt einige Quellen im Internet, wie diese Funktion zu verwenden ist. Am best
 
 Ausgerüstet mit diesen Kenntnissen habe ich beispielhaft die nachstehenden Tabelle erstellt, die als Grundlage für mein persönliches Aktiendashboard dienen soll. Die in der Tabelle genannten Unternehmen sind lediglich Beispiele, halte sie also nicht für einen Anlagetip:
 
-![Google Finance Example](/img/Google_Sheets_Finance.png)
+![Google Finance Example](/img/google_finance/Google_Sheets_Finance.png)
 
 In der Tabelle enthalten sind alle verfügbaren Informationen, die die `GOOGLEFINANCE`-Funktion für einen Aktienwert liefert. Man kann sofort wichtige Kennzahlen erkennen und entsprechend reagieren. Besonders hervorzuheben sind folgende Werte, die gerade am Anfang sehr hilfreich sein können:
 

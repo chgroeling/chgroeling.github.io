@@ -17,7 +17,7 @@ Eine Assoziation ist eine "kennt-ein"-Beziehung; keines der Objekte ist Teil ode
 
 Das folgende Bild illustriert die gerichtete Assoziation "``Foo`` kennt ein ``Bar``".
 
-![Assoziation](/img/uml/uml_elements-Assoziation.drawio.png)
+![Assoziation](/img/uml/uml_elements-Assoziation.drawio.png#width_65perc)
 
 Wenn der Pfeil weggelassen wird, bedeutet dies, dass beide Klassen sich gegenseitig kennen. Aus Gründen der Einfachheit konzentriere ich mich auf das Beispiel der gerichteten Assoziation.
 
@@ -50,7 +50,7 @@ Die Aggregation ist eine spezielle Form der Assoziation und stellt eine "hat-ein
 
 Das folgende Bild stellt die Aggregation "``Foo`` hat ein ``Bar``" dar.
 
-![Aggregation](/img/uml/uml_elements-Aggregation.drawio.png)
+![Aggregation](/img/uml/uml_elements-Aggregation.drawio.png#width_65perc)
 
 
 Eine Aggregation kann auftreten, wenn eine Klasse eine Sammlung oder einen Container für andere Klassen ist, die enthaltenen Klassen aber nicht stark vom Container abhängig sind. Das heißt, wenn der Container zerstört wird, bleibt sein Inhalt unberührt.
@@ -90,7 +90,7 @@ Eine Komposition ist eine spezielle Form der Aggregation und stellt eine "besitz
 
 Das folgende Bild stellt die Komposition "``Foo`` besitzt ein ``Bar``" dar.
 
-![Komposition](/img/uml/uml_elements-Komposition.drawio.png)
+![Komposition](/img/uml/uml_elements-Komposition.drawio.png#width_65perc)
 
 Dies ist eine stärkere Form der "hat-ein"-Beziehung, die impliziert, dass die Lebensdauer des Teil-Objekts (der "Besitz") an die des Ganzen gebunden ist.
 
@@ -123,7 +123,7 @@ Generalisierung ist ein anderer Ausdruck für Vererbung. Es handelt sich hierbei
 
 Das folgende Bild stellt die Generalisierung "``Foo`` ist ein ``Bar``" dar.
 
-![Generalisierung](/img/uml/uml_elements-Generalisierung.drawio.png)
+![Generalisierung](/img/uml/uml_elements-Generalisierung.drawio.png#width_65perc)
 
 **Alltagsbeispiel:** Tier und Hund - Ein Hund ist ein Tier. In diesem Fall wäre "Tier" die Basisklasse und "Hund" wäre eine abgeleitete Klasse.
 
@@ -155,7 +155,7 @@ Abhängigkeiten repräsentieren eine "benutzt-ein"-Beziehung zwischen zwei Klass
 
 Das folgende Bild stellt die Abhängigkeit "``Foo`` benutzt-ein ``Bar``" dar.
 
-![Abhängigkeit](/img/uml/uml_elements-Abhängigkeit.drawio.png)
+![Abhängigkeit](/img/uml/uml_elements-Abhängigkeit.drawio.png#width_65perc)
 
 **Alltagsbeispiel:** Koch und Rezept - Ein Koch ist abhängig von einem Rezept, um ein Gericht zuzubereiten. Wenn das Rezept geändert wird (etwa die Zutaten oder die Zubereitungsanweisungen), muss der Koch seine Methode zum Zubereiten des Gerichts entsprechend ändern.
 
@@ -178,8 +178,7 @@ Eine Realisierung ist eine Beziehung zwischen zwei Klassen, in der eine Klasse d
 
 Das folgende Bild stellt die Realisierung "``Foo`` erfüllt das ``IBar`` Interface" dar.
 
-![Realisierung](/img/uml/uml_elements-Realisierung.drawio.png)
-
+![Realisierung](/img/uml/uml_elements-Realisierung.drawio.png#width_65perc)
 
 **Alltagsbeispiel:**  Es ist schwierig, ein Alltagsbeispiel zu finden, da dieses Konzept in der realen Welt kaum greifbar ist. Grob gesagt könnte eine Klasse eine Schnittstelle "Laufbar" implementieren, die eine Methode "laufen" definiert. Diese Klasse könnte ein "Hund", ein "Mensch" oder ein "Roboter" sein - alles, was "laufen" kann.
 
